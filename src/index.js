@@ -10,6 +10,7 @@ let indexes = null;
 let inQuestion = false;
 let currentPlace = null;
 let hits = 0;
+let totalScore = 0;
 
 function getRandomInt (min, max) {
   min = Math.ceil(min);
@@ -51,6 +52,20 @@ function getPlaceFromIndex (index) {
   return place;
 }
 
+function getPlaceFromGeoJSON (place) {
+  const placeId = parseInt(place.id);
+  let thePlace = null;
+  if (!Number.isNaN(placeId)) {
+    thePlace = locations.features.reduce(function (accum, feature) {
+      if (accum === null && placeId === feature.properties.id) {
+        accum = feature;
+      }
+      return accum;
+    }, null);  
+  }
+  return thePlace;
+}
+
 function addMap () {
   const map = new mapboxgl.Map({
     container: 'map',
@@ -70,21 +85,42 @@ function addMap () {
   interactivity.on('featureClick', featureEvent => {
     if (inQuestion) {
       const feature = featureEvent.features[0];
+      getPlaceFromGeoJSON(currentPlace);
       if (feature) {
         const selectedId = feature.id;
         const targetId = parseInt(currentPlace.id);
         if (selectedId === targetId) {
-          console.log('YEAH!');
+          const score = calculateScore(0);
+          totalScore += score;
+          console.log(`YEAH! You nailed it! You earned ${ score } points.`);
+          console.log('');
           hits++;
         } else {
-          console.log(`FAIL! You clicked on ${ feature.variables.name.value }`);
+          const targetPlace = getPlaceFromGeoJSON(currentPlace);
+          let distance = null;
+          let distanceText = '';
+          if (targetPlace !== null) {
+            distance = getDistanceFromLngLatInKm({
+              lat: targetPlace.geometry.coordinates[0],
+              lng: targetPlace.geometry.coordinates[1]
+            }, featureEvent.coordinates);
+            distanceText = ` It's ${ Math.floor(distance) } kms. far from the answer.`;
+          }
+          const score = calculateScore(distance);
+          console.log(`FAIL! You clicked on ${ feature.variables.name.value }.${ distanceText }`);
+          if (score === 0) {
+            console.log(`You didn't earn any points.`);
+          } else {
+            totalScore += score;
+            console.log(`You earned ${ score } points.`);
+          }
           console.log('');
         }
         currentIndex++;
         if (currentIndex <= 10) {
           askQuestion();
         } else {
-          console.log(`Your score: ${ hits }/10`);
+          console.log(`Your score: ${ totalScore }/1000`);
         }  
       }
     }
@@ -97,6 +133,16 @@ function addMap () {
   });
 
   layer.addTo(map);
+}
+
+function calculateScore (distance) {
+  const maxPoints = 100;
+  const maxDistance = 1000;
+  if (distance === null || distance > maxDistance) {
+    return 0;
+  }
+  const percentage = (maxDistance - distance) / maxDistance;
+  return Math.floor(percentage * maxPoints);
 }
 
 function askQuestion () {
