@@ -170,6 +170,19 @@ function addMap () {
     }
   });
 
+  interactivity.on('featureEnter', featureEvent => {
+    const feature = featureEvent.features[0];
+    if (feature) {
+      const text = document.getElementById('tooltip-text');
+      text.textContent = feature.variables.name.value;
+    }
+  });
+
+  interactivity.on('featureLeave', () => {
+    const text = document.getElementById('tooltip-text');
+    text.textContent = '';
+  });
+
   layer2.addTo(map);
   layer3.addTo(map);
   layer4.addTo(map);

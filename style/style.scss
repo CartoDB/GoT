@@ -16,3 +16,16 @@ body {
   height: 100%;
   width: 100%;
 }
+
+.tooltip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#tooltip-text {
+  margin: 0;
+  padding: 16px;
+  font-size: 24px;
+  background-color: #FFF;
+}
