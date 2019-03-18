@@ -145,8 +145,8 @@ function addMap () {
           let distanceText = '';
           if (targetPlace !== null) {
             distance = getDistanceFromLngLatInKm({
-              lat: targetPlace.geometry.coordinates[0],
-              lng: targetPlace.geometry.coordinates[1]
+              lat: targetPlace.geometry.coordinates[1],
+              lng: targetPlace.geometry.coordinates[0]
             }, featureEvent.coordinates);
             distanceText = ` It's ${ Math.floor(distance) } kms. far from the answer.`;
           }
