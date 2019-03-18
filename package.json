@@ -1,0 +1,22 @@
+{
+  "name": "got",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html",
+    "lint": "eslint src/*.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^5.15.2",
+    "parcel-bundler": "^1.12.2",
+    "sass": "^1.17.3"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.5.0"
+  }
+}

@@ -1,0 +1,4469 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.986984,
+          4.621155
+        ]
+      },
+      "properties": {
+        "cartodb_id": 3,
+        "id": 3,
+        "name": "Rosby",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.07823,
+          3.953606
+        ]
+      },
+      "properties": {
+        "cartodb_id": 1,
+        "id": 1,
+        "name": "King's Landing",
+        "size": 5,
+        "confirmed": 1,
+        "type": "City"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.802566,
+          4.487995
+        ]
+      },
+      "properties": {
+        "cartodb_id": 2,
+        "id": 2,
+        "name": "Hayford Castle",
+        "size": 3,
+        "confirmed": 0,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.398143,
+          5.041658
+        ]
+      },
+      "properties": {
+        "cartodb_id": 4,
+        "id": 4,
+        "name": "Old Stone Bridge Inn",
+        "size": 1,
+        "confirmed": 0,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.650718,
+          5.527573
+        ]
+      },
+      "properties": {
+        "cartodb_id": 5,
+        "id": 5,
+        "name": "Brindlewood",
+        "size": 1,
+        "confirmed": 0,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.856297,
+          6.415302
+        ]
+      },
+      "properties": {
+        "cartodb_id": 6,
+        "id": 6,
+        "name": "Sow's Horn",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.791159,
+          2.33642
+        ]
+      },
+      "properties": {
+        "cartodb_id": 7,
+        "id": 7,
+        "name": "Tumbleton",
+        "size": 4,
+        "confirmed": 1,
+        "type": "Town"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.23777,
+          8.452407
+        ]
+      },
+      "properties": {
+        "cartodb_id": 8,
+        "id": 8,
+        "name": "High Heart",
+        "size": 2,
+        "confirmed": 1,
+        "type": "Ruin"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.9191,
+          5.838278
+        ]
+      },
+      "properties": {
+        "cartodb_id": 9,
+        "id": 9,
+        "name": "Duskendale",
+        "size": 4,
+        "confirmed": 1,
+        "type": "Town"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.601523,
+          7.314712
+        ]
+      },
+      "properties": {
+        "cartodb_id": 10,
+        "id": 10,
+        "name": "Antlers",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.592178,
+          5.072028
+        ]
+      },
+      "properties": {
+        "cartodb_id": 11,
+        "id": 11,
+        "name": "Stokeworth",
+        "size": 3,
+        "confirmed": 0,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.508214,
+          6.268126
+        ]
+      },
+      "properties": {
+        "cartodb_id": 12,
+        "id": 12,
+        "name": "Ivy Inn",
+        "size": 1,
+        "confirmed": 0,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.62983,
+          7.006343
+        ]
+      },
+      "properties": {
+        "cartodb_id": 13,
+        "id": 13,
+        "name": "Village",
+        "size": 1,
+        "confirmed": 0,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.807512,
+          6.464361
+        ]
+      },
+      "properties": {
+        "cartodb_id": 14,
+        "id": 14,
+        "name": "Holdfast",
+        "size": 1,
+        "confirmed": 0,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.900957,
+          8.379987
+        ]
+      },
+      "properties": {
+        "cartodb_id": 15,
+        "id": 15,
+        "name": "Harrenhal",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.396353,
+          7.922105
+        ]
+      },
+      "properties": {
+        "cartodb_id": 16,
+        "id": 16,
+        "name": "Rushing Falls",
+        "size": 1,
+        "confirmed": 0,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.648929,
+          6.847486
+        ]
+      },
+      "properties": {
+        "cartodb_id": 17,
+        "id": 17,
+        "name": "Tumblers Falls",
+        "size": 1,
+        "confirmed": 0,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          51.365872,
+          -12.423244
+        ]
+      },
+      "properties": {
+        "cartodb_id": 210,
+        "id": 210,
+        "name": null,
+        "size": 1,
+        "confirmed": 1,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.742511,
+          6.987654
+        ]
+      },
+      "properties": {
+        "cartodb_id": 20,
+        "id": 20,
+        "name": "Sept",
+        "size": 1,
+        "confirmed": 0,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          53.991681,
+          -11.362641
+        ]
+      },
+      "properties": {
+        "cartodb_id": 211,
+        "id": 211,
+        "name": null,
+        "size": 2,
+        "confirmed": 1,
+        "type": "Ruin"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.994813,
+          6.137303
+        ]
+      },
+      "properties": {
+        "cartodb_id": 18,
+        "id": 18,
+        "name": "Stoney Sept",
+        "size": 4,
+        "confirmed": 1,
+        "type": "Town"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.406108,
+          6.520428
+        ]
+      },
+      "properties": {
+        "cartodb_id": 19,
+        "id": 19,
+        "name": "Hollow Hill",
+        "size": 1,
+        "confirmed": 0,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.05088,
+          8.015551
+        ]
+      },
+      "properties": {
+        "cartodb_id": 21,
+        "id": 21,
+        "name": "Acorn Hall",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.985605,
+          7.604392
+        ]
+      },
+      "properties": {
+        "cartodb_id": 22,
+        "id": 22,
+        "name": "Pinkmaiden",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.742647,
+          7.239956
+        ]
+      },
+      "properties": {
+        "cartodb_id": 23,
+        "id": 23,
+        "name": "Mummer's Ford",
+        "size": 1,
+        "confirmed": 0,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.751992,
+          7.043721
+        ]
+      },
+      "properties": {
+        "cartodb_id": 24,
+        "id": 24,
+        "name": "Sherrer",
+        "size": 1,
+        "confirmed": 0,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.58379,
+          7.081099
+        ]
+      },
+      "properties": {
+        "cartodb_id": 25,
+        "id": 25,
+        "name": "Wendish Town",
+        "size": 1,
+        "confirmed": 0,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.658273,
+          8.679011
+        ]
+      },
+      "properties": {
+        "cartodb_id": 26,
+        "id": 26,
+        "name": "Lord Goodbrook's Village",
+        "size": 1,
+        "confirmed": 0,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.200392,
+          8.763112
+        ]
+      },
+      "properties": {
+        "cartodb_id": 27,
+        "id": 27,
+        "name": "Sallydance",
+        "size": 1,
+        "confirmed": 0,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.032191,
+          9.006069
+        ]
+      },
+      "properties": {
+        "cartodb_id": 28,
+        "id": 28,
+        "name": "Lady of the Leaves",
+        "size": 1,
+        "confirmed": 0,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.611551,
+          9.426573
+        ]
+      },
+      "properties": {
+        "cartodb_id": 29,
+        "id": 29,
+        "name": "Lord Lychester's Keep",
+        "size": 1,
+        "confirmed": 0,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.751718,
+          9.604118
+        ]
+      },
+      "properties": {
+        "cartodb_id": 30,
+        "id": 30,
+        "name": "Unnamed Village",
+        "size": 1,
+        "confirmed": 0,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.835956,
+          9.819042
+        ]
+      },
+      "properties": {
+        "cartodb_id": 31,
+        "id": 31,
+        "name": "Inn (They Ley with Lions)",
+        "size": 1,
+        "confirmed": 0,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.312663,
+          9.491984
+        ]
+      },
+      "properties": {
+        "cartodb_id": 32,
+        "id": 32,
+        "name": "Riverrun",
+        "size": 3,
+        "confirmed": 1,
+        "type": "City"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.798304,
+          8.837868
+        ]
+      },
+      "properties": {
+        "cartodb_id": 33,
+        "id": 33,
+        "name": "Raventree Hall",
+        "size": 3,
+        "confirmed": 0,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.377528,
+          9.370505
+        ]
+      },
+      "properties": {
+        "cartodb_id": 34,
+        "id": 34,
+        "name": "Darry",
+        "size": 3,
+        "confirmed": 0,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.873197,
+          10.276924
+        ]
+      },
+      "properties": {
+        "cartodb_id": 35,
+        "id": 35,
+        "name": "Inn of the Kneeling Man",
+        "size": 1,
+        "confirmed": 1,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.013228,
+          10.361024
+        ]
+      },
+      "properties": {
+        "cartodb_id": 36,
+        "id": 36,
+        "name": "BWB hideout",
+        "size": 1,
+        "confirmed": 0,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.882268,
+          9.725597
+        ]
+      },
+      "properties": {
+        "cartodb_id": 37,
+        "id": 37,
+        "name": "Lort Harroway's Town",
+        "size": 1,
+        "confirmed": 0,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.34015,
+          9.819042
+        ]
+      },
+      "properties": {
+        "cartodb_id": 38,
+        "id": 38,
+        "name": "Crossroads Inn",
+        "size": 1,
+        "confirmed": 0,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.181019,
+          9.099514
+        ]
+      },
+      "properties": {
+        "cartodb_id": 39,
+        "id": 39,
+        "name": "Saltpans",
+        "size": 1,
+        "confirmed": 1,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.227742,
+          8.931313
+        ]
+      },
+      "properties": {
+        "cartodb_id": 40,
+        "id": 40,
+        "name": "Quiet Isle",
+        "size": 1,
+        "confirmed": 1,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.638627,
+          9.09017
+        ]
+      },
+      "properties": {
+        "cartodb_id": 41,
+        "id": 41,
+        "name": "Wickenden",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.171538,
+          8.230474
+        ]
+      },
+      "properties": {
+        "cartodb_id": 42,
+        "id": 42,
+        "name": "Maidenpool",
+        "size": 4,
+        "confirmed": 1,
+        "type": "Town"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.068475,
+          7.267989
+        ]
+      },
+      "properties": {
+        "cartodb_id": 43,
+        "id": 43,
+        "name": "Rook's Rest",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.918689,
+          9.183615
+        ]
+      },
+      "properties": {
+        "cartodb_id": 44,
+        "id": 44,
+        "name": "Dyre Den",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.58215,
+          8.482776
+        ]
+      },
+      "properties": {
+        "cartodb_id": 45,
+        "id": 45,
+        "name": "The Whispers",
+        "size": 2,
+        "confirmed": 1,
+        "type": "Ruin"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.348537,
+          7.053065
+        ]
+      },
+      "properties": {
+        "cartodb_id": 46,
+        "id": 46,
+        "name": "Dragonstone",
+        "size": 3,
+        "confirmed": 1,
+        "type": "City"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.806555,
+          5.744833
+        ]
+      },
+      "properties": {
+        "cartodb_id": 47,
+        "id": 47,
+        "name": "Sharp Point",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.208369,
+          4.950549
+        ]
+      },
+      "properties": {
+        "cartodb_id": 48,
+        "id": 48,
+        "name": "Stonedance",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.74128,
+          1.549145
+        ]
+      },
+      "properties": {
+        "cartodb_id": 49,
+        "id": 49,
+        "name": "Haystack Hall",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.040442,
+          1.296843
+        ]
+      },
+      "properties": {
+        "cartodb_id": 50,
+        "id": 50,
+        "name": "Bronzegate",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.283536,
+          0.427803
+        ]
+      },
+      "properties": {
+        "cartodb_id": 51,
+        "id": 51,
+        "name": "Felwood",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.713247,
+          -0.656161
+        ]
+      },
+      "properties": {
+        "cartodb_id": 52,
+        "id": 52,
+        "name": "Storm's End",
+        "size": 3,
+        "confirmed": 1,
+        "type": "City"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.816173,
+          -1.263555
+        ]
+      },
+      "properties": {
+        "cartodb_id": 53,
+        "id": 53,
+        "name": "Griffin's Roost",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          60.663666,
+          -16.525487
+        ]
+      },
+      "properties": {
+        "cartodb_id": 219,
+        "id": 219,
+        "name": null,
+        "size": 2,
+        "confirmed": 1,
+        "type": "Ruin"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.05872,
+          -1.992427
+        ]
+      },
+      "properties": {
+        "cartodb_id": 54,
+        "id": 54,
+        "name": "Rain House",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.797074,
+          -4.085599
+        ]
+      },
+      "properties": {
+        "cartodb_id": 55,
+        "id": 55,
+        "name": "Greenstone",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.872104,
+          -4.590203
+        ]
+      },
+      "properties": {
+        "cartodb_id": 56,
+        "id": 56,
+        "name": "Weeping Tower",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.002927,
+          -3.805263
+        ]
+      },
+      "properties": {
+        "cartodb_id": 57,
+        "id": 57,
+        "name": "Mistwood",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.040715,
+          -3.235248
+        ]
+      },
+      "properties": {
+        "cartodb_id": 58,
+        "id": 58,
+        "name": "Stonehelm",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.077956,
+          -2.244729
+        ]
+      },
+      "properties": {
+        "cartodb_id": 59,
+        "id": 59,
+        "name": "Crow's Nest",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.283672,
+          -1.179454
+        ]
+      },
+      "properties": {
+        "cartodb_id": 60,
+        "id": 60,
+        "name": "Grandview",
+        "size": 4,
+        "confirmed": 0,
+        "type": "Town"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.49887,
+          -1.702747
+        ]
+      },
+      "properties": {
+        "cartodb_id": 61,
+        "id": 61,
+        "name": "Summerhall",
+        "size": 2,
+        "confirmed": 1,
+        "type": "Ruin"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.863443,
+          -2.852123
+        ]
+      },
+      "properties": {
+        "cartodb_id": 62,
+        "id": 62,
+        "name": "Blackhaven",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.601659,
+          0.923062
+        ]
+      },
+      "properties": {
+        "cartodb_id": 63,
+        "id": 63,
+        "name": "Fawnton",
+        "size": 4,
+        "confirmed": 0,
+        "type": "Town"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.13457,
+          0.175501
+        ]
+      },
+      "properties": {
+        "cartodb_id": 64,
+        "id": 64,
+        "name": "Grassy Vale",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.779342,
+          -4.291178
+        ]
+      },
+      "properties": {
+        "cartodb_id": 65,
+        "id": 65,
+        "name": "Wyl",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.321187,
+          -6.169426
+        ]
+      },
+      "properties": {
+        "cartodb_id": 66,
+        "id": 66,
+        "name": "Ghaston Grey",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.872924,
+          -6.926332
+        ]
+      },
+      "properties": {
+        "cartodb_id": 67,
+        "id": 67,
+        "name": "Yronwood",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.854508,
+          -4.805127
+        ]
+      },
+      "properties": {
+        "cartodb_id": 68,
+        "id": 68,
+        "name": "Vulture's Roost",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.611687,
+          -4.272489
+        ]
+      },
+      "properties": {
+        "cartodb_id": 69,
+        "id": 69,
+        "name": "Nightsong",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.648929,
+          -1.852259
+        ]
+      },
+      "properties": {
+        "cartodb_id": 70,
+        "id": 70,
+        "name": "Ashford",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.938882,
+          -1.300933
+        ]
+      },
+      "properties": {
+        "cartodb_id": 71,
+        "id": 71,
+        "name": "Cider Hall",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.714887,
+          -2.768022
+        ]
+      },
+      "properties": {
+        "cartodb_id": 72,
+        "id": 72,
+        "name": "Highgarden",
+        "size": 3,
+        "confirmed": 1,
+        "type": "City"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.798988,
+          -4.44069
+        ]
+      },
+      "properties": {
+        "cartodb_id": 73,
+        "id": 73,
+        "name": "Horn Hill",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.920877,
+          -4.524791
+        ]
+      },
+      "properties": {
+        "cartodb_id": 74,
+        "id": 74,
+        "name": "Brightwater Keep",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.453787,
+          -4.412657
+        ]
+      },
+      "properties": {
+        "cartodb_id": 75,
+        "id": 75,
+        "name": "Bandallon",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.154489,
+          -5.431209
+        ]
+      },
+      "properties": {
+        "cartodb_id": 76,
+        "id": 76,
+        "name": "Honeyholt",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.752675,
+          -6.57124
+        ]
+      },
+      "properties": {
+        "cartodb_id": 77,
+        "id": 77,
+        "name": "Oldtown",
+        "size": 5,
+        "confirmed": 1,
+        "type": "City"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.350998,
+          -7.244046
+        ]
+      },
+      "properties": {
+        "cartodb_id": 78,
+        "id": 78,
+        "name": "Blackcrown",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.995769,
+          -8.066363
+        ]
+      },
+      "properties": {
+        "cartodb_id": 79,
+        "id": 79,
+        "name": "Three Towers",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.920603,
+          -6.823542
+        ]
+      },
+      "properties": {
+        "cartodb_id": 80,
+        "id": 80,
+        "name": "Uplands",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.145008,
+          -9.729687
+        ]
+      },
+      "properties": {
+        "cartodb_id": 81,
+        "id": 81,
+        "name": "Sunflower Hall",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.144598,
+          -6.627307
+        ]
+      },
+      "properties": {
+        "cartodb_id": 82,
+        "id": 82,
+        "name": "Blackmont",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.200665,
+          -7.346835
+        ]
+      },
+      "properties": {
+        "cartodb_id": 83,
+        "id": 83,
+        "name": "High Hermitage",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.443759,
+          -8.169153
+        ]
+      },
+      "properties": {
+        "cartodb_id": 84,
+        "id": 84,
+        "name": "Starfall",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.667754,
+          -9.430662
+        ]
+      },
+      "properties": {
+        "cartodb_id": 85,
+        "id": 85,
+        "name": "Sandstone",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.163014,
+          -7.290768
+        ]
+      },
+      "properties": {
+        "cartodb_id": 86,
+        "id": 86,
+        "name": "Skyreach",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.331215,
+          -6.029258
+        ]
+      },
+      "properties": {
+        "cartodb_id": 87,
+        "id": 87,
+        "name": "Kingsgrave",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.368593,
+          -5.132185
+        ]
+      },
+      "properties": {
+        "cartodb_id": 88,
+        "id": 88,
+        "name": "Tower of Joy",
+        "size": 1,
+        "confirmed": 1,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.200119,
+          -9.140982
+        ]
+      },
+      "properties": {
+        "cartodb_id": 89,
+        "id": 89,
+        "name": "Hellholt",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.395807,
+          -9.309184
+        ]
+      },
+      "properties": {
+        "cartodb_id": 90,
+        "id": 90,
+        "name": "Vaith",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.358292,
+          -10.112812
+        ]
+      },
+      "properties": {
+        "cartodb_id": 91,
+        "id": 91,
+        "name": "Salt Shore",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.470426,
+          -8.542933
+        ]
+      },
+      "properties": {
+        "cartodb_id": 92,
+        "id": 92,
+        "name": "Godsgrace",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.638764,
+          -7.290768
+        ]
+      },
+      "properties": {
+        "cartodb_id": 93,
+        "id": 93,
+        "name": "The Tor",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.834589,
+          -7.449625
+        ]
+      },
+      "properties": {
+        "cartodb_id": 94,
+        "id": 94,
+        "name": "Ghost Hill",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.984101,
+          -9.589519
+        ]
+      },
+      "properties": {
+        "cartodb_id": 95,
+        "id": 95,
+        "name": "Lemonwood",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.591495,
+          -8.926059
+        ]
+      },
+      "properties": {
+        "cartodb_id": 96,
+        "id": 96,
+        "name": "Sunspear",
+        "size": 3,
+        "confirmed": 1,
+        "type": "City"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.049513,
+          -9.103604
+        ]
+      },
+      "properties": {
+        "cartodb_id": 97,
+        "id": 97,
+        "name": "Planky Town",
+        "size": 4,
+        "confirmed": 1,
+        "type": "Town"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.722318,
+          -8.720479
+        ]
+      },
+      "properties": {
+        "cartodb_id": 98,
+        "id": 98,
+        "name": "Water Gardens",
+        "size": 1,
+        "confirmed": 0,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.619802,
+          -8.524244
+        ]
+      },
+      "properties": {
+        "cartodb_id": 99,
+        "id": 99,
+        "name": "Shandystone",
+        "size": 1,
+        "confirmed": 0,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.639858,
+          -24.965922
+        ]
+      },
+      "properties": {
+        "cartodb_id": 100,
+        "id": 100,
+        "name": "Tall Trees Town",
+        "size": 4,
+        "confirmed": 0,
+        "type": "Town"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.130308,
+          -0.226313
+        ]
+      },
+      "properties": {
+        "cartodb_id": 101,
+        "id": 101,
+        "name": "Longtable",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.419988,
+          0.736172
+        ]
+      },
+      "properties": {
+        "cartodb_id": 102,
+        "id": 102,
+        "name": "Bitterbridge",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.775626,
+          0.736172
+        ]
+      },
+      "properties": {
+        "cartodb_id": 103,
+        "id": 103,
+        "name": "Goldengrove",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7759,
+          1.474389
+        ]
+      },
+      "properties": {
+        "cartodb_id": 104,
+        "id": 104,
+        "name": "Red Lake",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.336844,
+          -0.188935
+        ]
+      },
+      "properties": {
+        "cartodb_id": 105,
+        "id": 105,
+        "name": "Old Oak",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.54256,
+          2.296706
+        ]
+      },
+      "properties": {
+        "cartodb_id": 106,
+        "id": 106,
+        "name": "Crakehall",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.542287,
+          2.894755
+        ]
+      },
+      "properties": {
+        "cartodb_id": 107,
+        "id": 107,
+        "name": "Cornfield",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.710215,
+          3.632972
+        ]
+      },
+      "properties": {
+        "cartodb_id": 108,
+        "id": 108,
+        "name": "Silverhill",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.159025,
+          4.053475
+        ]
+      },
+      "properties": {
+        "cartodb_id": 109,
+        "id": 109,
+        "name": "Clegane Hall",
+        "size": 3,
+        "confirmed": 0,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.028475,
+          4.016097
+        ]
+      },
+      "properties": {
+        "cartodb_id": 110,
+        "id": 110,
+        "name": "Tarbeck Hall",
+        "size": 2,
+        "confirmed": 0,
+        "type": "Ruin"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.364878,
+          5.22154
+        ]
+      },
+      "properties": {
+        "cartodb_id": 111,
+        "id": 111,
+        "name": "Lannisport",
+        "size": 5,
+        "confirmed": 1,
+        "type": "City"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.701554,
+          4.997272
+        ]
+      },
+      "properties": {
+        "cartodb_id": 112,
+        "id": 112,
+        "name": "Feastfires",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.972545,
+          5.539254
+        ]
+      },
+      "properties": {
+        "cartodb_id": 113,
+        "id": 113,
+        "name": "Kayce",
+        "size": 4,
+        "confirmed": 1,
+        "type": "Town"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.112439,
+          5.969101
+        ]
+      },
+      "properties": {
+        "cartodb_id": 114,
+        "id": 114,
+        "name": "Oxcross",
+        "size": 1,
+        "confirmed": 0,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.96279,
+          6.455016
+        ]
+      },
+      "properties": {
+        "cartodb_id": 115,
+        "id": 115,
+        "name": "Sarsfield",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.270886,
+          5.053339
+        ]
+      },
+      "properties": {
+        "cartodb_id": 116,
+        "id": 116,
+        "name": "Deep Den",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.055962,
+          5.941068
+        ]
+      },
+      "properties": {
+        "cartodb_id": 117,
+        "id": 117,
+        "name": "Hornvale",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.644803,
+          7.296023
+        ]
+      },
+      "properties": {
+        "cartodb_id": 118,
+        "id": 118,
+        "name": "Golden Tooth",
+        "size": 1,
+        "confirmed": 1,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.981069,
+          7.996861
+        ]
+      },
+      "properties": {
+        "cartodb_id": 119,
+        "id": 119,
+        "name": "Wayfarer's Rest",
+        "size": 3,
+        "confirmed": 0,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.420808,
+          7.697837
+        ]
+      },
+      "properties": {
+        "cartodb_id": 120,
+        "id": 120,
+        "name": "Castamere",
+        "size": 2,
+        "confirmed": 0,
+        "type": "Ruin"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.177714,
+          8.763112
+        ]
+      },
+      "properties": {
+        "cartodb_id": 121,
+        "id": 121,
+        "name": "Pendric Hills",
+        "size": 1,
+        "confirmed": 0,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.402119,
+          8.809834
+        ]
+      },
+      "properties": {
+        "cartodb_id": 122,
+        "id": 122,
+        "name": "The Crag",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.402119,
+          10.155445
+        ]
+      },
+      "properties": {
+        "cartodb_id": 123,
+        "id": 123,
+        "name": "Banefort",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.140336,
+          8.015551
+        ]
+      },
+      "properties": {
+        "cartodb_id": 124,
+        "id": 124,
+        "name": "Ashemark",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.813141,
+          9.501329
+        ]
+      },
+      "properties": {
+        "cartodb_id": 125,
+        "id": 125,
+        "name": "Nunn's Deep",
+        "size": 1,
+        "confirmed": 0,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.22389,
+          8.538843
+        ]
+      },
+      "properties": {
+        "cartodb_id": 126,
+        "id": 126,
+        "name": "Stone Mill",
+        "size": 1,
+        "confirmed": 0,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.204927,
+          9.435917
+        ]
+      },
+      "properties": {
+        "cartodb_id": 127,
+        "id": 127,
+        "name": "Stone Hedge",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.803113,
+          11.482366
+        ]
+      },
+      "properties": {
+        "cartodb_id": 128,
+        "id": 128,
+        "name": "Fairmarket",
+        "size": 4,
+        "confirmed": 1,
+        "type": "Town"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.812594,
+          11.977626
+        ]
+      },
+      "properties": {
+        "cartodb_id": 129,
+        "id": 129,
+        "name": "Oldstones",
+        "size": 2,
+        "confirmed": 1,
+        "type": "Ruin"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.541057,
+          11.145964
+        ]
+      },
+      "properties": {
+        "cartodb_id": 130,
+        "id": 130,
+        "name": "Palisade Village",
+        "size": 1,
+        "confirmed": 0,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.867841,
+          11.669257
+        ]
+      },
+      "properties": {
+        "cartodb_id": 131,
+        "id": 131,
+        "name": "The Bloody Gate",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.942598,
+          12.211239
+        ]
+      },
+      "properties": {
+        "cartodb_id": 132,
+        "id": 132,
+        "name": "The Eyrie",
+        "size": 3,
+        "confirmed": 1,
+        "type": "City"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.307307,
+          13.82784
+        ]
+      },
+      "properties": {
+        "cartodb_id": 133,
+        "id": 133,
+        "name": "Strongsong",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.839671,
+          13.790462
+        ]
+      },
+      "properties": {
+        "cartodb_id": 134,
+        "id": 134,
+        "name": "Heart's Home",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.680678,
+          10.949729
+        ]
+      },
+      "properties": {
+        "cartodb_id": 135,
+        "id": 135,
+        "name": "Redfort",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.624474,
+          12.370095
+        ]
+      },
+      "properties": {
+        "cartodb_id": 136,
+        "id": 136,
+        "name": "Ironoaks",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.783194,
+          12.706498
+        ]
+      },
+      "properties": {
+        "cartodb_id": 137,
+        "id": 137,
+        "name": "Old Anchor",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.969948,
+          12.407473
+        ]
+      },
+      "properties": {
+        "cartodb_id": 138,
+        "id": 138,
+        "name": "Runestone",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.661579,
+          11.529089
+        ]
+      },
+      "properties": {
+        "cartodb_id": 139,
+        "id": 139,
+        "name": "Gulltown",
+        "size": 5,
+        "confirmed": 1,
+        "type": "Town"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.988773,
+          14.584746
+        ]
+      },
+      "properties": {
+        "cartodb_id": 140,
+        "id": 140,
+        "name": "Longbow Hall",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.428239,
+          15.472475
+        ]
+      },
+      "properties": {
+        "cartodb_id": 141,
+        "id": 141,
+        "name": "Snakewood",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.437173,
+          15.95839
+        ]
+      },
+      "properties": {
+        "cartodb_id": 142,
+        "id": 142,
+        "name": "Baelish Keep",
+        "size": 1,
+        "confirmed": 0,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.904946,
+          16.631195
+        ]
+      },
+      "properties": {
+        "cartodb_id": 143,
+        "id": 143,
+        "name": "Coldwater",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.074378,
+          13.295203
+        ]
+      },
+      "properties": {
+        "cartodb_id": 144,
+        "id": 144,
+        "name": "Seagard",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.298646,
+          14.472612
+        ]
+      },
+      "properties": {
+        "cartodb_id": 145,
+        "id": 145,
+        "name": "The Twins",
+        "size": 3,
+        "confirmed": 1,
+        "type": "City"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.167823,
+          14.313755
+        ]
+      },
+      "properties": {
+        "cartodb_id": 146,
+        "id": 146,
+        "name": null,
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.242442,
+          17.01432
+        ]
+      },
+      "properties": {
+        "cartodb_id": 147,
+        "id": 147,
+        "name": "Greywater Watch",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.821802,
+          20.154078
+        ]
+      },
+      "properties": {
+        "cartodb_id": 148,
+        "id": 148,
+        "name": "Moat Cailin",
+        "size": 2,
+        "confirmed": 1,
+        "type": "Ruin"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.802566,
+          18.285175
+        ]
+      },
+      "properties": {
+        "cartodb_id": 149,
+        "id": 149,
+        "name": "Sisterton",
+        "size": 4,
+        "confirmed": 1,
+        "type": "Town"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.129761,
+          19.228971
+        ]
+      },
+      "properties": {
+        "cartodb_id": 150,
+        "id": 150,
+        "name": "Oldcastle",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.933663,
+          21.368865
+        ]
+      },
+      "properties": {
+        "cartodb_id": 151,
+        "id": 151,
+        "name": "White Harbor",
+        "size": 5,
+        "confirmed": 1,
+        "type": "City"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.204107,
+          22.471518
+        ]
+      },
+      "properties": {
+        "cartodb_id": 152,
+        "id": 152,
+        "name": "Ramsgate",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.222386,
+          21.901503
+        ]
+      },
+      "properties": {
+        "cartodb_id": 153,
+        "id": 153,
+        "name": "Widow's Watch",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.980112,
+          24.919782
+        ]
+      },
+      "properties": {
+        "cartodb_id": 154,
+        "id": 154,
+        "name": "Hornwood",
+        "size": 3,
+        "confirmed": 0,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.596987,
+          25.9103
+        ]
+      },
+      "properties": {
+        "cartodb_id": 155,
+        "id": 155,
+        "name": "Tower",
+        "size": 1,
+        "confirmed": 0,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.914564,
+          27.3587
+        ]
+      },
+      "properties": {
+        "cartodb_id": 156,
+        "id": 156,
+        "name": "The Dreadfort",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.597534,
+          26.059813
+        ]
+      },
+      "properties": {
+        "cartodb_id": 157,
+        "id": 157,
+        "name": "Cerwyn",
+        "size": 3,
+        "confirmed": 0,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.803113,
+          26.826063
+        ]
+      },
+      "properties": {
+        "cartodb_id": 158,
+        "id": 158,
+        "name": "Holdfast",
+        "size": 1,
+        "confirmed": 0,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.560156,
+          26.611139
+        ]
+      },
+      "properties": {
+        "cartodb_id": 159,
+        "id": 159,
+        "name": "Winterfell",
+        "size": 3,
+        "confirmed": 1,
+        "type": "City"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.130308,
+          26.826063
+        ]
+      },
+      "properties": {
+        "cartodb_id": 160,
+        "id": 160,
+        "name": "Crofters' Village",
+        "size": 1,
+        "confirmed": 0,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.191047,
+          27.601658
+        ]
+      },
+      "properties": {
+        "cartodb_id": 161,
+        "id": 161,
+        "name": "Tumbledown Tower",
+        "size": 1,
+        "confirmed": 0,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.65882,
+          29.358427
+        ]
+      },
+      "properties": {
+        "cartodb_id": 162,
+        "id": 162,
+        "name": "Deepwood Motte",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.36791,
+          31.33012
+        ]
+      },
+      "properties": {
+        "cartodb_id": 163,
+        "id": 163,
+        "name": "Last Hearth",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.638354,
+          29.498595
+        ]
+      },
+      "properties": {
+        "cartodb_id": 164,
+        "id": 164,
+        "name": "Karhold",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.153123,
+          33.787728
+        ]
+      },
+      "properties": {
+        "cartodb_id": 165,
+        "id": 165,
+        "name": "Queenscrown",
+        "size": 1,
+        "confirmed": 1,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.853961,
+          34.890381
+        ]
+      },
+      "properties": {
+        "cartodb_id": 166,
+        "id": 166,
+        "name": "Castle Black",
+        "size": 3,
+        "confirmed": 1,
+        "type": "City"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.881995,
+          34.600701
+        ]
+      },
+      "properties": {
+        "cartodb_id": 167,
+        "id": 167,
+        "name": "Mole's Town",
+        "size": 1,
+        "confirmed": 0,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.358975,
+          34.993171
+        ]
+      },
+      "properties": {
+        "cartodb_id": 168,
+        "id": 168,
+        "name": "Shadow Tower",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.050606,
+          34.993171
+        ]
+      },
+      "properties": {
+        "cartodb_id": 169,
+        "id": 169,
+        "name": "Westwatch-by-the-Bridge",
+        "size": 1,
+        "confirmed": 1,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.709395,
+          35.016532
+        ]
+      },
+      "properties": {
+        "cartodb_id": 170,
+        "id": 170,
+        "name": "Sentinel Stand",
+        "size": 1,
+        "confirmed": 1,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.073831,
+          34.927759
+        ]
+      },
+      "properties": {
+        "cartodb_id": 171,
+        "id": 171,
+        "name": "Greyguard",
+        "size": 1,
+        "confirmed": 1,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.414906,
+          35.05391
+        ]
+      },
+      "properties": {
+        "cartodb_id": 172,
+        "id": 172,
+        "name": "Stonedoor",
+        "size": 1,
+        "confirmed": 1,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.653191,
+          35.039893
+        ]
+      },
+      "properties": {
+        "cartodb_id": 173,
+        "id": 173,
+        "name": "Hoarfrost Hill",
+        "size": 1,
+        "confirmed": 1,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.933526,
+          34.993171
+        ]
+      },
+      "properties": {
+        "cartodb_id": 174,
+        "id": 174,
+        "name": "Icemark",
+        "size": 1,
+        "confirmed": 1,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.167139,
+          34.95112
+        ]
+      },
+      "properties": {
+        "cartodb_id": 175,
+        "id": 175,
+        "name": "Nightfort",
+        "size": 1,
+        "confirmed": 1,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.35403,
+          34.913742
+        ]
+      },
+      "properties": {
+        "cartodb_id": 176,
+        "id": 176,
+        "name": "Deep Lake",
+        "size": 1,
+        "confirmed": 1,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.568954,
+          34.871692
+        ]
+      },
+      "properties": {
+        "cartodb_id": 177,
+        "id": 177,
+        "name": "Queensgate",
+        "size": 1,
+        "confirmed": 1,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.134297,
+          34.810953
+        ]
+      },
+      "properties": {
+        "cartodb_id": 178,
+        "id": 178,
+        "name": "Oakensheild",
+        "size": 1,
+        "confirmed": 1,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.372582,
+          34.796936
+        ]
+      },
+      "properties": {
+        "cartodb_id": 179,
+        "id": 179,
+        "name": "Woodswatch-by-the-Pool",
+        "size": 1,
+        "confirmed": 1,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.680951,
+          34.750213
+        ]
+      },
+      "properties": {
+        "cartodb_id": 180,
+        "id": 180,
+        "name": "Sable Hall",
+        "size": 1,
+        "confirmed": 1,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.965959,
+          34.731524
+        ]
+      },
+      "properties": {
+        "cartodb_id": 181,
+        "id": 181,
+        "name": "Rimegate",
+        "size": 1,
+        "confirmed": 1,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.190227,
+          34.694146
+        ]
+      },
+      "properties": {
+        "cartodb_id": 182,
+        "id": 182,
+        "name": "Long Barrow",
+        "size": 1,
+        "confirmed": 1,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.409823,
+          34.670785
+        ]
+      },
+      "properties": {
+        "cartodb_id": 183,
+        "id": 183,
+        "name": "Torches",
+        "size": 1,
+        "confirmed": 1,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.573352,
+          34.628735
+        ]
+      },
+      "properties": {
+        "cartodb_id": 184,
+        "id": 184,
+        "name": "Greenguard",
+        "size": 1,
+        "confirmed": 1,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.718192,
+          34.792264
+        ]
+      },
+      "properties": {
+        "cartodb_id": 185,
+        "id": 185,
+        "name": "Eastwatch-by-the-Sea",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.167139,
+          35.409002
+        ]
+      },
+      "properties": {
+        "cartodb_id": 186,
+        "id": 186,
+        "name": "Whitetree",
+        "size": 1,
+        "confirmed": 1,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.625157,
+          36.296731
+        ]
+      },
+      "properties": {
+        "cartodb_id": 187,
+        "id": 187,
+        "name": "Craster's Keep",
+        "size": 1,
+        "confirmed": 1,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.242169,
+          37.212493
+        ]
+      },
+      "properties": {
+        "cartodb_id": 188,
+        "id": 188,
+        "name": "Fist of the First Men",
+        "size": 1,
+        "confirmed": 1,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.140883,
+          24.480589
+        ]
+      },
+      "properties": {
+        "cartodb_id": 189,
+        "id": 189,
+        "name": "Fishing Village",
+        "size": 1,
+        "confirmed": 0,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.513297,
+          8.926641
+        ]
+      },
+      "properties": {
+        "cartodb_id": 190,
+        "id": 190,
+        "name": "Pennytree",
+        "size": 1,
+        "confirmed": 0,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.693327,
+          -8.996142
+        ]
+      },
+      "properties": {
+        "cartodb_id": 191,
+        "id": 191,
+        "name": "Lys",
+        "size": 5,
+        "confirmed": 1,
+        "type": "City"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.511519,
+          -3.562306
+        ]
+      },
+      "properties": {
+        "cartodb_id": 192,
+        "id": 192,
+        "name": "Tyrosh",
+        "size": 5,
+        "confirmed": 1,
+        "type": "City"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.697726,
+          -2.590476
+        ]
+      },
+      "properties": {
+        "cartodb_id": 193,
+        "id": 193,
+        "name": "Myr",
+        "size": 5,
+        "confirmed": 1,
+        "type": "City"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.127984,
+          4.632835
+        ]
+      },
+      "properties": {
+        "cartodb_id": 194,
+        "id": 194,
+        "name": "Pentos",
+        "size": 5,
+        "confirmed": 1,
+        "type": "City"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.099404,
+          5.595321
+        ]
+      },
+      "properties": {
+        "cartodb_id": 195,
+        "id": 195,
+        "name": "Ghoyan Drohe",
+        "size": 2,
+        "confirmed": 1,
+        "type": "Ruin"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.313918,
+          8.763112
+        ]
+      },
+      "properties": {
+        "cartodb_id": 196,
+        "id": 196,
+        "name": "Norvos",
+        "size": 5,
+        "confirmed": 1,
+        "type": "City"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.79941,
+          0.271282
+        ]
+      },
+      "properties": {
+        "cartodb_id": 197,
+        "id": 197,
+        "name": "Evenfall Hall",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.276117,
+          1.401969
+        ]
+      },
+      "properties": {
+        "cartodb_id": 198,
+        "id": 198,
+        "name": "Parchments",
+        "size": 1,
+        "confirmed": 0,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.976136,
+          16.241061
+        ]
+      },
+      "properties": {
+        "cartodb_id": 199,
+        "id": 199,
+        "name": "Braavos",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.227754,
+          14.783317
+        ]
+      },
+      "properties": {
+        "cartodb_id": 200,
+        "id": 200,
+        "name": "Lorath",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.955533,
+          4.747306
+        ]
+      },
+      "properties": {
+        "cartodb_id": 201,
+        "id": 201,
+        "name": "Qohor",
+        "size": 5,
+        "confirmed": 1,
+        "type": "City"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          42.021355,
+          2.579378
+        ]
+      },
+      "properties": {
+        "cartodb_id": 202,
+        "id": 202,
+        "name": "Ar Noy",
+        "size": 2,
+        "confirmed": 1,
+        "type": "Ruin"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.713396,
+          3.30825
+        ]
+      },
+      "properties": {
+        "cartodb_id": 203,
+        "id": 203,
+        "name": "Ny Sar",
+        "size": 2,
+        "confirmed": 1,
+        "type": "Ruin"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.488854,
+          -1.887301
+        ]
+      },
+      "properties": {
+        "cartodb_id": 204,
+        "id": 204,
+        "name": "The Sorrows (Chroyane)",
+        "size": 2,
+        "confirmed": 1,
+        "type": "Ruin"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.236415,
+          -5.344772
+        ]
+      },
+      "properties": {
+        "cartodb_id": 205,
+        "id": 205,
+        "name": "Selhorys",
+        "size": 4,
+        "confirmed": 1,
+        "type": "Town"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.180348,
+          -7.13892
+        ]
+      },
+      "properties": {
+        "cartodb_id": 206,
+        "id": 206,
+        "name": "Valysar",
+        "size": 4,
+        "confirmed": 1,
+        "type": "Town"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.92791,
+          -8.260262
+        ]
+      },
+      "properties": {
+        "cartodb_id": 207,
+        "id": 207,
+        "name": "Volon Therys",
+        "size": 4,
+        "confirmed": 1,
+        "type": "Town"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          42.376446,
+          -8.166817
+        ]
+      },
+      "properties": {
+        "cartodb_id": 208,
+        "id": 208,
+        "name": "Sar Mell",
+        "size": 2,
+        "confirmed": 1,
+        "type": "Ruin"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.637956,
+          -9.213402
+        ]
+      },
+      "properties": {
+        "cartodb_id": 209,
+        "id": 209,
+        "name": "Volantis",
+        "size": 5,
+        "confirmed": 1,
+        "type": "City"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          56.533389,
+          -11.647649
+        ]
+      },
+      "properties": {
+        "cartodb_id": 212,
+        "id": 212,
+        "name": "Mantarys",
+        "size": 5,
+        "confirmed": 1,
+        "type": "City"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          52.889028,
+          -16.301219
+        ]
+      },
+      "properties": {
+        "cartodb_id": 213,
+        "id": 213,
+        "name": null,
+        "size": 2,
+        "confirmed": 1,
+        "type": "Ruin"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.869929,
+          -18.534558
+        ]
+      },
+      "properties": {
+        "cartodb_id": 214,
+        "id": 214,
+        "name": "Oros",
+        "size": 2,
+        "confirmed": 1,
+        "type": "Ruin"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          57.729488,
+          -13.768854
+        ]
+      },
+      "properties": {
+        "cartodb_id": 215,
+        "id": 215,
+        "name": "Elyria",
+        "size": 5,
+        "confirmed": 1,
+        "type": "City"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          59.131165,
+          -13.217528
+        ]
+      },
+      "properties": {
+        "cartodb_id": 216,
+        "id": 216,
+        "name": "Tolos",
+        "size": 5,
+        "confirmed": 1,
+        "type": "City"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          60.691699,
+          -15.273322
+        ]
+      },
+      "properties": {
+        "cartodb_id": 217,
+        "id": 217,
+        "name": "Ghozai",
+        "size": 2,
+        "confirmed": 1,
+        "type": "Ruin"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          61.046791,
+          -17.132881
+        ]
+      },
+      "properties": {
+        "cartodb_id": 218,
+        "id": 218,
+        "name": "Velos",
+        "size": 2,
+        "confirmed": 1,
+        "type": "Ruin"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          64.915421,
+          -15.235944
+        ]
+      },
+      "properties": {
+        "cartodb_id": 220,
+        "id": 220,
+        "name": "Astapor",
+        "size": 5,
+        "confirmed": 1,
+        "type": "City"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          65.849873,
+          -11.245835
+        ]
+      },
+      "properties": {
+        "cartodb_id": 221,
+        "id": 221,
+        "name": "Yunkai",
+        "size": 5,
+        "confirmed": 1,
+        "type": "City"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          67.130072,
+          -9.610544
+        ]
+      },
+      "properties": {
+        "cartodb_id": 222,
+        "id": 222,
+        "name": "Meereen",
+        "size": 5,
+        "confirmed": 1,
+        "type": "City"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.035806,
+          -7.13892
+        ]
+      },
+      "properties": {
+        "cartodb_id": 223,
+        "id": 223,
+        "name": "Lhazarene Village",
+        "size": 1,
+        "confirmed": 0,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          64.938782,
+          -1.144412
+        ]
+      },
+      "properties": {
+        "cartodb_id": 224,
+        "id": 224,
+        "name": "Vaes Dothrak",
+        "size": 5,
+        "confirmed": 0,
+        "type": "City"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          65.807822,
+          -19.702623
+        ]
+      },
+      "properties": {
+        "cartodb_id": 225,
+        "id": 225,
+        "name": "Old Ghis",
+        "size": 2,
+        "confirmed": 1,
+        "type": "Ruin"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          66.770308,
+          -23.571253
+        ]
+      },
+      "properties": {
+        "cartodb_id": 226,
+        "id": 226,
+        "name": "New Ghis",
+        "size": 5,
+        "confirmed": 1,
+        "type": "City"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          64.639758,
+          -31.205723
+        ]
+      },
+      "properties": {
+        "cartodb_id": 227,
+        "id": 227,
+        "name": "Zamettar",
+        "size": 2,
+        "confirmed": 1,
+        "type": "Ruin"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          65.691016,
+          -33.976372
+        ]
+      },
+      "properties": {
+        "cartodb_id": 228,
+        "id": 228,
+        "name": "Yeen",
+        "size": 2,
+        "confirmed": 1,
+        "type": "Ruin"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          61.392538,
+          -33.602591
+        ]
+      },
+      "properties": {
+        "cartodb_id": 229,
+        "id": 229,
+        "name": "Gogossos",
+        "size": 2,
+        "confirmed": 1,
+        "type": "Ruin"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.016658,
+          18.511779
+        ]
+      },
+      "properties": {
+        "cartodb_id": 230,
+        "id": 230,
+        "name": "Flint's Finger",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.203138,
+          21.857116
+        ]
+      },
+      "properties": {
+        "cartodb_id": 231,
+        "id": 231,
+        "name": "Barrowton",
+        "size": 4,
+        "confirmed": 1,
+        "type": "Town"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.866599,
+          24.604404
+        ]
+      },
+      "properties": {
+        "cartodb_id": 232,
+        "id": 232,
+        "name": "Torrhen's Square",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          62.193837,
+          -10.130149
+        ]
+      },
+      "properties": {
+        "cartodb_id": 233,
+        "id": 233,
+        "name": "Bhorash",
+        "size": 2,
+        "confirmed": 1,
+        "type": "Ruin"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.548877,
+          11.060547
+        ]
+      },
+      "properties": {
+        "cartodb_id": 234,
+        "id": 234,
+        "name": "Pyke",
+        "size": 3,
+        "confirmed": 1,
+        "type": "City"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.043347,
+          11.585773
+        ]
+      },
+      "properties": {
+        "cartodb_id": 235,
+        "id": 235,
+        "name": "Pebbleton",
+        "size": 1,
+        "confirmed": 0,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.09794,
+          11.854951
+        ]
+      },
+      "properties": {
+        "cartodb_id": 236,
+        "id": 236,
+        "name": "Hammerhorn",
+        "size": 1,
+        "confirmed": 0,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.616601,
+          12.130695
+        ]
+      },
+      "properties": {
+        "cartodb_id": 237,
+        "id": 237,
+        "name": "Nagga's Ribs",
+        "size": 1,
+        "confirmed": 0,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.820126,
+          12.314524
+        ]
+      },
+      "properties": {
+        "cartodb_id": 238,
+        "id": 238,
+        "name": "Castle Goodbrother",
+        "size": 1,
+        "confirmed": 0,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.131122,
+          12.137261
+        ]
+      },
+      "properties": {
+        "cartodb_id": 239,
+        "id": 239,
+        "name": "Ten Towers",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.003955,
+          7.351136
+        ]
+      },
+      "properties": {
+        "cartodb_id": 240,
+        "id": 240,
+        "name": "Faircastle",
+        "size": 3,
+        "confirmed": 1,
+        "type": "Castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.383862,
+          -19.967197
+        ]
+      },
+      "properties": {
+        "cartodb_id": 241,
+        "id": 241,
+        "name": "Tyria",
+        "size": 2,
+        "confirmed": 1,
+        "type": "Ruin"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          54.753591,
+          -22.232235
+        ]
+      },
+      "properties": {
+        "cartodb_id": 242,
+        "id": 242,
+        "name": "Valyria",
+        "size": 2,
+        "confirmed": 1,
+        "type": "Ruin"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          57.799903,
+          -21.93023
+        ]
+      },
+      "properties": {
+        "cartodb_id": 243,
+        "id": 243,
+        "name": null,
+        "size": 2,
+        "confirmed": 1,
+        "type": "Ruin"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          52.317854,
+          -20.774732
+        ]
+      },
+      "properties": {
+        "cartodb_id": 244,
+        "id": 244,
+        "name": null,
+        "size": 2,
+        "confirmed": 1,
+        "type": "Ruin"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          54.083927,
+          -24.641711
+        ]
+      },
+      "properties": {
+        "cartodb_id": 245,
+        "id": 245,
+        "name": null,
+        "size": 2,
+        "confirmed": 1,
+        "type": "Ruin"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.984002,
+          -34.588184
+        ]
+      },
+      "properties": {
+        "cartodb_id": 246,
+        "id": 246,
+        "name": "Qarth",
+        "size": 5,
+        "confirmed": 0,
+        "type": "City"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.686749,
+          -1.922391
+        ]
+      },
+      "properties": {
+        "cartodb_id": 247,
+        "id": 247,
+        "name": "Lord Hewett's Town",
+        "size": 1,
+        "confirmed": 0,
+        "type": "Other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.984131,
+          27.288808
+        ]
+      },
+      "properties": {
+        "cartodb_id": 248,
+        "id": 248,
+        "name": "The Dreadfort",
+        "size": 3,
+        "confirmed": 1,
+        "type": "City"
+      }
+    }
+  ]
+}
