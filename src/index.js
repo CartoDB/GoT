@@ -2,6 +2,9 @@
 
 import './../style/style.scss';
 import locations from './locations.geo.json';
+import continents from './continents.geo.json';
+import rivers from './rivers.geo.json';
+import roads from './roads.geo.json';
 import * as trivia from './../trivia/trivia.json';
 import { getDistanceFromLngLatInKm } from './utils';
 
@@ -69,16 +72,57 @@ function getPlaceFromGeoJSON (place) {
 function addMap () {
   const map = new mapboxgl.Map({
     container: 'map',
-    style: carto.basemaps.darkmatter,
+    style: {
+      version: 8,
+      name: 'oceans',
+      sources: {},
+      layers: [
+        {
+          id: 'background',
+          type: 'background',
+          layout: {
+            visibility: 'visible'
+          },
+          paint: {
+            'background-color': '#B5D4DE',
+            'background-opacity': 1
+          }
+        }
+      ],
+      id: 'oceans',
+      owner: 'The Iron Bank'
+    },
     center: [30, 15],
     zoom: 4
   });
 
   const locationsSource = new carto.source.GeoJSON(locations);
   const viz = new carto.Viz(`
-    @name: $name
+    @name: $name,
+    strokeWidth: 0
   `);
 
+  const continentsSource = new carto.source.GeoJSON(continents);
+  const viz2 = new carto.Viz(`
+    strokeWidth: 0
+    color: #034F50
+  `);
+
+  const riversSource = new carto.source.GeoJSON(rivers);
+  const viz3 = new carto.Viz(`
+    strokeWidth: 2
+    color: blue
+  `);
+
+  const roadsSource = new carto.source.GeoJSON(roads);
+  const viz4 = new carto.Viz(`
+    strokeWidth: 3
+    color: gray
+  `);
+
+  const layer4 = new carto.Layer('layer4', roadsSource, viz4);
+  const layer3 = new carto.Layer('layer3', riversSource, viz3);
+  const layer2 = new carto.Layer('layer2', continentsSource, viz2);
   const layer = new carto.Layer('layer', locationsSource, viz);
   const interactivity = new carto.Interactivity(layer);
 
@@ -124,14 +168,11 @@ function addMap () {
         }  
       }
     }
-
-    // const winterfell = { lng: 14.560156, lat: 26.611139};
-    // featureEvent.features.forEach((feature) => {
-    //   const name = feature.variables.name.value;
-    //   console.log(`:${name}: distance: ${ getDistanceFromLngLatInKm(winterfell, featureEvent.coordinates) }`);
-    // });
   });
 
+  layer2.addTo(map);
+  layer3.addTo(map);
+  layer4.addTo(map);
   layer.addTo(map);
 }
 
