@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "csvtojson": "^2.0.8",
     "eslint": "^5.15.2",
     "parcel-bundler": "^1.12.2",
     "sass": "^1.17.3"
