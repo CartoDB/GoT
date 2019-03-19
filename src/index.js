@@ -12,8 +12,9 @@ let currentIndex = 0;
 let indexes = null;
 let inQuestion = false;
 let currentPlace = null;
-let hits = 0;
 let totalScore = 0;
+let viz;
+let filtered = false;
 
 function getRandomInt (min, max) {
   min = Math.ceil(min);
@@ -97,9 +98,12 @@ function addMap () {
   });
 
   const locationsSource = new carto.source.GeoJSON(locations);
-  const viz = new carto.Viz(`
+  viz = new carto.Viz(`
     @name: $name,
-    strokeWidth: 0
+    @important: $important,
+    strokeWidth: 0,
+    color: ramp(top($question, 2), [red, yellow]),
+    filter: 1
   `);
 
   const continentsSource = new carto.source.GeoJSON(continents);
@@ -144,8 +148,8 @@ function addMap () {
           let distanceText = '';
           if (targetPlace !== null) {
             distance = getDistanceFromLngLatInKm({
-              lat: targetPlace.geometry.coordinates[0],
-              lng: targetPlace.geometry.coordinates[1]
+              lat: targetPlace.geometry.coordinates[1],
+              lng: targetPlace.geometry.coordinates[0]
             }, featureEvent.coordinates);
             distanceText = ` It's ${ Math.floor(distance) } kms. far from the answer.`;
           }
@@ -205,9 +209,25 @@ function askQuestion () {
   console.log(`${ currentIndex + 1 }/10: ${ question }`);
 }
 
+function hookUpEvents () {
+  const button = document.getElementById('filter-button');
+  button.addEventListener('click', function () {
+    filtered = !filtered;
+    if (filtered) {
+      const s = carto.expressions;
+      viz.filter = s.eq(s.prop('important'), 'true');
+      button.textContent = 'Reset';
+    } else {
+      viz.filter = 1;
+      button.textContent = 'Filter';
+    }
+  });
+}
+
 function autorun() {
   console.log('GoT');
   addMap();
+  hookUpEvents();
   getTenQuestions();
   askQuestion();
 }
