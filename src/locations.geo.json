@@ -16,7 +16,9 @@
         "name": "Rosby",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -34,7 +36,9 @@
         "name": "King's Landing",
         "size": 5,
         "confirmed": 1,
-        "type": "City"
+        "type": "City",
+        "question": "true",
+        "important": "true"
       }
     },
     {
@@ -52,7 +56,9 @@
         "name": "Hayford Castle",
         "size": 3,
         "confirmed": 0,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -70,7 +76,9 @@
         "name": "Old Stone Bridge Inn",
         "size": 1,
         "confirmed": 0,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -88,7 +96,9 @@
         "name": "Brindlewood",
         "size": 1,
         "confirmed": 0,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -106,7 +116,9 @@
         "name": "Sow's Horn",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -124,7 +136,9 @@
         "name": "Tumbleton",
         "size": 4,
         "confirmed": 1,
-        "type": "Town"
+        "type": "Town",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -142,7 +156,9 @@
         "name": "High Heart",
         "size": 2,
         "confirmed": 1,
-        "type": "Ruin"
+        "type": "Ruin",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -160,7 +176,9 @@
         "name": "Duskendale",
         "size": 4,
         "confirmed": 1,
-        "type": "Town"
+        "type": "Town",
+        "question": "false",
+        "important": "true"
       }
     },
     {
@@ -178,7 +196,9 @@
         "name": "Antlers",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -196,7 +216,9 @@
         "name": "Stokeworth",
         "size": 3,
         "confirmed": 0,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -214,7 +236,9 @@
         "name": "Ivy Inn",
         "size": 1,
         "confirmed": 0,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -232,7 +256,9 @@
         "name": "Village",
         "size": 1,
         "confirmed": 0,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -250,7 +276,9 @@
         "name": "Holdfast",
         "size": 1,
         "confirmed": 0,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -268,7 +296,9 @@
         "name": "Harrenhal",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "true",
+        "important": "true"
       }
     },
     {
@@ -286,7 +316,9 @@
         "name": "Rushing Falls",
         "size": 1,
         "confirmed": 0,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -304,7 +336,9 @@
         "name": "Tumblers Falls",
         "size": 1,
         "confirmed": 0,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -322,7 +356,9 @@
         "name": null,
         "size": 1,
         "confirmed": 1,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -340,7 +376,9 @@
         "name": "Sept",
         "size": 1,
         "confirmed": 0,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -358,7 +396,9 @@
         "name": null,
         "size": 2,
         "confirmed": 1,
-        "type": "Ruin"
+        "type": "Ruin",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -376,7 +416,9 @@
         "name": "Stoney Sept",
         "size": 4,
         "confirmed": 1,
-        "type": "Town"
+        "type": "Town",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -394,7 +436,9 @@
         "name": "Hollow Hill",
         "size": 1,
         "confirmed": 0,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -412,7 +456,9 @@
         "name": "Acorn Hall",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -430,7 +476,9 @@
         "name": "Pinkmaiden",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -448,7 +496,9 @@
         "name": "Mummer's Ford",
         "size": 1,
         "confirmed": 0,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "true"
       }
     },
     {
@@ -466,7 +516,9 @@
         "name": "Sherrer",
         "size": 1,
         "confirmed": 0,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -484,7 +536,9 @@
         "name": "Wendish Town",
         "size": 1,
         "confirmed": 0,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -502,7 +556,9 @@
         "name": "Lord Goodbrook's Village",
         "size": 1,
         "confirmed": 0,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -520,7 +576,9 @@
         "name": "Sallydance",
         "size": 1,
         "confirmed": 0,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -538,7 +596,9 @@
         "name": "Lady of the Leaves",
         "size": 1,
         "confirmed": 0,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -556,7 +616,9 @@
         "name": "Lord Lychester's Keep",
         "size": 1,
         "confirmed": 0,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -574,7 +636,9 @@
         "name": "Unnamed Village",
         "size": 1,
         "confirmed": 0,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -592,7 +656,9 @@
         "name": "Inn (They Ley with Lions)",
         "size": 1,
         "confirmed": 0,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "true"
       }
     },
     {
@@ -610,7 +676,9 @@
         "name": "Riverrun",
         "size": 3,
         "confirmed": 1,
-        "type": "City"
+        "type": "City",
+        "question": "true",
+        "important": "true"
       }
     },
     {
@@ -628,7 +696,9 @@
         "name": "Raventree Hall",
         "size": 3,
         "confirmed": 0,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -646,7 +716,9 @@
         "name": "Darry",
         "size": 3,
         "confirmed": 0,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -664,7 +736,9 @@
         "name": "Inn of the Kneeling Man",
         "size": 1,
         "confirmed": 1,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -682,7 +756,9 @@
         "name": "BWB hideout",
         "size": 1,
         "confirmed": 0,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -700,7 +776,9 @@
         "name": "Lort Harroway's Town",
         "size": 1,
         "confirmed": 0,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -718,7 +796,9 @@
         "name": "Crossroads Inn",
         "size": 1,
         "confirmed": 0,
-        "type": "Other"
+        "type": "Other",
+        "question": "true",
+        "important": "true"
       }
     },
     {
@@ -736,7 +816,9 @@
         "name": "Saltpans",
         "size": 1,
         "confirmed": 1,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -754,7 +836,9 @@
         "name": "Quiet Isle",
         "size": 1,
         "confirmed": 1,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "true"
       }
     },
     {
@@ -772,7 +856,9 @@
         "name": "Wickenden",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -790,7 +876,9 @@
         "name": "Maidenpool",
         "size": 4,
         "confirmed": 1,
-        "type": "Town"
+        "type": "Town",
+        "question": "false",
+        "important": "true"
       }
     },
     {
@@ -808,7 +896,9 @@
         "name": "Rook's Rest",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -826,7 +916,9 @@
         "name": "Dyre Den",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "true"
       }
     },
     {
@@ -844,7 +936,9 @@
         "name": "The Whispers",
         "size": 2,
         "confirmed": 1,
-        "type": "Ruin"
+        "type": "Ruin",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -862,7 +956,9 @@
         "name": "Dragonstone",
         "size": 3,
         "confirmed": 1,
-        "type": "City"
+        "type": "City",
+        "question": "true",
+        "important": "true"
       }
     },
     {
@@ -880,7 +976,9 @@
         "name": "Sharp Point",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -898,7 +996,9 @@
         "name": "Stonedance",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -916,7 +1016,9 @@
         "name": "Haystack Hall",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -934,7 +1036,9 @@
         "name": "Bronzegate",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -952,7 +1056,9 @@
         "name": "Felwood",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -970,7 +1076,9 @@
         "name": "Storm's End",
         "size": 3,
         "confirmed": 1,
-        "type": "City"
+        "type": "City",
+        "question": "true",
+        "important": "true"
       }
     },
     {
@@ -988,7 +1096,9 @@
         "name": "Griffin's Roost",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -1006,7 +1116,9 @@
         "name": null,
         "size": 2,
         "confirmed": 1,
-        "type": "Ruin"
+        "type": "Ruin",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -1024,7 +1136,9 @@
         "name": "Rain House",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -1042,7 +1156,9 @@
         "name": "Greenstone",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -1060,7 +1176,9 @@
         "name": "Weeping Tower",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -1078,7 +1196,9 @@
         "name": "Mistwood",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -1096,7 +1216,9 @@
         "name": "Stonehelm",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -1114,7 +1236,9 @@
         "name": "Crow's Nest",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -1132,7 +1256,9 @@
         "name": "Grandview",
         "size": 4,
         "confirmed": 0,
-        "type": "Town"
+        "type": "Town",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -1150,7 +1276,9 @@
         "name": "Summerhall",
         "size": 2,
         "confirmed": 1,
-        "type": "Ruin"
+        "type": "Ruin",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -1168,7 +1296,9 @@
         "name": "Blackhaven",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -1186,7 +1316,9 @@
         "name": "Fawnton",
         "size": 4,
         "confirmed": 0,
-        "type": "Town"
+        "type": "Town",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -1204,7 +1336,9 @@
         "name": "Grassy Vale",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -1222,7 +1356,9 @@
         "name": "Wyl",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -1240,7 +1376,9 @@
         "name": "Ghaston Grey",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -1258,7 +1396,9 @@
         "name": "Yronwood",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -1276,7 +1416,9 @@
         "name": "Vulture's Roost",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -1294,7 +1436,9 @@
         "name": "Nightsong",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -1312,7 +1456,9 @@
         "name": "Ashford",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -1330,7 +1476,9 @@
         "name": "Cider Hall",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -1348,7 +1496,9 @@
         "name": "Highgarden",
         "size": 3,
         "confirmed": 1,
-        "type": "City"
+        "type": "City",
+        "question": "true",
+        "important": "true"
       }
     },
     {
@@ -1366,7 +1516,9 @@
         "name": "Horn Hill",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "true",
+        "important": "true"
       }
     },
     {
@@ -1384,7 +1536,9 @@
         "name": "Brightwater Keep",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -1402,7 +1556,9 @@
         "name": "Bandallon",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -1420,7 +1576,9 @@
         "name": "Honeyholt",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -1438,7 +1596,9 @@
         "name": "Oldtown",
         "size": 5,
         "confirmed": 1,
-        "type": "City"
+        "type": "City",
+        "question": "true",
+        "important": "true"
       }
     },
     {
@@ -1456,7 +1616,9 @@
         "name": "Blackcrown",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -1474,7 +1636,9 @@
         "name": "Three Towers",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -1492,7 +1656,9 @@
         "name": "Uplands",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -1510,7 +1676,9 @@
         "name": "Sunflower Hall",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -1528,7 +1696,9 @@
         "name": "Blackmont",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -1546,7 +1716,9 @@
         "name": "High Hermitage",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -1564,7 +1736,9 @@
         "name": "Starfall",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -1582,7 +1756,9 @@
         "name": "Sandstone",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -1600,7 +1776,9 @@
         "name": "Skyreach",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -1618,7 +1796,9 @@
         "name": "Kingsgrave",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -1636,7 +1816,9 @@
         "name": "Tower of Joy",
         "size": 1,
         "confirmed": 1,
-        "type": "Other"
+        "type": "Other",
+        "question": "true",
+        "important": "true"
       }
     },
     {
@@ -1654,7 +1836,9 @@
         "name": "Hellholt",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -1672,7 +1856,9 @@
         "name": "Vaith",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -1690,7 +1876,9 @@
         "name": "Salt Shore",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -1708,7 +1896,9 @@
         "name": "Godsgrace",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -1726,7 +1916,9 @@
         "name": "The Tor",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -1744,7 +1936,9 @@
         "name": "Ghost Hill",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -1762,7 +1956,9 @@
         "name": "Lemonwood",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -1780,7 +1976,9 @@
         "name": "Sunspear",
         "size": 3,
         "confirmed": 1,
-        "type": "City"
+        "type": "City",
+        "question": "true",
+        "important": "true"
       }
     },
     {
@@ -1798,7 +1996,9 @@
         "name": "Planky Town",
         "size": 4,
         "confirmed": 1,
-        "type": "Town"
+        "type": "Town",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -1816,7 +2016,9 @@
         "name": "Water Gardens",
         "size": 1,
         "confirmed": 0,
-        "type": "Other"
+        "type": "Other",
+        "question": "true",
+        "important": "true"
       }
     },
     {
@@ -1834,7 +2036,9 @@
         "name": "Shandystone",
         "size": 1,
         "confirmed": 0,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -1852,7 +2056,9 @@
         "name": "Tall Trees Town",
         "size": 4,
         "confirmed": 0,
-        "type": "Town"
+        "type": "Town",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -1870,7 +2076,9 @@
         "name": "Longtable",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -1888,7 +2096,9 @@
         "name": "Bitterbridge",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -1906,7 +2116,9 @@
         "name": "Goldengrove",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -1924,7 +2136,9 @@
         "name": "Red Lake",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -1942,7 +2156,9 @@
         "name": "Old Oak",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -1960,7 +2176,9 @@
         "name": "Crakehall",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -1978,7 +2196,9 @@
         "name": "Cornfield",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -1996,7 +2216,9 @@
         "name": "Silverhill",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -2014,7 +2236,9 @@
         "name": "Clegane Hall",
         "size": 3,
         "confirmed": 0,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -2032,25 +2256,9 @@
         "name": "Tarbeck Hall",
         "size": 2,
         "confirmed": 0,
-        "type": "Ruin"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          7.364878,
-          5.22154
-        ]
-      },
-      "properties": {
-        "cartodb_id": 111,
-        "id": 111,
-        "name": "Lannisport",
-        "size": 5,
-        "confirmed": 1,
-        "type": "City"
+        "type": "Ruin",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -2068,7 +2276,9 @@
         "name": "Feastfires",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -2086,7 +2296,9 @@
         "name": "Kayce",
         "size": 4,
         "confirmed": 1,
-        "type": "Town"
+        "type": "Town",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -2104,7 +2316,9 @@
         "name": "Oxcross",
         "size": 1,
         "confirmed": 0,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -2122,7 +2336,9 @@
         "name": "Sarsfield",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -2140,7 +2356,9 @@
         "name": "Deep Den",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -2158,7 +2376,9 @@
         "name": "Hornvale",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -2176,7 +2396,9 @@
         "name": "Golden Tooth",
         "size": 1,
         "confirmed": 1,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -2194,7 +2416,9 @@
         "name": "Wayfarer's Rest",
         "size": 3,
         "confirmed": 0,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "true"
       }
     },
     {
@@ -2212,7 +2436,9 @@
         "name": "Castamere",
         "size": 2,
         "confirmed": 0,
-        "type": "Ruin"
+        "type": "Ruin",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -2230,7 +2456,9 @@
         "name": "Pendric Hills",
         "size": 1,
         "confirmed": 0,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -2248,7 +2476,9 @@
         "name": "The Crag",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -2266,7 +2496,9 @@
         "name": "Banefort",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -2284,7 +2516,9 @@
         "name": "Ashemark",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -2302,7 +2536,9 @@
         "name": "Nunn's Deep",
         "size": 1,
         "confirmed": 0,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -2320,7 +2556,9 @@
         "name": "Stone Mill",
         "size": 1,
         "confirmed": 0,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "true"
       }
     },
     {
@@ -2338,7 +2576,9 @@
         "name": "Stone Hedge",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -2356,7 +2596,9 @@
         "name": "Fairmarket",
         "size": 4,
         "confirmed": 1,
-        "type": "Town"
+        "type": "Town",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -2374,7 +2616,9 @@
         "name": "Oldstones",
         "size": 2,
         "confirmed": 1,
-        "type": "Ruin"
+        "type": "Ruin",
+        "question": "false",
+        "important": "true"
       }
     },
     {
@@ -2392,7 +2636,9 @@
         "name": "Palisade Village",
         "size": 1,
         "confirmed": 0,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -2410,7 +2656,9 @@
         "name": "The Bloody Gate",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "true",
+        "important": "true"
       }
     },
     {
@@ -2428,7 +2676,9 @@
         "name": "The Eyrie",
         "size": 3,
         "confirmed": 1,
-        "type": "City"
+        "type": "City",
+        "question": "true",
+        "important": "true"
       }
     },
     {
@@ -2446,7 +2696,9 @@
         "name": "Strongsong",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "true"
       }
     },
     {
@@ -2464,7 +2716,9 @@
         "name": "Heart's Home",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "true"
       }
     },
     {
@@ -2482,7 +2736,9 @@
         "name": "Redfort",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -2500,7 +2756,9 @@
         "name": "Ironoaks",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -2518,7 +2776,9 @@
         "name": "Old Anchor",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -2536,7 +2796,9 @@
         "name": "Runestone",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -2554,7 +2816,9 @@
         "name": "Gulltown",
         "size": 5,
         "confirmed": 1,
-        "type": "Town"
+        "type": "Town",
+        "question": "false",
+        "important": "true"
       }
     },
     {
@@ -2572,7 +2836,9 @@
         "name": "Longbow Hall",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -2590,7 +2856,9 @@
         "name": "Snakewood",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -2608,7 +2876,9 @@
         "name": "Baelish Keep",
         "size": 1,
         "confirmed": 0,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -2626,7 +2896,9 @@
         "name": "Coldwater",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -2644,7 +2916,9 @@
         "name": "Seagard",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -2662,25 +2936,9 @@
         "name": "The Twins",
         "size": 3,
         "confirmed": 1,
-        "type": "City"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          13.167823,
-          14.313755
-        ]
-      },
-      "properties": {
-        "cartodb_id": 146,
-        "id": 146,
-        "name": null,
-        "size": 3,
-        "confirmed": 1,
-        "type": "Castle"
+        "type": "City",
+        "question": "true",
+        "important": "true"
       }
     },
     {
@@ -2698,7 +2956,9 @@
         "name": "Greywater Watch",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -2716,7 +2976,9 @@
         "name": "Moat Cailin",
         "size": 2,
         "confirmed": 1,
-        "type": "Ruin"
+        "type": "Ruin",
+        "question": "true",
+        "important": "true"
       }
     },
     {
@@ -2734,7 +2996,9 @@
         "name": "Sisterton",
         "size": 4,
         "confirmed": 1,
-        "type": "Town"
+        "type": "Town",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -2752,7 +3016,9 @@
         "name": "Oldcastle",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -2770,7 +3036,9 @@
         "name": "White Harbor",
         "size": 5,
         "confirmed": 1,
-        "type": "City"
+        "type": "City",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -2788,7 +3056,9 @@
         "name": "Ramsgate",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -2806,7 +3076,9 @@
         "name": "Widow's Watch",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -2824,7 +3096,9 @@
         "name": "Hornwood",
         "size": 3,
         "confirmed": 0,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -2842,25 +3116,9 @@
         "name": "Tower",
         "size": 1,
         "confirmed": 0,
-        "type": "Other"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          19.914564,
-          27.3587
-        ]
-      },
-      "properties": {
-        "cartodb_id": 156,
-        "id": 156,
-        "name": "The Dreadfort",
-        "size": 3,
-        "confirmed": 1,
-        "type": "Castle"
+        "type": "Other",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -2878,7 +3136,9 @@
         "name": "Cerwyn",
         "size": 3,
         "confirmed": 0,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "true"
       }
     },
     {
@@ -2896,7 +3156,9 @@
         "name": "Holdfast",
         "size": 1,
         "confirmed": 0,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "true"
       }
     },
     {
@@ -2914,7 +3176,9 @@
         "name": "Winterfell",
         "size": 3,
         "confirmed": 1,
-        "type": "City"
+        "type": "City",
+        "question": "true",
+        "important": "true"
       }
     },
     {
@@ -2932,7 +3196,9 @@
         "name": "Crofters' Village",
         "size": 1,
         "confirmed": 0,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -2950,7 +3216,9 @@
         "name": "Tumbledown Tower",
         "size": 1,
         "confirmed": 0,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -2968,7 +3236,9 @@
         "name": "Deepwood Motte",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -2986,7 +3256,9 @@
         "name": "Last Hearth",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -3004,7 +3276,9 @@
         "name": "Karhold",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -3022,7 +3296,9 @@
         "name": "Queenscrown",
         "size": 1,
         "confirmed": 1,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -3040,7 +3316,9 @@
         "name": "Castle Black",
         "size": 3,
         "confirmed": 1,
-        "type": "City"
+        "type": "City",
+        "question": "false",
+        "important": "true"
       }
     },
     {
@@ -3058,7 +3336,9 @@
         "name": "Mole's Town",
         "size": 1,
         "confirmed": 0,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "true"
       }
     },
     {
@@ -3076,7 +3356,9 @@
         "name": "Shadow Tower",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -3094,7 +3376,9 @@
         "name": "Westwatch-by-the-Bridge",
         "size": 1,
         "confirmed": 1,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "true"
       }
     },
     {
@@ -3112,7 +3396,9 @@
         "name": "Sentinel Stand",
         "size": 1,
         "confirmed": 1,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -3130,7 +3416,9 @@
         "name": "Greyguard",
         "size": 1,
         "confirmed": 1,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -3148,7 +3436,9 @@
         "name": "Stonedoor",
         "size": 1,
         "confirmed": 1,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -3166,7 +3456,9 @@
         "name": "Hoarfrost Hill",
         "size": 1,
         "confirmed": 1,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -3184,7 +3476,9 @@
         "name": "Icemark",
         "size": 1,
         "confirmed": 1,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -3202,7 +3496,9 @@
         "name": "Nightfort",
         "size": 1,
         "confirmed": 1,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -3220,7 +3516,9 @@
         "name": "Deep Lake",
         "size": 1,
         "confirmed": 1,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -3238,7 +3536,9 @@
         "name": "Queensgate",
         "size": 1,
         "confirmed": 1,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -3256,7 +3556,9 @@
         "name": "Oakensheild",
         "size": 1,
         "confirmed": 1,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -3274,7 +3576,9 @@
         "name": "Woodswatch-by-the-Pool",
         "size": 1,
         "confirmed": 1,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -3292,7 +3596,9 @@
         "name": "Sable Hall",
         "size": 1,
         "confirmed": 1,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -3310,7 +3616,9 @@
         "name": "Rimegate",
         "size": 1,
         "confirmed": 1,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -3328,7 +3636,9 @@
         "name": "Long Barrow",
         "size": 1,
         "confirmed": 1,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -3346,7 +3656,9 @@
         "name": "Torches",
         "size": 1,
         "confirmed": 1,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -3364,7 +3676,9 @@
         "name": "Greenguard",
         "size": 1,
         "confirmed": 1,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -3382,7 +3696,9 @@
         "name": "Eastwatch-by-the-Sea",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "true"
       }
     },
     {
@@ -3400,7 +3716,9 @@
         "name": "Whitetree",
         "size": 1,
         "confirmed": 1,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "true"
       }
     },
     {
@@ -3418,7 +3736,9 @@
         "name": "Craster's Keep",
         "size": 1,
         "confirmed": 1,
-        "type": "Other"
+        "type": "Other",
+        "question": "true",
+        "important": "true"
       }
     },
     {
@@ -3436,7 +3756,9 @@
         "name": "Fist of the First Men",
         "size": 1,
         "confirmed": 1,
-        "type": "Other"
+        "type": "Other",
+        "question": "true",
+        "important": "true"
       }
     },
     {
@@ -3454,7 +3776,9 @@
         "name": "Fishing Village",
         "size": 1,
         "confirmed": 0,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -3472,7 +3796,9 @@
         "name": "Pennytree",
         "size": 1,
         "confirmed": 0,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -3490,7 +3816,9 @@
         "name": "Lys",
         "size": 5,
         "confirmed": 1,
-        "type": "City"
+        "type": "City",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -3508,7 +3836,9 @@
         "name": "Tyrosh",
         "size": 5,
         "confirmed": 1,
-        "type": "City"
+        "type": "City",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -3526,7 +3856,9 @@
         "name": "Myr",
         "size": 5,
         "confirmed": 1,
-        "type": "City"
+        "type": "City",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -3544,7 +3876,9 @@
         "name": "Pentos",
         "size": 5,
         "confirmed": 1,
-        "type": "City"
+        "type": "City",
+        "question": "true",
+        "important": "true"
       }
     },
     {
@@ -3562,7 +3896,9 @@
         "name": "Ghoyan Drohe",
         "size": 2,
         "confirmed": 1,
-        "type": "Ruin"
+        "type": "Ruin",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -3580,7 +3916,9 @@
         "name": "Norvos",
         "size": 5,
         "confirmed": 1,
-        "type": "City"
+        "type":  "City",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -3595,10 +3933,12 @@
       "properties": {
         "cartodb_id": 197,
         "id": 197,
-        "name": "Evenfall Hall",
+        "name": "Tarth",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "true",
+        "important": "true"
       }
     },
     {
@@ -3616,7 +3956,9 @@
         "name": "Parchments",
         "size": 1,
         "confirmed": 0,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -3634,7 +3976,9 @@
         "name": "Braavos",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "true",
+        "important": "true"
       }
     },
     {
@@ -3652,7 +3996,9 @@
         "name": "Lorath",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -3670,7 +4016,9 @@
         "name": "Qohor",
         "size": 5,
         "confirmed": 1,
-        "type": "City"
+        "type": "City",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -3688,7 +4036,9 @@
         "name": "Ar Noy",
         "size": 2,
         "confirmed": 1,
-        "type": "Ruin"
+        "type": "Ruin",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -3706,7 +4056,9 @@
         "name": "Ny Sar",
         "size": 2,
         "confirmed": 1,
-        "type": "Ruin"
+        "type": "Ruin",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -3724,7 +4076,9 @@
         "name": "The Sorrows (Chroyane)",
         "size": 2,
         "confirmed": 1,
-        "type": "Ruin"
+        "type": "Ruin",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -3742,7 +4096,9 @@
         "name": "Selhorys",
         "size": 4,
         "confirmed": 1,
-        "type": "Town"
+        "type": "Town",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -3760,7 +4116,9 @@
         "name": "Valysar",
         "size": 4,
         "confirmed": 1,
-        "type": "Town"
+        "type": "Town",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -3778,7 +4136,9 @@
         "name": "Volon Therys",
         "size": 4,
         "confirmed": 1,
-        "type": "Town"
+        "type": "Town",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -3796,7 +4156,9 @@
         "name": "Sar Mell",
         "size": 2,
         "confirmed": 1,
-        "type": "Ruin"
+        "type": "Ruin",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -3814,7 +4176,9 @@
         "name": "Volantis",
         "size": 5,
         "confirmed": 1,
-        "type": "City"
+        "type": "City",
+        "question": "true",
+        "important": "true"
       }
     },
     {
@@ -3832,7 +4196,9 @@
         "name": "Mantarys",
         "size": 5,
         "confirmed": 1,
-        "type": "City"
+        "type": "City",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -3850,7 +4216,9 @@
         "name": null,
         "size": 2,
         "confirmed": 1,
-        "type": "Ruin"
+        "type": "Ruin",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -3868,7 +4236,9 @@
         "name": "Oros",
         "size": 2,
         "confirmed": 1,
-        "type": "Ruin"
+        "type": "Ruin",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -3886,7 +4256,9 @@
         "name": "Elyria",
         "size": 5,
         "confirmed": 1,
-        "type": "City"
+        "type": "City",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -3904,7 +4276,9 @@
         "name": "Tolos",
         "size": 5,
         "confirmed": 1,
-        "type": "City"
+        "type": "City",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -3922,7 +4296,9 @@
         "name": "Ghozai",
         "size": 2,
         "confirmed": 1,
-        "type": "Ruin"
+        "type": "Ruin",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -3940,7 +4316,9 @@
         "name": "Velos",
         "size": 2,
         "confirmed": 1,
-        "type": "Ruin"
+        "type": "Ruin",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -3958,7 +4336,9 @@
         "name": "Astapor",
         "size": 5,
         "confirmed": 1,
-        "type": "City"
+        "type": "City",
+        "question": "true",
+        "important": "true"
       }
     },
     {
@@ -3976,7 +4356,9 @@
         "name": "Yunkai",
         "size": 5,
         "confirmed": 1,
-        "type": "City"
+        "type": "City",
+        "question": "true",
+        "important": "true"
       }
     },
     {
@@ -3994,7 +4376,9 @@
         "name": "Meereen",
         "size": 5,
         "confirmed": 1,
-        "type": "City"
+        "type": "City",
+        "question": "true",
+        "important": "true"
       }
     },
     {
@@ -4012,7 +4396,9 @@
         "name": "Lhazarene Village",
         "size": 1,
         "confirmed": 0,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -4030,7 +4416,9 @@
         "name": "Vaes Dothrak",
         "size": 5,
         "confirmed": 0,
-        "type": "City"
+        "type": "City",
+        "question": "true",
+        "important": "true"
       }
     },
     {
@@ -4048,7 +4436,9 @@
         "name": "Old Ghis",
         "size": 2,
         "confirmed": 1,
-        "type": "Ruin"
+        "type": "Ruin",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -4066,7 +4456,9 @@
         "name": "New Ghis",
         "size": 5,
         "confirmed": 1,
-        "type": "City"
+        "type": "City",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -4084,7 +4476,9 @@
         "name": "Zamettar",
         "size": 2,
         "confirmed": 1,
-        "type": "Ruin"
+        "type": "Ruin",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -4102,7 +4496,9 @@
         "name": "Yeen",
         "size": 2,
         "confirmed": 1,
-        "type": "Ruin"
+        "type": "Ruin",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -4120,7 +4516,9 @@
         "name": "Gogossos",
         "size": 2,
         "confirmed": 1,
-        "type": "Ruin"
+        "type": "Ruin",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -4138,7 +4536,9 @@
         "name": "Flint's Finger",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -4156,7 +4556,9 @@
         "name": "Barrowton",
         "size": 4,
         "confirmed": 1,
-        "type": "Town"
+        "type": "Town",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -4174,7 +4576,9 @@
         "name": "Torrhen's Square",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -4192,7 +4596,9 @@
         "name": "Bhorash",
         "size": 2,
         "confirmed": 1,
-        "type": "Ruin"
+        "type": "Ruin",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -4210,7 +4616,9 @@
         "name": "Pyke",
         "size": 3,
         "confirmed": 1,
-        "type": "City"
+        "type": "City",
+        "question": "true",
+        "important": "true"
       }
     },
     {
@@ -4228,7 +4636,9 @@
         "name": "Pebbleton",
         "size": 1,
         "confirmed": 0,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -4246,7 +4656,9 @@
         "name": "Hammerhorn",
         "size": 1,
         "confirmed": 0,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -4264,7 +4676,9 @@
         "name": "Nagga's Ribs",
         "size": 1,
         "confirmed": 0,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -4282,7 +4696,9 @@
         "name": "Castle Goodbrother",
         "size": 1,
         "confirmed": 0,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -4300,7 +4716,9 @@
         "name": "Ten Towers",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "true"
       }
     },
     {
@@ -4318,7 +4736,9 @@
         "name": "Faircastle",
         "size": 3,
         "confirmed": 1,
-        "type": "Castle"
+        "type": "Castle",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -4336,7 +4756,9 @@
         "name": "Tyria",
         "size": 2,
         "confirmed": 1,
-        "type": "Ruin"
+        "type": "Ruin",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -4354,7 +4776,9 @@
         "name": "Valyria",
         "size": 2,
         "confirmed": 1,
-        "type": "Ruin"
+        "type": "Ruin",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -4372,7 +4796,9 @@
         "name": null,
         "size": 2,
         "confirmed": 1,
-        "type": "Ruin"
+        "type": "Ruin",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -4390,7 +4816,9 @@
         "name": null,
         "size": 2,
         "confirmed": 1,
-        "type": "Ruin"
+        "type": "Ruin",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -4408,7 +4836,9 @@
         "name": null,
         "size": 2,
         "confirmed": 1,
-        "type": "Ruin"
+        "type": "Ruin",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -4426,7 +4856,9 @@
         "name": "Qarth",
         "size": 5,
         "confirmed": 0,
-        "type": "City"
+        "type": "City",
+        "question": "true",
+        "important": "true"
       }
     },
     {
@@ -4444,7 +4876,9 @@
         "name": "Lord Hewett's Town",
         "size": 1,
         "confirmed": 0,
-        "type": "Other"
+        "type": "Other",
+        "question": "false",
+        "important": "false"
       }
     },
     {
@@ -4462,7 +4896,69 @@
         "name": "The Dreadfort",
         "size": 3,
         "confirmed": 1,
-        "type": "City"
+        "type": "City",
+        "question": "true",
+        "important": "true"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.320858,
+          37.90817923
+        ]
+      },
+      "properties": {
+        "cartodb_id": 249,
+        "id": 249,
+        "name": "Hardhome",
+        "size": 1,
+        "confirmed": 1,
+        "type": "Other",
+        "question": "true",
+        "important": "true"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.84867144,
+          37.37677349
+        ]
+      },
+      "properties": {
+        "cartodb_id": 250,
+        "id": 250,
+        "name": "Cave of the Three-eyed Raven",
+        "size": 1,
+        "confirmed": 0,
+        "type": "Other",
+        "question": "true",
+        "important": "true"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.364878,
+          5.22154
+        ]
+      },
+      "properties": {
+        "cartodb_id": 251,
+        "id": 251,
+        "name": "Casterly Rock",
+        "size": 2,
+        "confirmed": 1,
+        "type": "Castle",
+        "question": "true",
+        "important": "true"
       }
     }
   ]
