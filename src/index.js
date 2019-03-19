@@ -138,7 +138,6 @@ function addMap () {
           totalScore += score;
           console.log(`YEAH! You nailed it! You earned ${ score } points.`);
           console.log('');
-          hits++;
         } else {
           const targetPlace = getPlaceFromGeoJSON(currentPlace);
           let distance = null;
