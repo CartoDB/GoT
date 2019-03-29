@@ -17,6 +17,20 @@ body {
   width: 100%;
 }
 
+sidebar {
+  margin: 0;
+  padding: 16px;
+  font-size: 16px;
+  max-width: 24em;
+  height: 100%;
+  overflow: auto;
+  font-family: 'Courier New', Courier, monospace;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #FFF;
+}
+
 .tooltip {
   position: absolute;
   top: 0;
