@@ -13,13 +13,17 @@ function log (text) {
   sidebar.appendChild(paragraph);
 }
 
+function setFilterButtonText () {
+  const button = document.getElementById('filter-button');
+  state.filtered
+    ? button.textContent = 'Reset'
+    : button.textContent = 'Filter';
+}
 function addFilterEvent () {
   const button = document.getElementById('filter-button');
   button.addEventListener('click', function () {
     filterMap();
-    state.filtered
-      ? button.textContent = 'Reset'
-      : button.textContent = 'Filter';
+    setFilterButtonText();
   });
 }
 
@@ -63,6 +67,9 @@ function featureClicked (feature, coordinates, target) {
 function setTooltip (text) {
   const tooltip = document.getElementById('tooltip-text');
   tooltip.textContent = text;
+  text
+    ? tooltip.classList.remove('hidden')
+    : tooltip.classList.add('hidden');
 }
 
 function featureEntered (name) {
@@ -77,6 +84,8 @@ function gameLoop() {
   log('GoT');
   setupMap(featureClicked, featureEntered, featureLeft);
   hookUpEvents();
+  filterMap();
+  setFilterButtonText();
   fillQuestions(10);
   log(askQuestion());
 }

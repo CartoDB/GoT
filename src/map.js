@@ -1,8 +1,6 @@
 /*global carto mapboxgl*/
 import locations from './locations.geo.json';
-import continents from './continents.geo.json';
-import rivers from './rivers.geo.json';
-import roads from './roads.geo.json';
+import style from './map-style.json';
 import { state } from './state';
 
 function getPlaceFromGeoJSON (place) {
@@ -20,62 +18,25 @@ function getPlaceFromGeoJSON (place) {
 }
 
 export function setupMap (onClickCb, onEnterCb, onLeaveCb) {
+  mapboxgl.accessToken = 'pk.eyJ1IjoibWFtYXRhIiwiYSI6IjRJQmR3VEkifQ.U2bHbrX94_ZDOuJiRpcUvg';
+  mapboxgl.config.API_URL = 'https://api.mapbox.com';
+
   const map = new mapboxgl.Map({
     container: 'map',
-    style: {
-      version: 8,
-      name: 'oceans',
-      sources: {},
-      layers: [
-        {
-          id: 'background',
-          type: 'background',
-          layout: {
-            visibility: 'visible'
-          },
-          paint: {
-            'background-color': '#B5D4DE',
-            'background-opacity': 1
-          }
-        }
-      ],
-      id: 'oceans',
-      owner: 'The Iron Bank'
-    },
-    center: [30, 15],
-    zoom: 4
-  });
+    style: style,
+    hash: true,
+    scrollZoom: true
+  }).addControl(new mapboxgl.NavigationControl(), 'bottom-left');
 
   const locationsSource = new carto.source.GeoJSON(locations);
   state.viz = new carto.Viz(`
     @name: $name,
     @important: $important,
     strokeWidth: 0,
-    color: ramp(top($question, 2), [red, yellow]),
+    color: #E82C0C,
     filter: 1
   `);
 
-  const continentsSource = new carto.source.GeoJSON(continents);
-  const continentsViz = new carto.Viz(`
-    strokeWidth: 0
-    color: #034F50
-  `);
-
-  const riversSource = new carto.source.GeoJSON(rivers);
-  const riversViz = new carto.Viz(`
-    strokeWidth: 2
-    color: blue
-  `);
-
-  const roadsSource = new carto.source.GeoJSON(roads);
-  const roadsViz = new carto.Viz(`
-    strokeWidth: 3
-    color: gray
-  `);
-
-  const layer4 = new carto.Layer('layer4', roadsSource, roadsViz);
-  const layer3 = new carto.Layer('layer3', riversSource, riversViz);
-  const layer2 = new carto.Layer('layer2', continentsSource, continentsViz);
   const layer = new carto.Layer('layer', locationsSource, state.viz);
   const interactivity = new carto.Interactivity(layer);
 
@@ -104,9 +65,6 @@ export function setupMap (onClickCb, onEnterCb, onLeaveCb) {
     onLeaveCb();
   });
 
-  layer2.addTo(map);
-  layer3.addTo(map);
-  layer4.addTo(map);
   layer.addTo(map);
 }
 

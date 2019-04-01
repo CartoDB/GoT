@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "parcel index.html",
     "build": "parcel build index.html",
-    "lint": "eslint src/*.js"
+    "lint": "eslint src/*.js && stylelint \"style/style.scss\""
   },
   "keywords": [],
   "author": "",
@@ -15,7 +15,11 @@
     "csvtojson": "^2.0.8",
     "eslint": "^5.15.2",
     "parcel-bundler": "^1.12.2",
-    "sass": "^1.17.3"
+    "sass": "^1.17.3",
+    "stylelint": "^9.10.1",
+    "stylelint-config-rational-order": "0.0.4",
+    "stylelint-config-recommended": "^2.1.0",
+    "stylelint-config-standard": "^18.2.0"
   },
   "dependencies": {
     "autoprefixer": "^9.5.0"
