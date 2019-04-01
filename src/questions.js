@@ -21,9 +21,9 @@ function getRandomQuestionIndex () {
   return `${ randomIndex }: ${ questionIndex }`;
 }
 
-function getPlaceFromIndex (index) {
-  const [ placeIndex ] = index.split(':');
-  const place = trivia[parseInt(placeIndex)];
+function getTargetFromIndex (index) {
+  const [ targetIndex ] = index.split(':');
+  const place = trivia[parseInt(targetIndex)];
   return place;
 }
 
@@ -41,10 +41,12 @@ export function fillQuestions (max) {
   state.indexes = idxs;
 }
 
-export function askQuestion () {
+export function getQuestion () {
   const question = getQuestionFromIndex(state.indexes[state.currentIndex]);
-  state.inQuestion = true;
-  state.currentPlace = getPlaceFromIndex(state.indexes[state.currentIndex]);
-  return `${ state.currentIndex + 1 }/10: ${ question }`; 
+  state.currentTarget = getTargetFromIndex(state.indexes[state.currentIndex]);
+  return {
+    index: state.currentIndex + 1,
+    text: question
+  };
 }
 
