@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -9,7 +9,7 @@
     <meta name="description" content="description here">
     <meta name="keywords" content="keywords,here"> -->
 
-    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet" />
     <script src="https://libs.cartocdn.com/carto-vl/v1.1.1/carto-vl.min.js"></script>
     <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.js"></script>
     <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.css" rel="stylesheet" />
@@ -22,8 +22,50 @@
       <button id="filter-button" class="button">Filter</button>
       <p id="tooltip-text" class="hidden"></p>
     </div>
-    <sidebar></sidebar>
 
-    <script type="text/javascript" src="src/index.js"></script>
+    <script src="src/index.js"></script>
+
+    <template id="welcome-template">
+      <section class="welcome">
+        <header>GEOM OF THRONES</header>
+        <div>
+          <button>Start</button>
+        </div>
+        <footer></footer>
+      </section>
+    </template>
+
+    <template id="question-template">
+      <div class="bottom-dialog question">
+        <div class="text"></div>
+      </div>
+    </template>
+
+    <template id="hit-template">
+      <div class="bottom-dialog hit">
+        <div>YEAH! You nailed it!</div>
+        <div class="points"></div>
+        <div class="place"></div>
+        <img></img>
+        <button>Next</button>
+      </div>
+    </template>
+
+    <template id="miss-template">
+      <div class="bottom-dialog fail">
+        <div>FAIL!</div>
+        <div class="clicked"></div>
+        <div class="distance"></div>
+        <div class="points"></div>
+        <button>Next</button>
+      </div>
+    </template>
+
+    <template id="end-template">
+      <div class="bottom-dialog fail">
+        <div class="points"></div>
+        <button>Play again</button>
+      </div>
+    </template>
   </body>
 </html>

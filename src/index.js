@@ -2,16 +2,11 @@ import './../style/style.scss';
 import { getDistanceFromLngLatInKm, calculateScore } from './utils';
 import { state } from './state';
 import { setupMap, filterMap } from './map';
-import { askQuestion, fillQuestions } from './questions';
+import { getQuestion, fillQuestions } from './questions';
+import { showWelcome, renderQuestion, closeBottomDialog, renderHit, renderMiss, renderEnd } from './ui';
 
-const sidebar = document.getElementsByTagName('sidebar')[0];
 const maxQuestions = 5;
-
-function log (text) {
-  const paragraph = document.createElement('p');
-  paragraph.textContent = text;
-  sidebar.appendChild(paragraph);
-}
+const maxPoints = 100;
 
 function setFilterButtonText () {
   const button = document.getElementById('filter-button');
@@ -31,36 +26,38 @@ function hookUpEvents () {
   addFilterEvent();
 }
 
+function onNext () {
+  state.currentIndex++;
+  closeBottomDialog();
+  if (state.currentIndex < maxQuestions) {
+    state.inQuestion = true;
+    renderQuestion(getQuestion(), maxQuestions);
+  } else {
+    renderEnd(state.totalScore, maxPoints * maxQuestions, onRestart);
+  }  
+}
+
+function onRestart () {
+  startState();
+}
+
 function featureClicked (feature, coordinates, target) {
   if (feature) {
+    state.inQuestion = false;
     const clickedId = feature.id;
+    closeBottomDialog();
     if (clickedId === target.id) {
-      const score = calculateScore(0);
+      const score = calculateScore(0, maxPoints);
       state.totalScore += score;
-      log(`YEAH! You nailed it! You earned ${ score } points.`);
-      log('');
+      renderHit(score, state.currentTarget, onNext);
     } else {
-      const distance = getDistanceFromLngLatInKm({
+      const distance = Math.floor(getDistanceFromLngLatInKm({
         lng: target.lng,
         lat: target.lat,
-      }, coordinates);
-      const distanceText = ` It's ${ Math.floor(distance) } kms. far from the answer.`;
-      const score = calculateScore(distance);
-      log(`FAIL! You clicked on ${ feature.variables.name.value }.${ distanceText }`);
-      if (score === 0) {
-        log("You didn't earn any points."); // eslint-disable-line
-      } else {
-        state.totalScore += score;
-        log(`You earned ${ score } points.`);
-      }
-      log('');
+      }, coordinates));
+      const score = calculateScore(distance, maxPoints);
+      renderMiss(feature.variables.name.value, distance, score, onNext);
     }
-    state.currentIndex++;
-    if (state.currentIndex < maxQuestions) {
-      log(askQuestion());
-    } else {
-      log(`Your score: ${ state.totalScore }/1000`);
-    }  
   }
 }
 
@@ -80,14 +77,33 @@ function featureLeft () {
   setTooltip('');
 }
 
+function onStart () {
+  state.inQuestion = true;
+  renderQuestion(getQuestion(), maxQuestions);
+}
+
+function startState (showWelcomeDialog) {
+  state.currentIndex = 0;
+  state.indexes = null;
+  state.inQuestion = false;
+  state.currentTarget = null;
+  state.totalScore = 0;
+
+  fillQuestions(maxQuestions);
+
+  if (showWelcomeDialog) {
+    showWelcome(onStart);
+  } else {
+    onStart();
+  }
+}
+
 function gameLoop() {
-  log('GoT');
   setupMap(featureClicked, featureEntered, featureLeft);
   hookUpEvents();
   filterMap();
   setFilterButtonText();
-  fillQuestions(10);
-  log(askQuestion());
+  startState(true);
 }
 
 if (window.addEventListener) {

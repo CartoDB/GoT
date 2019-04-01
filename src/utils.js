@@ -16,8 +16,7 @@ export function getDistanceFromLngLatInKm(coords1, coords2) {
   return d;
 }
 
-export function calculateScore (distance) {
-  const maxPoints = 100;
+export function calculateScore (distance, maxPoints) {
   const maxDistance = 1000;
   if (distance === null || distance > maxDistance) {
     return 0;

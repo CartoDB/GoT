@@ -24,9 +24,9 @@ export function setupMap (onClickCb, onEnterCb, onLeaveCb) {
   const map = new mapboxgl.Map({
     container: 'map',
     style: style,
-    hash: true,
+    hash: false,
     scrollZoom: true
-  }).addControl(new mapboxgl.NavigationControl(), 'bottom-left');
+  }).addControl(new mapboxgl.NavigationControl(), 'top-right');
 
   const locationsSource = new carto.source.GeoJSON(locations);
   state.viz = new carto.Viz(`
@@ -44,7 +44,7 @@ export function setupMap (onClickCb, onEnterCb, onLeaveCb) {
     if (state.inQuestion) {
       const feature = featureEvent.features[0];
       const coordinates = featureEvent.coordinates;
-      const target = getPlaceFromGeoJSON(state.currentPlace);
+      const target = getPlaceFromGeoJSON(state.currentTarget);
       const basicTarget = {
         id: target.properties.id,
         lng: target.geometry.coordinates[0],
