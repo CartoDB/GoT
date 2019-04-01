@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>title</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
     <!-- <meta name="author" content="CARTO">
     <meta name="description" content="description here">
     <meta name="keywords" content="keywords,here"> -->
 
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
     <script src="https://libs.cartocdn.com/carto-vl/v1.1.1/carto-vl.min.js"></script>
     <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.js"></script>
     <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.css" rel="stylesheet" />
@@ -18,8 +20,9 @@
     <div id="map"></div>
     <div class="tooltip">
       <button id="filter-button" class="button">Filter</button>
-      <p id="tooltip-text"></p>
+      <p id="tooltip-text" class="hidden"></p>
     </div>
+    <sidebar></sidebar>
 
     <script type="text/javascript" src="src/index.js"></script>
   </body>

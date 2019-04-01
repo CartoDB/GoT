@@ -1,9 +1,12 @@
-$background-color: #FFB6C1;
+$background-color: #ffb6c1;
 
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -13,8 +16,22 @@ body {
 
 #map {
   position: absolute;
-  height: 100%;
   width: 100%;
+  height: 100%;
+}
+
+aside {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 24em;
+  height: 100%;
+  margin: 0;
+  padding: 16px;
+  overflow: auto;
+  font-size: 16px;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #fff;
 }
 
 .tooltip {
@@ -24,13 +41,20 @@ body {
 }
 
 #tooltip-text {
-  margin: 0;
+  margin: 16px;
   padding: 16px;
   font-size: 24px;
-  background-color: #FFF;
+  font-family: 'Cinzel', serif;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.2);
 }
 
 .button {
   padding: 8px;
   cursor: pointer;
+}
+
+.hidden {
+  display: none;
 }

@@ -15,3 +15,13 @@ export function getDistanceFromLngLatInKm(coords1, coords2) {
   var d = R * c; // Distance in km
   return d;
 }
+
+export function calculateScore (distance) {
+  const maxPoints = 100;
+  const maxDistance = 1000;
+  if (distance === null || distance > maxDistance) {
+    return 0;
+  }
+  const percentage = (maxDistance - distance) / maxDistance;
+  return Math.floor(percentage * maxPoints);
+}
