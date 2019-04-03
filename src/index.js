@@ -4,6 +4,7 @@ import { state } from './state';
 import { setupMap, filterMap } from './map';
 import { getQuestion, fillQuestions } from './questions';
 import { showWelcome, renderQuestion, closeBottomDialog, renderHit, renderMiss, renderEnd } from './ui';
+import { getCharacterFromScore } from './score';
 
 const maxQuestions = 5;
 const maxPoints = 100;
@@ -33,7 +34,8 @@ function onNext () {
     state.inQuestion = true;
     renderQuestion(getQuestion(), maxQuestions);
   } else {
-    renderEnd(state.totalScore, maxPoints * maxQuestions, onRestart);
+    const maxScore = maxPoints * maxQuestions;
+    renderEnd(state.totalScore, maxScore, getCharacterFromScore(state.totalScore, maxScore), onRestart);
   }  
 }
 
@@ -45,19 +47,20 @@ function featureClicked (feature, coordinates, target) {
   if (feature) {
     state.inQuestion = false;
     const clickedId = feature.id;
+    let score = 0;
     closeBottomDialog();
     if (clickedId === target.id) {
-      const score = calculateScore(0, maxPoints);
-      state.totalScore += score;
+      score = calculateScore(0, maxPoints);
       renderHit(score, state.currentTarget, onNext);
     } else {
       const distance = Math.floor(getDistanceFromLngLatInKm({
         lng: target.lng,
         lat: target.lat,
       }, coordinates));
-      const score = calculateScore(distance, maxPoints);
+      score = calculateScore(distance, maxPoints);
       renderMiss(feature.variables.name.value, distance, score, onNext);
     }
+    state.totalScore += score;
   }
 }
 
@@ -79,6 +82,7 @@ function featureLeft () {
 
 function onStart () {
   state.inQuestion = true;
+  closeBottomDialog();
   renderQuestion(getQuestion(), maxQuestions);
 }
 

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel index.html",
-    "build": "parcel build index.html",
+    "build": "rm -rf dist && parcel build index.html",
     "lint": "eslint src/*.js && stylelint \"style/style.scss\"",
     "lint:css": "stylelint \"style/style.scss\""
   },

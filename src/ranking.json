@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Hot Pie",
+    "message": "Okay, so you really don’t have a good sense of Westeros or the wider world around you, but that’s okay. Keep working on your dire wolf bread, your baking may be the key to save the Seven Kingdoms. You may yet sit the Iron Throne, Hot Pie.",
+    "image": ""
+  },
+  {
+    "name": "Rickon Stark",
+    "message": "Serpentine Rickon! Serpentine! Oh, Rickon you were taken from us too soon. You didn’t quite have time develop a good geographical sense, did you?",
+    "image": ""
+  },
+  {
+    "name": "Khal Drogo",
+    "message": "Sure you are a powerful horse-lord, and your son would be the Stallion that Mounts the World… but you really haven’t spent much time outside of the Dothraki Sea, have you?",
+    "image": ""
+  },
+  {
+    "name": "Theon Greyjoy",
+    "message": "So you know your way around a bit. While getting tortured you could certainly name some of the great keeps of The North. But you definitely lack some geographic sense… You should have listened to Yara when she told you that Winterfell was too far from the sea…",
+    "image": ""
+  },
+  {
+    "name": "Robb Stark",
+    "message": "Your understanding of Westerosi geography has its ups and downs. You are smart enough to use the terrain to trick your opponents and win battles, only to insult the man who controls the only bridge between you and home… cue The Rains of Castamere",
+    "image": ""
+  },
+  {
+    "name": "Davos Seaworthy",
+    "message": "Decades of smuggling followed by years hanging out with Stannis around that giant map table on Dragonstone have given you a good head for geography! Still, I think you could do better, Onion Knight.",
+    "image": ""
+  },
+  {
+    "name": "Arya Stark",
+    "message": "You’ve studied courtliness in Winterfell as a child, water dancing with a First Sword of Braavos, and the art of death with the Faceless Men. It seems you must have picked up some geography on your travels as well!",
+    "image": ""
+  },
+  {
+    "name": "Daenerys Targaryen",
+    "message": "Not only are you one of the most well-travelled people in all the known world, as Mother of Dragon’s you get to take in the scenery from the best seat in the house. Who needs a map when you have Drogon?",
+    "image": ""
+  },
+  {
+    "name": "Samwell Tarly",
+    "message": "With all the maps in Horn Hill, Castle Black, and probably a good number of those in The Citadel in Oldtown committed to memory, you really know your way around Westeros and Essos!",
+    "image": ""
+  },
+  {
+    "name": "The Three-eyed Raven",
+    "message": "You must be a Greenseer. That is the only way to explain how you seem to know the location and details of every castle, city, village, and landmark from Sunspear to the The Shadowlands beyond Asshai.",
+    "image": ""
+  }
+]
