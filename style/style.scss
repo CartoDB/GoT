@@ -12,26 +12,16 @@ html {
 
 body {
   margin: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Cinzel', serif;
+  color: rgb(255, 255, 255);
 }
 
 #map {
   position: absolute;
   width: 100%;
   height: 100%;
-}
-
-aside {
-  position: absolute;
-  top: 0;
-  right: 0;
-  max-width: 24em;
-  height: 100%;
-  margin: 0;
-  padding: 16px;
-  overflow: auto;
-  font-size: 16px;
-  font-family: 'Courier New', Courier, monospace;
-  background-color: #fff;
 }
 
 .tooltip {
@@ -44,8 +34,8 @@ aside {
   margin: 16px;
   padding: 16px;
   font-size: 24px;
-  font-family: 'Cinzel', serif;
   background-color: #fff;
+  color: #000;
   border-radius: 4px;
   box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.2);
 }
@@ -88,9 +78,9 @@ button {
   width: 100%;
   min-height: 128px;
   max-height: 50%;
-  padding: 16px;
+  padding: 24px;
   overflow-y: auto;
-  background-color: rgb(225, 208, 138);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .bottom-dialog div {
@@ -103,6 +93,50 @@ button {
 
 .hit img {
   max-width: 100%;
+}
+
+.bottom-dialog.question {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  text-align: center;
+}
+
+.bottom-dialog.question .text {
+  font-size: 24px;
+}
+
+.bottom-dialog.end {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  min-height: 100%;
+}
+
+.bottom-dialog.end .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 16px;
+}
+
+.bottom-dialog.end .character-name {
+  font-size: 24px;
+}
+
+.bottom-dialog.end .content .character-message {
+  padding-right: 8px;
+}
+
+.bottom-dialog.end .content .character-message p {
+  margin-top: 0;
+}
+
+.bottom-dialog.end .content img {
+  max-width: 50%;
+  padding-left: 8px;
 }
 
 @media all and (min-width: 480px) {
