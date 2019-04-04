@@ -30,8 +30,10 @@ export function showWelcome (startCb) {
 export function renderQuestion (question, totalQuestions) {
   const template = document.querySelector('#question-template');
   const clone = document.importNode(template.content, true);
+  const numberEl = clone.querySelector('.number');
+  numberEl.textContent = `${ question.index} / ${ totalQuestions }`; 
   const questionEl = clone.querySelector('.text');
-  questionEl.textContent = `${ question.index} / ${ totalQuestions } ${ question.text }`;
+  questionEl.textContent = `${ question.text }`;
 
   const body = document.getElementsByTagName('body')[0];
   body.appendChild(clone);
@@ -80,9 +82,16 @@ export function renderEnd (points, maxPoints, character, nextCb) {
   const buttonEl = clone.querySelector('button');
   buttonEl.addEventListener('click', nextCb);
   const characterNameEl = clone.querySelector('.character-name');
-  characterNameEl.textContent = character.name; 
+  characterNameEl.textContent = character.name;
   const characterMessageEl = clone.querySelector('.character-message');
-  characterMessageEl.textContent = character.message; 
+  const paragraphs = character.message.split('\n');
+  paragraphs.forEach(sentence => {
+    const p = document.createElement('p');
+    p.textContent = sentence;
+    characterMessageEl.appendChild(p);
+  });
+  const imgEl = clone.querySelector('img');
+  imgEl.src = character.image;
 
   const body = document.getElementsByTagName('body')[0];
   body.appendChild(clone);

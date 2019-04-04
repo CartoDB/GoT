@@ -37,6 +37,7 @@
 
     <template id="question-template">
       <div class="bottom-dialog question">
+        <div class="number"></div>
         <div class="text"></div>
       </div>
     </template>
@@ -62,10 +63,13 @@
     </template>
 
     <template id="end-template">
-      <div class="bottom-dialog fail">
+      <div class="bottom-dialog end">
         <div class="points"></div>
         <div class="character-name"></div>
-        <div class="character-message"></div>
+        <div class="content">
+          <div class="character-message"></div>
+          <img></img>
+        </div>
         <button>Play again</button>
       </div>
     </template>

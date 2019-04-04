@@ -16,6 +16,7 @@
     "csvtojson": "^2.0.8",
     "eslint": "^5.15.2",
     "parcel-bundler": "^1.12.2",
+    "parcel-plugin-static-files-copy": "^2.0.0",
     "sass": "^1.17.3",
     "stylelint": "^9.10.1",
     "stylelint-config-rational-order": "0.0.4",
@@ -24,5 +25,8 @@
   },
   "dependencies": {
     "autoprefixer": "^9.5.0"
+  },
+  "staticFiles": {
+    "staticPath": "media"
   }
 }
