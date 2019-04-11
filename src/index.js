@@ -1,7 +1,7 @@
 import './../style/style.scss';
 import { getDistanceFromLngLatInKm, calculateScore } from './utils';
 import { state } from './state';
-import { setupMap, filterMap } from './map';
+import { setupMap, filterMap, showPath, hidePath } from './map';
 import { getQuestion, fillQuestions } from './questions';
 import { showWelcome, renderQuestion, closeBottomDialog, renderHit, renderMiss, renderEnd } from './ui';
 import { getCharacterFromScore } from './score';
@@ -30,6 +30,7 @@ function hookUpEvents () {
 function onNext () {
   state.currentIndex++;
   closeBottomDialog();
+  hidePath();
   if (state.currentIndex < maxQuestions) {
     state.inQuestion = true;
     renderQuestion(getQuestion(), maxQuestions);
@@ -56,9 +57,10 @@ function featureClicked (feature, coordinates, target) {
       const distance = Math.floor(getDistanceFromLngLatInKm({
         lng: target.lng,
         lat: target.lat,
-      }, coordinates));
+      }, { lng: coordinates[0], lat: coordinates[1] }));
       score = calculateScore(distance, maxPoints);
-      renderMiss(feature.variables.name.value, distance, score, onNext);
+      renderMiss(feature.variables.name.value, target.name, distance, score, onNext);
+      showPath({ lng: coordinates[0], lat: coordinates[1] }, { lng: target.lng, lat: target.lat });
     }
     state.totalScore += score;
   }
@@ -103,6 +105,7 @@ function startState (showWelcomeDialog) {
 }
 
 function gameLoop() {
+  window.state = state;
   setupMap(featureClicked, featureEntered, featureLeft);
   hookUpEvents();
   filterMap();

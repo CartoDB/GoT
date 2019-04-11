@@ -20,7 +20,7 @@ export function showWelcome (startCb) {
   const body = document.getElementsByTagName('body')[0];
   body.appendChild(clone);
 
-  const startButton = document.querySelector('.welcome button');
+  const startButton = document.querySelector('.welcome .button');
   startButton.addEventListener('click', () => {
     onStartClicked();
     startCb();
@@ -55,13 +55,13 @@ export function renderHit (points, target, nextCb) {
   body.appendChild(clone);
 }
 
-export function renderMiss (clickedPlace, distance, points, nextCb) {
+export function renderMiss (clickedPlace, targetName, distance, points, nextCb) {
   const template = document.querySelector('#miss-template');
   const clone = document.importNode(template.content, true);
   const clickedEl = clone.querySelector('.clicked');
   clickedEl.textContent = `You clicked on ${ clickedPlace }`;
   const distanceEl = clone.querySelector('.distance');
-  distanceEl.textContent = `It's ${ Math.floor(distance) } kms. far from the answer.`; 
+  distanceEl.textContent = `It's ${ Math.floor(distance) } kms. far from ${ targetName }.`; 
   const pointsEl = clone.querySelector('.points');
   const pointsText = points > 0
     ? `You earned ${ points } points.`
