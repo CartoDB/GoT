@@ -1,4 +1,10 @@
 $background-color: #ffb6c1;
+$yellow: rgb(245, 227, 108);
+
+@font-face {
+  font-family: 'got';
+  src: url('/media/got.ttf');
+}
 
 html {
   box-sizing: border-box;
@@ -11,11 +17,12 @@ html {
 }
 
 body {
-  margin: 0;
-  height: 100%;
   width: 100%;
-  font-family: 'Cinzel', serif;
+  height: 100%;
+  margin: 0;
   color: rgb(255, 255, 255);
+  font-family: 'got', serif;
+  letter-spacing: 12px;
 }
 
 #map {
@@ -33,38 +40,95 @@ body {
 #tooltip-text {
   margin: 16px;
   padding: 16px;
+  color: #000;
   font-size: 24px;
   background-color: #fff;
-  color: #000;
   border-radius: 4px;
   box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.2);
-}
-
-.button {
-  padding: 8px;
-  cursor: pointer;
 }
 
 .hidden {
   display: none;
 }
 
-button {
-  padding: 8px;
-  background-color: orange;
+.button {
+  padding: 16px 32px;
+  font-size: 16px;
+  font-family: 'got', serif;
+  letter-spacing: 2px;
+  background: linear-gradient(to right, #bca22b 0%, #fdf175 50%, #bca22b 100%);
   border: 0;
+  cursor: pointer;
+}
+
+.dialog {
+  z-index: 100;
+  background: rgba(36, 49, 50, 0.7);
 }
 
 .welcome {
   position: absolute;
-  z-index: 100;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 255, 0, 0.25);
+}
+
+.welcome h1 {
+  margin-bottom: 48px;
+  color: rgb(245, 227, 108);
+  font-weight: 200;
+  font-size: 28px;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.5) 0 2px 4px;
+}
+
+.ui {
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ornaments {
+  position: absolute;
+  z-index: 50;
+  width: 100%;
+  height: 100%;
+}
+
+.ornaments .top.left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 116px;
+  transform: rotate(180deg);
+}
+
+.ornaments .top.right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 116px;
+  transform: rotate(270deg);
+}
+
+.ornaments .bottom.right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 116px;
+}
+
+.ornaments .bottom.left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 116px;
+  transform: rotate(90deg);
 }
 
 .bottom-dialog {
@@ -80,7 +144,7 @@ button {
   max-height: 50%;
   padding: 24px;
   overflow-y: auto;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(36, 49, 50, 0.7);
 }
 
 .bottom-dialog div {
@@ -140,13 +204,7 @@ button {
 }
 
 @media all and (min-width: 480px) {
-  .welcome {
-    background-color: rgba(255, 0, 0, 0.25);
-  }
 }
 
 @media all and (min-width: 769px) {
-  .welcome {
-    background-color: rgba(0, 0, 255, 0.25);
-  }
 }

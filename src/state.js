@@ -5,5 +5,10 @@ export const state = {
   currentTarget: null,
   totalScore: 0,
   viz: null,
-  filtered: false
+  filtered: false,
+  line: null,
+  lineViz: null,
+  lineSource: null,
+  lineLayer: null,
+  map: null
 };
