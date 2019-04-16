@@ -27,13 +27,20 @@ export function showWelcome (startCb) {
   });
 }
 
-export function renderQuestion (question, totalQuestions) {
+export function renderQuestion (question, totalQuestions, score, maxScore) {
   const template = document.querySelector('#question-template');
   const clone = document.importNode(template.content, true);
   const numberEl = clone.querySelector('.number');
   numberEl.textContent = `${ question.index} / ${ totalQuestions }`; 
   const questionEl = clone.querySelector('.text');
   questionEl.textContent = `${ question.text }`;
+  const scoreEl = clone.querySelector('.score');
+  const text0 = document.createTextNode('SCORE: ');
+  const b = document.createElement('b');
+  const text1 = document.createTextNode(`${score}/${maxScore}`);
+  scoreEl.appendChild(text0);
+  scoreEl.appendChild(b);
+  b.appendChild(text1);
 
   const body = document.getElementsByTagName('body')[0];
   body.appendChild(clone);

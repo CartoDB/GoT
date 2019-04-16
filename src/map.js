@@ -25,7 +25,9 @@ export function setupMap (onClickCb, onEnterCb, onLeaveCb) {
     container: 'map',
     style: style,
     hash: false,
-    scrollZoom: true
+    scrollZoom: true,
+    center: [20.757130, 4.235433],
+    zoom: 4
   }).addControl(new mapboxgl.NavigationControl(), 'top-right');
 
   const locationsSource = new carto.source.GeoJSON(locations);
@@ -33,7 +35,7 @@ export function setupMap (onClickCb, onEnterCb, onLeaveCb) {
     @name: $name,
     @important: $important,
     strokeWidth: 0,
-    color: #E82C0C,
+    color: #FFFF66,
     filter: 1
   `);
 
@@ -72,7 +74,7 @@ export function setupMap (onClickCb, onEnterCb, onLeaveCb) {
   state.line = getLineGeoJSON();
   state.lineSource = new carto.source.GeoJSON(state.line);
   state.lineViz = new carto.Viz(`
-    color: #FF3300,
+    color: #FFFF66,
     width: 4
   `);
   state.lineLayer = new carto.Layer('lineLayer', state.lineSource, state.lineViz);

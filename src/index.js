@@ -31,11 +31,11 @@ function onNext () {
   state.currentIndex++;
   closeBottomDialog();
   hidePath();
+  const maxScore = maxPoints * maxQuestions;
   if (state.currentIndex < maxQuestions) {
     state.inQuestion = true;
-    renderQuestion(getQuestion(), maxQuestions);
+    renderQuestion(getQuestion(), maxQuestions, state.totalScore, maxScore);
   } else {
-    const maxScore = maxPoints * maxQuestions;
     renderEnd(state.totalScore, maxScore, getCharacterFromScore(state.totalScore, maxScore), onRestart);
   }  
 }
@@ -85,7 +85,7 @@ function featureLeft () {
 function onStart () {
   state.inQuestion = true;
   closeBottomDialog();
-  renderQuestion(getQuestion(), maxQuestions);
+  renderQuestion(getQuestion(), maxQuestions, state.totalScore, maxPoints * maxQuestions);
 }
 
 function startState (showWelcomeDialog) {

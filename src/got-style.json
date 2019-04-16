@@ -1,15 +1,30 @@
 {
   "version": 8,
-  "name": "GoT",
-  "metadata": {},
-  "sources": {
-      "carto": {
-          "type": "vector",
-          "url": "https://tiles.basemaps.cartocdn.com/vector/carto.got/v1/tiles.json"
+  "name": "GoT Test",
+  "metadata": {
+      "mapbox:autocomposite": true,
+      "mapbox:type": "template",
+      "mapbox:sdk-support": {
+          "js": "0.50.0",
+          "android": "6.7.0",
+          "ios": "4.6.0"
+      },
+      "mapbox:groups": {
+          "e40d078c3494160ad0e2cbb288b21316": {
+              "name": "Roads",
+              "collapsed": false
+          }
       }
   },
-  "sprite": "https://tiles.basemaps.cartocdn.com/gl/game-of-thrones-style/sprite",
-  "glyphs": "https://tiles.basemaps.cartocdn.com/fonts/{fontstack}/{range}.pbf",
+  "center": [30.394093137094615, 4.698656850286724],
+  "zoom": 4,
+  "bearing": 0,
+  "pitch": 0,
+  "sources": {
+      "composite": {"url": "mapbox://mamata.9gw5v5hl", "type": "vector"}
+  },
+  "sprite": "mapbox://sprites/mamata/cjud6g7240oza1fmtca5zjvzh/ef7wugu9981yjfhesdb3dmtk8",
+  "glyphs": "mapbox://fonts/mamata/{fontstack}/{range}.pbf",
   "layers": [
     {
         "id": "background",
@@ -19,7 +34,7 @@
     {
         "id": "ocean",
         "type": "fill",
-        "source": "carto",
+        "source": "composite",
         "source-layer": "ocean",
         "layout": {},
         "paint": {"fill-pattern": "wavy-ocean-small", "fill-opacity": 0.1}
@@ -27,7 +42,7 @@
     {
         "id": "buffer-under",
         "type": "fill",
-        "source": "carto",
+        "source": "composite",
         "source-layer": "buffer_under",
         "layout": {},
         "paint": {
@@ -47,7 +62,7 @@
     {
         "id": "continents (1)",
         "type": "fill",
-        "source": "carto",
+        "source": "composite",
         "source-layer": "continents",
         "layout": {},
         "paint": {"fill-opacity": 1, "fill-color": "hsl(207, 38%, 17%)"}
@@ -55,7 +70,7 @@
     {
         "id": "continents",
         "type": "fill",
-        "source": "carto",
+        "source": "composite",
         "source-layer": "continents",
         "layout": {},
         "paint": {
@@ -68,7 +83,7 @@
     {
         "id": "ice",
         "type": "fill",
-        "source": "carto",
+        "source": "composite",
         "source-layer": "ice",
         "filter": ["match", ["get", "cartodb_id"], [3], true, false],
         "layout": {},
@@ -81,7 +96,7 @@
     {
         "id": "mountains",
         "type": "fill",
-        "source": "carto",
+        "source": "composite",
         "source-layer": "mountains",
         "layout": {},
         "paint": {
@@ -93,7 +108,7 @@
     {
         "id": "mountains copy",
         "type": "fill",
-        "source": "carto",
+        "source": "composite",
         "source-layer": "mountains",
         "layout": {},
         "paint": {
@@ -106,7 +121,7 @@
     {
         "id": "rivers",
         "type": "line",
-        "source": "carto",
+        "source": "composite",
         "source-layer": "rivers_and_roads",
         "filter": ["match", ["get", "type"], ["river"], true, false],
         "layout": {},
@@ -127,7 +142,7 @@
     {
         "id": "lakes-and-swamps",
         "type": "fill",
-        "source": "carto",
+        "source": "composite",
         "source-layer": "lakes_and_swamps",
         "layout": {},
         "paint": {
@@ -146,7 +161,7 @@
         "id": "roads",
         "type": "line",
         "metadata": {"mapbox:group": "e40d078c3494160ad0e2cbb288b21316"},
-        "source": "carto",
+        "source": "composite",
         "source-layer": "rivers_and_roads",
         "filter": ["match", ["get", "type"], ["road"], true, false],
         "layout": {},
@@ -168,7 +183,7 @@
         "id": "roads casing",
         "type": "line",
         "metadata": {"mapbox:group": "e40d078c3494160ad0e2cbb288b21316"},
-        "source": "carto",
+        "source": "composite",
         "source-layer": "rivers_and_roads",
         "filter": ["match", ["get", "type"], ["road"], true, false],
         "layout": {},
@@ -189,7 +204,7 @@
     {
         "id": "vegetation",
         "type": "circle",
-        "source": "carto",
+        "source": "composite",
         "source-layer": "vegetation",
         "filter": ["match", ["get", "type"], ["forest"], true, false],
         "layout": {},
@@ -210,18 +225,45 @@
     {
         "id": "wall",
         "type": "line",
-        "source": "carto",
+        "source": "composite",
         "source-layer": "wall",
         "layout": {},
         "paint": {"line-color": "hsl(41, 38%, 49%)", "line-width": 4}
     },
     {
+        "id": "selected-places-got",
+        "type": "symbol",
+        "source": "composite",
+        "source-layer": "selected_places_got",
+        "layout": {
+            "text-field": ["to-string", ["get", "name"]],
+            "text-size": 10.5,
+            "text-font": ["Oswald Regular", "Arial Unicode MS Regular"],
+            "text-letter-spacing": 0.08
+        },
+        "paint": {
+            "text-color": "hsl(207, 30%, 72%)",
+            "text-halo-color": "hsl(206, 28%, 20%)",
+            "text-halo-width": 0.75,
+            "text-translate": [0, -15]
+        }
+    },
+    {
+        "id": "selected-places-got copy",
+        "type": "circle",
+        "source": "composite",
+        "source-layer": "selected_places_got",
+        "layout": {"visibility": "none"},
+        "paint": {"circle-radius": 4, "circle-color": "hsl(55, 93%, 54%)"}
+    },
+    {
         "id": "point-region",
         "type": "symbol",
-        "source": "carto",
+        "source": "composite",
         "source-layer": "point_region",
         "layout": {
             "text-field": ["to-string", ["get", "category"]],
+            "text-font": ["Oswald Bold", "Arial Unicode MS Regular"],
             "text-letter-spacing": [
                 "interpolate",
                 ["linear"],
