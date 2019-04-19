@@ -73,7 +73,7 @@ export function renderHit (points, target, nextCb) {
   const placeEl = clone.querySelector('.place');
   placeEl.textContent = target.Name;
   const imgEl = clone.querySelector('img');
-  imgEl.src = target['Image URL'];
+  imgEl.src = `/places/${ target['Image URL'] }`;
   const buttonEl = clone.querySelector('button');
   buttonEl.addEventListener('click', nextCb);
 
