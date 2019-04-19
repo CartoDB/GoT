@@ -61,26 +61,6 @@ body {
   height: 100%;
 }
 
-.tooltip {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-#tooltip-text {
-  margin: 16px;
-  padding: 16px;
-  color: #000;
-  font-size: 24px;
-  background-color: #fff;
-  border-radius: 4px;
-  box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.2);
-}
-
-.hidden {
-  display: none;
-}
-
 .button {
   padding: 16px 32px;
   color: rgba(36, 49, 50);
@@ -92,11 +72,6 @@ body {
   cursor: pointer;
 }
 
-.dialog {
-  z-index: 100;
-  background: rgba(36, 49, 50, 0.8);
-}
-
 .welcome {
   position: absolute;
   display: flex;
@@ -105,6 +80,8 @@ body {
   align-items: center;
   width: 100%;
   height: 100%;
+  z-index: 100;
+  background: rgba(36, 49, 50, 0.8);
 }
 
 .welcome h1 {
@@ -174,6 +151,44 @@ body {
   width: $powered-s;
 }
 
+.flowers {
+  position: absolute;
+  z-index: 50;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.flowers .corner {
+  position: absolute;
+  width: 16px;
+}
+
+.flowers .top.left {
+  top: 3px;
+  left: 2px;
+  transform: rotate(180deg);
+}
+
+.flowers .top.right {
+  top: 3px;
+  right: 2px;
+  transform: rotate(270deg);
+}
+
+.flowers .bottom.left {
+  bottom: 3px;
+  left: 2px;
+  transform: rotate(90deg);
+}
+
+.flowers .bottom.right {
+  right: 2px;
+  bottom: 3px;
+}
+
 .bottom-dialog {
   position: absolute;
   bottom: 0;
@@ -203,7 +218,7 @@ body {
   margin: 8px;
 }
 
-.hit img {
+.hit img.place {
   max-width: 100%;
   max-height: 50%;
   margin: 16px;
@@ -241,12 +256,20 @@ body {
   text-align: left;
 }
 
+.bottom-dialog .score {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  font-size: 12px;
+}
+
 .end-dialog {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 100;
   height: 100%;
+  width: 100%;
   overflow-y: scroll;
   color: $yellow;
   font-size: 16px;
@@ -265,6 +288,7 @@ body {
 }
 
 .end-dialog .points {
+  margin-top: 32px;
   text-align: center;
 }
 
@@ -291,17 +315,8 @@ body {
   display: block;
   max-width: 40%;
   max-height: 40%;
-  // float: right;
-  // margin: 8px;
   margin: 12px auto;
   border: 1px solid $yellow;
-}
-
-.end-dialog .score {
-  position: absolute;
-  top: 24px;
-  right: 24px;
-  font-size: 12px;
 }
 
 .end-dialog .button {
@@ -309,6 +324,54 @@ body {
 }
 
 @media all and (min-width: 480px) {
+  // .welcome {
+  //   background: rgba(143, 20, 112, 0.8);
+  // }
+
+  .bottom-dialog {
+    padding: 32px;
+    overflow-y: auto;
+    color: $yellow;
+    font-size: 24px;
+    font-family: $cinzel;
+    letter-spacing: 2px;
+    line-height: 32px;
+
+    // background: rgba(143, 20, 112, 0.8);    
+  }
+
+  .bottom-dialog.question .number {
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .bottom-dialog.question .text {
+    text-align: center;
+  }
+
+  .bottom-dialog .score {
+    top: 32px;
+    right: 32px;
+    font-size: 16px;
+  }
+
+  // .end-dialog {
+  //   background: rgba(143, 20, 112, 0.8);
+  // }
+
+  .end-dialog .character-message {
+    margin: 32px 0;
+    padding: 0;
+  }
+
+  .end-dialog img {
+    max-width: 40%;
+    max-height: 40%;
+    float: right;
+    margin: 0 0 0 32px;
+    border: 1px solid $yellow;
+  }
+
   .ornaments .corner {
     width: $ornament-m;
   }
@@ -324,9 +387,37 @@ body {
     left: calc(50% - #{$powered-m / 2});
     width: $powered-m;
   }
+
+  .flowers .corner {
+    position: absolute;
+    width: 24px;
+  }  
 }
 
 @media all and (min-width: 769px) {
+  // .welcome {
+  //   background: rgba(175, 10, 38, 0.8);
+  // }
+
+  // .bottom-dialog {
+  //   background: rgba(175, 10, 38, 0.8);
+  // }
+
+  .bottom-dialog.question .text {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 770px
+  }
+
+  // .end-dialog {
+  //   background: rgba(175, 10, 38, 0.8);
+  // }
+
+  .end-dialog .content {
+    margin: 0 auto;
+    max-width: 770px;
+  }
+
   .ornaments .corner {
     width: $ornament-l;
   }

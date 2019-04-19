@@ -5,7 +5,7 @@ import { getQuestion, fillQuestions } from './questions';
 import { showWelcome, renderQuestion, closeBottomDialog, renderHit, renderMiss, renderEnd } from './ui';
 import { getCharacterFromScore } from './score';
 
-const maxQuestions = 1;
+const maxQuestions = 3;
 const maxPoints = 100;
 
 function getRandomScore(maxScore) {

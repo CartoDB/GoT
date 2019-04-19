@@ -8,3 +8,4 @@
 - [ ] Remove distances
 - [ ] Fit to bounds doesn't work on mobile
 - [ ] Unsupported browsers
+- [ ] Restrict world size

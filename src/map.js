@@ -40,8 +40,9 @@ export function setupMap (onClickCb) {
   state.viz = new carto.Viz(`
     @name: $name,
     @important: $important,
-    strokeWidth: 0,
-    color: #FFFF66,
+    strokeWidth: 2,
+    strokeColor: rgba(36, 49, 50, 0.8),
+    color: rgb(245, 227, 108),
     filter: 1,
     width: ${ width }
   `);
@@ -65,8 +66,6 @@ export function setupMap (onClickCb) {
     }
   });
 
-  layer.addTo(state.map);
-
   state.line = getLineGeoJSON();
   state.lineSource = new carto.source.GeoJSON(state.line);
   state.lineViz = new carto.Viz(`
@@ -75,6 +74,7 @@ export function setupMap (onClickCb) {
   `);
   state.lineLayer = new carto.Layer('lineLayer', state.lineSource, state.lineViz);
   state.lineLayer.addTo(state.map);
+  layer.addTo(state.map);
 }
 
 export function filterMap () {
@@ -95,7 +95,7 @@ function getLineGeoJSON () {
         type: 'Feature',
         geometry: {
           type: 'LineString',
-          coordinates: [[20,5], [25, 10]]
+          coordinates: [[-50,-50], [-51, -51]]
         }
       }
     ]
