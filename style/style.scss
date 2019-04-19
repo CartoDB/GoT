@@ -16,21 +16,17 @@ $powered-l: 200px;
   src: url('/media/got.ttf');
 }
 
+/* Button reset */
 button {
-  border: none;
+  width: auto;
   margin: 0;
   padding: 0;
-  width: auto;
   overflow: visible;
-
-  background: transparent;
-
-  /* inherit font & color from ancestor */
   color: inherit;
   font: inherit;
-
-  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
   line-height: normal;
+  background: transparent;
+  border: none;
 
   /* Corrects font smoothing for webkit */
   -webkit-font-smoothing: inherit;
@@ -87,10 +83,10 @@ body {
 
 .button {
   padding: 16px 32px;
+  color: rgba(36, 49, 50);
   font-size: 16px;
   font-family: 'got', serif;
   letter-spacing: 2px;
-  color: rgba(36, 49, 50);
   background: linear-gradient(to right, #bca22b 0%, #fdf175 50%, #bca22b 100%);
   border: 0;
   cursor: pointer;
@@ -208,16 +204,17 @@ body {
 }
 
 .hit img {
-  max-height: 50%;
   max-width: 100%;
+  max-height: 50%;
   margin: 16px;
   border: 1px solid $yellow;
 }
 
 .bottom-dialog.hit .place {
-  font-size: 24px;
   font-weight: 700;
+  font-size: 24px;
 }
+
 .bottom-dialog.fail {
   text-align: center;
 }
@@ -234,8 +231,8 @@ body {
 }
 
 .bottom-dialog.question .number {
-  font-size: 16px;
   width: 100%;
+  font-size: 16px;
   text-align: left;
 }
 
@@ -249,22 +246,22 @@ body {
   top: 0;
   left: 0;
   z-index: 100;
+  height: 100%;
+  overflow-y: scroll;
   color: $yellow;
   font-size: 16px;
   font-family: $cinzel;
   line-height: 24px;
   letter-spacing: 2px;
   background-color: rgba(36, 49, 50, 0.8);
-  overflow-y: scroll;
-  height: 100%;
 }
 
 .end-dialog .content {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 0;
   margin: 24px;
+  padding: 0;
 }
 
 .end-dialog .points {
@@ -272,14 +269,18 @@ body {
 }
 
 .end-dialog .character-name {
-  font-size: 24px;
   font-weight: 700;
+  font-size: 24px;
   text-align: center;
 }
 
 .end-dialog .character-message {
-  padding-right: 8px;
   flex: none;
+  padding-right: 8px;
+}
+
+.end-dialog p {
+  margin-bottom: 12px;
 }
 
 .end-dialog .character-message p {
@@ -287,27 +288,23 @@ body {
 }
 
 .end-dialog img {
+  display: block;
   max-width: 40%;
   max-height: 40%;
   // float: right;
-  display: block;
   // margin: 8px;
   margin: 12px auto;
   border: 1px solid $yellow;
 }
 
-.end-dialog p {
-  margin-bottom: 12px;
-}
-
-.bottom-dialog .score {
+.end-dialog .score {
   position: absolute;
   top: 24px;
   right: 24px;
   font-size: 12px;
 }
 
-.bottom-dialog .button {
+.end-dialog .button {
   margin: 12px 0;
 }
 
