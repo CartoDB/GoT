@@ -1,11 +1,14 @@
+- [ ] Fit to bounds doesn't work on mobile
+- [ ] Restrict world size
+- [ ] Remove distances
+- [ ] Unsupported browsers
+- [ ] Latest basemap
+- [ ] Difficulty setting
+- [ ] Score share
+- [ ] Twitter card
+
 - [ ] Google Analytics
 - [ ] Suggestion form
-- [ ] Difficulty setting
+
 - [x] Remove tooltips
 - [x] Remove original filter
-- [ ] Twitter card
-- [ ] Score share
-- [ ] Remove distances
-- [ ] Fit to bounds doesn't work on mobile
-- [ ] Unsupported browsers
-- [ ] Restrict world size
