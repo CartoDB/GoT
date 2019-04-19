@@ -1,4 +1,5 @@
 /*global carto mapboxgl*/
+import { isMobile } from 'is-mobile';
 import locations from './locations.geo.json';
 import style from './map-style.json';
 import { state } from './state';
@@ -31,12 +32,18 @@ export function setupMap (onClickCb, onEnterCb, onLeaveCb) {
   }).addControl(new mapboxgl.NavigationControl(), 'top-right');
 
   const locationsSource = new carto.source.GeoJSON(locations);
+
+  const width = isMobile()
+    ? '16'
+    : '4';
+
   state.viz = new carto.Viz(`
     @name: $name,
     @important: $important,
     strokeWidth: 0,
     color: #FFFF66,
-    filter: 1
+    filter: 1,
+    width: ${ width }
   `);
 
   const layer = new carto.Layer('layer', locationsSource, state.viz);
@@ -74,7 +81,7 @@ export function setupMap (onClickCb, onEnterCb, onLeaveCb) {
   state.line = getLineGeoJSON();
   state.lineSource = new carto.source.GeoJSON(state.line);
   state.lineViz = new carto.Viz(`
-    color: #FFFF66,
+    color: rgba(255, 255, 102, 0.7),
     width: 4
   `);
   state.lineLayer = new carto.Layer('lineLayer', state.lineSource, state.lineViz);

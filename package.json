@@ -7,7 +7,8 @@
     "dev": "parcel index.html",
     "build": "rm -rf dist && parcel build index.html",
     "lint": "eslint src/*.js && stylelint \"style/style.scss\"",
-    "lint:css": "stylelint \"style/style.scss\""
+    "lint:css": "stylelint \"style/style.scss\"",
+    "csv2json": "csvtojson ./trivia/got-trivia.csv > ./trivia/trivia.json"
   },
   "keywords": [],
   "author": "",
@@ -24,7 +25,8 @@
     "stylelint-config-standard": "^18.2.0"
   },
   "dependencies": {
-    "autoprefixer": "^9.5.0"
+    "autoprefixer": "^9.5.0",
+    "is-mobile": "^2.0.0"
   },
   "staticFiles": {
     "staticPath": "media"
