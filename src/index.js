@@ -9,24 +9,6 @@ import { getCharacterFromScore } from './score';
 const maxQuestions = 5;
 const maxPoints = 100;
 
-function setFilterButtonText () {
-  const button = document.getElementById('filter-button');
-  state.filtered
-    ? button.textContent = 'Reset'
-    : button.textContent = 'Filter';
-}
-function addFilterEvent () {
-  const button = document.getElementById('filter-button');
-  button.addEventListener('click', function () {
-    filterMap();
-    setFilterButtonText();
-  });
-}
-
-function hookUpEvents () {
-  addFilterEvent();
-}
-
 function onNext () {
   state.currentIndex++;
   closeBottomDialog();
@@ -66,22 +48,6 @@ function featureClicked (feature, coordinates, target) {
   }
 }
 
-function setTooltip (text) {
-  const tooltip = document.getElementById('tooltip-text');
-  tooltip.textContent = text;
-  text
-    ? tooltip.classList.remove('hidden')
-    : tooltip.classList.add('hidden');
-}
-
-function featureEntered (name) {
-  setTooltip(name);
-}
-
-function featureLeft () {
-  setTooltip('');
-}
-
 function onStart () {
   state.inQuestion = true;
   closeBottomDialog();
@@ -106,10 +72,8 @@ function startState (showWelcomeDialog) {
 
 function gameLoop() {
   window.state = state;
-  setupMap(featureClicked, featureEntered, featureLeft);
-  hookUpEvents();
+  setupMap(featureClicked);
   filterMap();
-  setFilterButtonText();
   startState(true);
 }
 

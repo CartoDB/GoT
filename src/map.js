@@ -18,7 +18,7 @@ function getPlaceFromGeoJSON (id) {
   return thePlace;
 }
 
-export function setupMap (onClickCb, onEnterCb, onLeaveCb) {
+export function setupMap (onClickCb) {
   mapboxgl.accessToken = 'pk.eyJ1IjoibWFtYXRhIiwiYSI6IjRJQmR3VEkifQ.U2bHbrX94_ZDOuJiRpcUvg';
   mapboxgl.config.API_URL = 'https://api.mapbox.com';
 
@@ -63,17 +63,6 @@ export function setupMap (onClickCb, onEnterCb, onLeaveCb) {
       };
       onClickCb(feature, coordinates, basicTarget);
     }
-  });
-
-  interactivity.on('featureEnter', featureEvent => {
-    const feature = featureEvent.features[0];
-    if (feature) {
-      onEnterCb(feature.variables.name.value);
-    }
-  });
-
-  interactivity.on('featureLeave', () => {
-    onLeaveCb();
   });
 
   layer.addTo(state.map);
