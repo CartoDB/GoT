@@ -5,3 +5,6 @@
 - [x] Remove original filter
 - [ ] Twitter card
 - [ ] Score share
+- [ ] Remove distances
+- [ ] Fit to bounds doesn't work on mobile
+- [ ] Unsupported browsers

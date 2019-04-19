@@ -35,7 +35,7 @@ export function setupMap (onClickCb) {
 
   const width = isMobile()
     ? '16'
-    : '4';
+    : '8';
 
   state.viz = new carto.Viz(`
     @name: $name,
@@ -50,7 +50,7 @@ export function setupMap (onClickCb) {
   const interactivity = new carto.Interactivity(layer);
 
   interactivity.on('featureClick', featureEvent => {
-    if (state.inQuestion) {
+    if (state.inQuestion && featureEvent && featureEvent.features.length > 0) {
       const feature = featureEvent.features[0];
       const origin = getPlaceFromGeoJSON(feature.id);
       const coordinates = origin.geometry.coordinates;

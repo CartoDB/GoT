@@ -9,7 +9,7 @@
     <meta name="description" content="description here">
     <meta name="keywords" content="keywords,here"> -->
 
-    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Cinzel:400,700" rel="stylesheet" />
     <script src="https://libs.cartocdn.com/carto-vl/v1.1.1/carto-vl.min.js"></script>
     <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.js"></script>
     <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.css" rel="stylesheet" />
@@ -62,7 +62,7 @@
 
     <template id="miss-template">
       <div class="bottom-dialog fail">
-        <div class="booh">FAIL!</div>
+        <div class="booh"><b>FAIL!</b></div>
         <div class="clicked"></div>
         <div class="distance"></div>
         <div class="points"></div>
@@ -71,14 +71,13 @@
     </template>
 
     <template id="end-template">
-      <div class="bottom-dialog end">
-        <div class="points"></div>
-        <div class="character-name"></div>
+      <div class="end-dialog">
         <div class="content">
+          <div class="points"></div>
+          <div class="character-name"></div>
           <div class="character-message"></div>
-          <img></img>
+          <button class="button">Play again</button>    
         </div>
-        <button class="button">Play again</button>
       </div>
     </template>
   </body>

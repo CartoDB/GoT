@@ -1,4 +1,3 @@
-import './../style/style.scss';
 import { getDistanceFromLngLatInKm, calculateScore } from './utils';
 import { state } from './state';
 import { setupMap, filterMap, showPath, hidePath } from './map';
@@ -6,8 +5,13 @@ import { getQuestion, fillQuestions } from './questions';
 import { showWelcome, renderQuestion, closeBottomDialog, renderHit, renderMiss, renderEnd } from './ui';
 import { getCharacterFromScore } from './score';
 
-const maxQuestions = 5;
+const maxQuestions = 1;
 const maxPoints = 100;
+
+function getRandomScore(maxScore) {
+  const max = Math.floor(maxScore);
+  return Math.floor(Math.random() * (max + 1));
+}
 
 function onNext () {
   state.currentIndex++;
@@ -18,6 +22,7 @@ function onNext () {
     state.inQuestion = true;
     renderQuestion(getQuestion(), maxQuestions, state.totalScore, maxScore);
   } else {
+    state.totalScore = getRandomScore(maxScore);
     renderEnd(state.totalScore, maxScore, getCharacterFromScore(state.totalScore, maxScore), onRestart);
   }  
 }

@@ -7,8 +7,32 @@ function closeWelcome () {
   welcome.parentNode.removeChild(welcome);
 }
 
+function renderBold (el, text, bold) {
+  const text0 = document.createTextNode(text);
+  const b = document.createElement('b');
+  const text1 = document.createTextNode(bold);
+  el.appendChild(text0);
+  el.appendChild(b);
+  b.appendChild(text1);
+}
+
+function renderMissPlaces (el, target, clicked) {
+  const text0 = document.createTextNode('It was ');
+  const b0 = document.createElement('b');
+  const targetText = document.createTextNode(target);
+  const text1 = document.createTextNode(' but you clicked on ');
+  const b1 = document.createElement('b');
+  const clickedText = document.createTextNode(clicked);
+  el.appendChild(text0);
+  el.appendChild(b0);
+  b0.appendChild(targetText);
+  el.appendChild(text1);
+  el.appendChild(b1);
+  b1.appendChild(clickedText);
+}
+
 export function closeBottomDialog () {
-  const dialogs = document.querySelectorAll('.bottom-dialog');
+  const dialogs = document.querySelectorAll('.bottom-dialog, .end-dialog');
   dialogs.forEach(element => {
     element.parentNode.removeChild(element);
   });
@@ -35,12 +59,7 @@ export function renderQuestion (question, totalQuestions, score, maxScore) {
   const questionEl = clone.querySelector('.text');
   questionEl.textContent = `${ question.text }`;
   const scoreEl = clone.querySelector('.score');
-  const text0 = document.createTextNode('SCORE: ');
-  const b = document.createElement('b');
-  const text1 = document.createTextNode(`${score}/${maxScore}`);
-  scoreEl.appendChild(text0);
-  scoreEl.appendChild(b);
-  b.appendChild(text1);
+  renderBold (scoreEl, 'SCORE:', `${score}/${maxScore}`);
 
   const body = document.getElementsByTagName('body')[0];
   body.appendChild(clone);
@@ -66,9 +85,7 @@ export function renderMiss (clickedPlace, targetName, distance, points, nextCb) 
   const template = document.querySelector('#miss-template');
   const clone = document.importNode(template.content, true);
   const clickedEl = clone.querySelector('.clicked');
-  clickedEl.textContent = `You clicked on ${ clickedPlace }`;
-  const distanceEl = clone.querySelector('.distance');
-  distanceEl.textContent = `It's ${ Math.floor(distance) } kms. far from ${ targetName }.`; 
+  renderMissPlaces(clickedEl, targetName, clickedPlace);
   const pointsEl = clone.querySelector('.points');
   const pointsText = points > 0
     ? `You earned ${ points } points.`
@@ -92,13 +109,15 @@ export function renderEnd (points, maxPoints, character, nextCb) {
   characterNameEl.textContent = character.name;
   const characterMessageEl = clone.querySelector('.character-message');
   const paragraphs = character.message.split('\n');
+
+  const imgEl = document.createElement('img');
+  imgEl.src = character.image;
+  characterMessageEl.appendChild(imgEl);
   paragraphs.forEach(sentence => {
     const p = document.createElement('p');
     p.textContent = sentence;
     characterMessageEl.appendChild(p);
   });
-  const imgEl = clone.querySelector('img');
-  imgEl.src = character.image;
 
   const body = document.getElementsByTagName('body')[0];
   body.appendChild(clone);
