@@ -132,13 +132,24 @@ export function showPath (start, end) {
 }
 
 function fitToBounds (start, end) {
+  let options = {
+    padding: 200,
+    duration: 1000,
+    maxZoom: 4,
+    linear: true
+  };
+
+  if (isMobile()) {
+    options.padding = 32;
+  }
+
   state.map.fitBounds([[
     start.lng,
     start.lat
   ],[
     end.lng,
     end.lat
-  ]], { padding: 200, duration: 1000, maxZoom: 4 });
+  ]], options);
 }
 
 export function hidePath () {
