@@ -1,5 +1,4 @@
-- [ ] Fit to bounds doesn't work on mobile
-- [ ] Restrict world size
+- [NOPE] Fit to bounds doesn't work on mobile
 - [ ] Remove distances
 - [ ] Unsupported browsers
 - [ ] Latest basemap
@@ -10,5 +9,7 @@
 - [ ] Google Analytics
 - [ ] Suggestion form
 
+- [x] Refactor statics
+- [x] Restrict world size
 - [x] Remove tooltips
 - [x] Remove original filter

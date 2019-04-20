@@ -8,11 +8,6 @@ import { getCharacterFromScore } from './score';
 const maxQuestions = 5;
 const maxPoints = 100;
 
-function getRandomScore(maxScore) {
-  const max = Math.floor(maxScore);
-  return Math.floor(Math.random() * (max + 1));
-}
-
 function onNext () {
   state.currentIndex++;
   closeBottomDialog();
@@ -22,7 +17,6 @@ function onNext () {
     state.inQuestion = true;
     renderQuestion(getQuestion(), maxQuestions, state.totalScore, maxScore);
   } else {
-    state.totalScore = getRandomScore(maxScore);
     renderEnd(state.totalScore, maxScore, getCharacterFromScore(state.totalScore, maxScore), onRestart);
   }  
 }

@@ -74,13 +74,13 @@ body {
 
 .welcome {
   position: absolute;
+  z-index: 100;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
-  z-index: 100;
   background: rgba(36, 49, 50, 0.8);
 }
 
@@ -153,11 +153,11 @@ body {
 
 .flowers {
   position: absolute;
+  top: 0;
+  left: 0;
   z-index: 50;
   width: 100%;
   height: 100%;
-  top: 0;
-  left: 0;
   pointer-events: none;
 }
 
@@ -230,6 +230,15 @@ body {
   font-size: 24px;
 }
 
+.bottom-dialog.hit .caption {
+  margin-bottom: 8px;
+  color: $yellow;
+  font-size: 12px;
+  line-height: 12px;
+  text-decoration: none;
+  border-bottom: solid 1px $yellow;
+}
+
 .bottom-dialog.fail {
   text-align: center;
 }
@@ -268,8 +277,8 @@ body {
   top: 0;
   left: 0;
   z-index: 100;
-  height: 100%;
   width: 100%;
+  height: 100%;
   overflow-y: scroll;
   color: $yellow;
   font-size: 16px;
@@ -324,27 +333,21 @@ body {
 }
 
 @media all and (min-width: 480px) {
-  // .welcome {
-  //   background: rgba(143, 20, 112, 0.8);
-  // }
-
   .bottom-dialog {
     padding: 32px;
     overflow-y: auto;
     color: $yellow;
     font-size: 24px;
     font-family: $cinzel;
-    letter-spacing: 2px;
     line-height: 32px;
-
-    // background: rgba(143, 20, 112, 0.8);    
+    letter-spacing: 2px;
   }
 
   .bottom-dialog.question .number {
     font-size: 24px;
     text-align: center;
   }
-  
+
   .bottom-dialog.question .text {
     text-align: center;
   }
@@ -355,19 +358,15 @@ body {
     font-size: 16px;
   }
 
-  // .end-dialog {
-  //   background: rgba(143, 20, 112, 0.8);
-  // }
-
   .end-dialog .character-message {
     margin: 32px 0;
     padding: 0;
   }
 
   .end-dialog img {
+    float: right;
     max-width: 40%;
     max-height: 40%;
-    float: right;
     margin: 0 0 0 32px;
     border: 1px solid $yellow;
   }
@@ -391,31 +390,19 @@ body {
   .flowers .corner {
     position: absolute;
     width: 24px;
-  }  
+  }
 }
 
 @media all and (min-width: 769px) {
-  // .welcome {
-  //   background: rgba(175, 10, 38, 0.8);
-  // }
-
-  // .bottom-dialog {
-  //   background: rgba(175, 10, 38, 0.8);
-  // }
-
   .bottom-dialog.question .text {
-    text-align: center;
+    max-width: 770px;
     margin: 0 auto;
-    max-width: 770px
+    text-align: center;
   }
 
-  // .end-dialog {
-  //   background: rgba(175, 10, 38, 0.8);
-  // }
-
   .end-dialog .content {
-    margin: 0 auto;
     max-width: 770px;
+    margin: 0 auto;
   }
 
   .ornaments .corner {
