@@ -51,7 +51,7 @@ export function showWelcome (startCb) {
   });
 }
 
-export function renderQuestion (question, totalQuestions, score, maxScore) {
+export function renderQuestion (question, target, totalQuestions, score, maxScore) {
   const template = document.querySelector('#question-template');
   const clone = document.importNode(template.content, true);
   const numberEl = clone.querySelector('.number');
@@ -60,6 +60,8 @@ export function renderQuestion (question, totalQuestions, score, maxScore) {
   questionEl.textContent = `${ question.text }`;
   const scoreEl = clone.querySelector('.score');
   renderBold (scoreEl, 'SCORE:', `${score}/${maxScore}`);
+  const preloadEl = document.getElementById('preload');
+  preloadEl.src = `/places/${ target['Image URL'] }`;
 
   const body = document.getElementsByTagName('body')[0];
   body.appendChild(clone);
@@ -105,7 +107,7 @@ export function renderEnd (points, maxPoints, character, nextCb) {
   const template = document.querySelector('#end-template');
   const clone = document.importNode(template.content, true);
   const pointsEl = clone.querySelector('.points');
-  pointsEl.textContent = `Your final score: ${ points } / ${ maxPoints }`; 
+  pointsEl.textContent = `Your final score: ${ points }/${ maxPoints }`; 
   const buttonEl = clone.querySelector('button');
   buttonEl.addEventListener('click', nextCb);
   const characterNameEl = clone.querySelector('.character-name');

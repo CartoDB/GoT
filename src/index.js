@@ -15,7 +15,7 @@ function onNext () {
   const maxScore = maxPoints * maxQuestions;
   if (state.currentIndex < maxQuestions) {
     state.inQuestion = true;
-    renderQuestion(getQuestion(), maxQuestions, state.totalScore, maxScore);
+    renderQuestion(getQuestion(), state.currentTarget, maxQuestions, state.totalScore, maxScore);
   } else {
     renderEnd(state.totalScore, maxScore, getCharacterFromScore(state.totalScore, maxScore), onRestart);
   }  
@@ -50,7 +50,7 @@ function featureClicked (feature, coordinates, target) {
 function onStart () {
   state.inQuestion = true;
   closeBottomDialog();
-  renderQuestion(getQuestion(), maxQuestions, state.totalScore, maxPoints * maxQuestions);
+  renderQuestion(getQuestion(), state.currentTarget, maxQuestions, state.totalScore, maxPoints * maxQuestions);
 }
 
 function startState (showWelcomeDialog) {
