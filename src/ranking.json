@@ -2,51 +2,71 @@
   {
     "name": "Hot Pie",
     "message": "Okay, so you really don’t have a good sense of Westeros or the wider world around you, but that’s okay.\nKeep working on your dire wolf bread, your baking may be the key to save the Seven Kingdoms.\nYou may yet sit the Iron Throne, Hot Pie.",
+    "tweet": "I’m Hot Pie, my Westeros geography is way worse than my dire wolf loaves. See how you fare.",
+    "page": "hotpie.html",
     "image": "/characters/hot-pie.png"
   },
   {
     "name": "Rickon Stark",
     "message": "Serpentine Rickon! Serpentine!\nOh, Rickon you were taken from us too soon.\nYou didn’t quite have time to develop a good geographical sense, did you?",
+    "tweet": "I’m Rickon, what I lack in trivia knowledge, I also lacked in screen time… #Shaggydog was the best direwolf. See how you fare.",
+    "page": "rickon.html",
     "image": "/characters/rickon.jpg"
   },
   {
     "name": "Khal Drogo",
     "message": "Sure you are a powerful horse-lord, and your son would be the Stallion that Mounts the World… but you really haven’t spent much time outside of the Dothraki Sea, have you?",
+    "tweet": "I’m Khal Drogo. I would have done better if all of the trivia questions were about horses. See how you fare.",
+    "page": "drogo.html",
     "image": "/characters/drogo.jpg"
   },
   {
     "name": "Theon Greyjoy",
     "message": "So you know your way around a bit.\nWhile getting tortured you could certainly name some of the great keeps of The North.\nBut you definitely lack some geographic sense…\nYou should have listened to Yara when she told you that Winterfell was too far from the sea…",
+    "tweet": "I’m Theon. I’ve been around enough to have some knowledge of the world, but I still screw it up quite a bit. See how you fare.",
+    "page": "theon.html",
     "image": "/characters/theon.jpg"
   },
   {
     "name": "Robb Stark",
     "message": "Your understanding of Westerosi geography has its ups and downs.\nYou are smart enough to use the terrain to trick your opponents and win battles, only to insult the man who controls the only bridge between you and home… cue The Rains of Castamere",
+    "tweet": "I’m Robb. I had a good run… but I probably could have done better. Hey, do you want to come to my wedding? See how you fare.",
+    "page": "robb.html",
     "image": "/characters/robb.jpg"
   },
   {
     "name": "Davos Seaworthy",
     "message": "Decades of smuggling followed by years hanging out with Stannis around that giant map table on Dragonstone have given you a good head for geography!\nStill, I think you could do better, Onion Knight.",
+    "tweet": "I’m Davos, I know loads about the secret passages and canals of the kingdom, just don’t ask me to read the questions for you. See how you fare.",
+    "page": "davos.html",
     "image": "/characters/davos.jpg"
   },
   {
     "name": "Arya Stark",
     "message": "You’ve studied courtliness in Winterfell as a child, water dancing with a First Sword of Braavos, and the art of death with the Faceless Men.\nIt seems you must have picked up some geography on your travels as well!",
+    "tweet": "I’m Arya. A girl has travelled the world and learned much. Valar Morghulis. See how you fare.",
+    "page": "arya.html",
     "image": "/characters/arya.jpg"
   },
   {
     "name": "Daenerys Targaryen",
     "message": "Not only are you one of the most well-travelled people in all the known world, as Mother of Dragon’s you get to take in the scenery from the best seat in the house.\nWho needs a map when you have Drogon?",
+    "tweet": "I’m Daenerys Stormborn of House Targaryen, First of Her Name, the Unburnt, Queen of the Andals and the First Men, Khaleesi of the Great Grass Sea, Breaker of Chains, and Mother of Dragons, and my trivia is on point. See how you fare.",
+    "page": "daenerys.html",
     "image": "/characters/daenerys.jpg"
   },
   {
     "name": "Samwell Tarly",
     "message": "With all the maps in Horn Hill, Castle Black, and probably a good number of those in The Citadel in Oldtown committed to memory, you really know your way around Westeros and Essos!",
+    "tweet": "I’m Sam. I know almost everything about Westeros and Essos. They won’t let me play during Castle Black Trivia Night anymore. See how you fare.",
+    "page": "sam.html",
     "image": "/characters/samwell.png"
   },
   {
     "name": "The Three-eyed Raven",
     "message": "You must be a Greenseer.\nThat is the only way to explain how you seem to know the location and details of every castle, city, village, and landmark from Sunspear to the The Shadowlands beyond Asshai.",
+    "tweet": "I’m The Three Eyed Raven, I can see all that has been and all that is. No trivia can fool me. See how you fare.",
+    "page": "raven.html",
     "image": "/characters/raven.jpg"
   }
 ]

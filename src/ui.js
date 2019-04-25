@@ -103,6 +103,14 @@ export function renderMiss (clickedPlace, targetName, distance, points, nextCb) 
   body.appendChild(clone);
 }
 
+function getTweetURL (character) {
+  const domain = 'https://game-of-thrones.cartocdn.com';
+  const text = `${ character.tweet} - Geom of Thrones map trivia`;
+  const url = `${ domain }/${ character.page }`;
+  const hashtags = 'GameofThrones';
+  return `https://twitter.com/intent/tweet?text=${ text }&url=${ url }&hashtags=${ hashtags }`;
+}
+
 export function renderEnd (points, maxPoints, character, nextCb) {
   const template = document.querySelector('#end-template');
   const clone = document.importNode(template.content, true);
@@ -123,6 +131,12 @@ export function renderEnd (points, maxPoints, character, nextCb) {
     p.textContent = sentence;
     characterMessageEl.appendChild(p);
   });
+
+  const shareTextEl = clone.querySelector('.tweet-text');
+  shareTextEl.textContent = character.tweet;
+
+  const shareButtonEl = clone.querySelector('.share a');
+  shareButtonEl.href = getTweetURL(character);
 
   const body = document.getElementsByTagName('body')[0];
   body.appendChild(clone);

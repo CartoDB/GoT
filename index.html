@@ -19,6 +19,7 @@
   <body>
     <div id="map"></div>
     <img id="preload" />
+    <img class="twitter-logo" style="display: none;" src="/media/twitter.svg" />
     <script src="src/index.js"></script>
 
     <template id="welcome-template">
@@ -34,7 +35,7 @@
         <div class="ui">
           <h1>GEOM OF THRONES</h1>
           <img class="separator" src="/media/separator.svg" />
-          <p>A Game of Thrones geo-trivia</p>
+          <p>A Game of Thrones map trivia</p>
           <div>
             <button class="button">Start</button>
           </div>
@@ -96,6 +97,12 @@
           <div class="points"></div>
           <div class="character-name"></div>
           <div class="character-message"></div>
+          <div class="share">
+            <p>Want to tell the realm of your accomplishments?</p>
+            <p class="tweet-text"></p>
+            <a class="button" href="" target="_blank"><img class="twitter-logo" src="/media/twitter-logo.svg" />Send a Raven</a>
+          </div>
+          <!-- <a href="https://twitter.com/intent/tweet?text=tucutu%20tacata" target="_blank">Share your score on Twitter</a> -->
           <button class="button">Play again</button>    
         </div>
       </div>

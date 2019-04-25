@@ -342,6 +342,38 @@ body {
   margin-top: 0;
 }
 
+.end-dialog .tweet-text {
+  border: 1px solid $yellow;
+  min-height: 32px;
+  background: #000;
+  margin-bottom: 24px;
+}
+
+.end-dialog .share {
+  text-align: center;
+}
+
+.end-dialog .share .tweet-text {
+  padding: 24px;
+}
+
+.end-dialog .share .twitter-logo {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 32px;
+  max-height: 32px;
+  border: none;
+  float: none;
+  background: none;
+  margin: 0;
+}
+
+.end-dialog .share .button {
+  text-decoration: none;
+  width: 100%;
+}
+
+
 .end-dialog img {
   display: block;
   max-width: 40%;
@@ -351,7 +383,7 @@ body {
 }
 
 .end-dialog .button {
-  margin: 12px 0;
+  margin: 48px 0;
 }
 
 @media all and (min-width: 480px) {
