@@ -74,7 +74,7 @@ export function setupMap (onClickCb) {
   `);
   state.lineLayer = new carto.Layer('lineLayer', state.lineSource, state.lineViz);
   state.lineLayer.addTo(state.map);
-  layer.addTo(state.map);
+  layer.addTo(state.map,"selected-places-got");
 }
 
 export function filterMap () {
