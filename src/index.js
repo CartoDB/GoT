@@ -1,9 +1,12 @@
+/*global carto*/
+import { isMobile } from 'is-mobile';
 import { getDistanceFromLngLatInKm, calculateScore } from './utils';
 import { state } from './state';
 import { setupMap, filterMap, showPath, hidePath } from './map';
 import { getQuestion, fillQuestions } from './questions';
-import { showWelcome, renderQuestion, closeBottomDialog, renderHit, renderMiss, renderEnd } from './ui';
+import { showWelcome, renderQuestion, closeBottomDialog, renderHit, renderMiss, renderEnd, renderError } from './ui';
 import { getCharacterFromScore } from './score';
+
 
 const maxQuestions = 1;
 const maxPoints = 100;
@@ -69,11 +72,26 @@ function startState (showWelcomeDialog) {
   }
 }
 
+function checkBrowser() {
+  if (!carto.isBrowserSupported()) {
+    const reasons = carto.unsupportedBrowserReasons();
+    const message = reasons.map(r => r.message).join(' - ');
+    if (window.dataLayer) {
+      window.dataLayer.push('vl-error', message);
+    }
+    renderError(isMobile());
+    return false;
+  }
+  return true;
+}
+
 function gameLoop() {
   window.state = state;
-  setupMap(featureClicked);
-  filterMap();
-  startState(true);
+  if (checkBrowser()) {
+    setupMap(featureClicked);
+    filterMap();
+    startState(true);  
+  }
 }
 
 if (window.addEventListener) {

@@ -15,6 +15,9 @@
     <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="style/style.scss" type="text/css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-20934186-30"></script>
   </head>
   <body>
     <div id="map"></div>
@@ -35,7 +38,7 @@
         <div class="ui">
           <h1>GEOM OF THRONES</h1>
           <img class="separator" src="/media/separator.svg" />
-          <p>A Game of Thrones map trivia</p>
+          <p>A Game of Thrones map trivia v0.9</p>
           <div>
             <button class="button">Start</button>
           </div>
@@ -107,5 +110,32 @@
         </div>
       </div>
     </template>
+
+    <template id="mobile-error-template">
+      <div class="error-dialog">
+        <div class="message">
+          <p>Your device is not supported.</p>
+          <p>Please use a desktop browser for the best experience.</p>    
+        </div>
+      </div>
+    </template>
+
+    <template id="desktop-error-template">
+      <div class="error-dialog">
+        <div class="message">
+          <p>Your browser is not supported.</p>
+          <p>Please use a modern browser for the best experience.</p>
+        </div>
+      </div>
+    </template>
+
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-20934186-30');
+    </script>
   </body>
 </html>

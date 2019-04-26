@@ -103,6 +103,16 @@ export function renderMiss (clickedPlace, targetName, distance, points, nextCb) 
   body.appendChild(clone);
 }
 
+export function renderError (isMobile) {
+  const selector = isMobile
+    ? '#mobile-error-template'
+    : '#desktop-error-template';
+  const template = document.querySelector(selector);
+  const clone = document.importNode(template.content, true);
+  const body = document.getElementsByTagName('body')[0];
+  body.appendChild(clone);
+}
+
 function getTweetURL (character) {
   const domain = 'https://game-of-thrones.cartocdn.com';
   const text = `${ character.tweet} - Geom of Thrones map trivia`;
