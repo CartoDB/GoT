@@ -117,7 +117,7 @@ function getTweetURL (character) {
   const domain = 'https://game-of-thrones.cartocdn.com';
   const text = `${ character.tweet} - Geom of Thrones map trivia`;
   const url = `${ domain }/${ character.page }`;
-  const hashtags = 'GameofThrones';
+  const hashtags = 'GameofThrones, GeomofThrones';
   return `https://twitter.com/intent/tweet?text=${ text }&url=${ url }&hashtags=${ hashtags }`;
 }
 
@@ -128,25 +128,30 @@ export function renderEnd (points, maxPoints, character, nextCb) {
   pointsEl.textContent = `Your final score: ${ points }/${ maxPoints }`; 
   const buttonEl = clone.querySelector('button');
   buttonEl.addEventListener('click', nextCb);
-  const characterNameEl = clone.querySelector('.character-name');
+  const characterNameEl = clone.querySelector('.name');
   characterNameEl.textContent = character.name;
-  const characterMessageEl = clone.querySelector('.character-message');
-  const paragraphs = character.message.split('\n');
 
-  const imgEl = document.createElement('img');
-  imgEl.src = character.image;
-  characterMessageEl.appendChild(imgEl);
+  // Message content
+  const messageEl = clone.querySelector('.message');
+  const paragraphs = character.message.split('\n');
   paragraphs.forEach(sentence => {
     const p = document.createElement('p');
     p.textContent = sentence;
-    characterMessageEl.appendChild(p);
+    messageEl.appendChild(p);
   });
 
-  const shareTextEl = clone.querySelector('.tweet-text');
-  shareTextEl.textContent = character.tweet;
+  // Image
+  const imageEl = clone.querySelector('.image');
+  imageEl.src = character.image;
 
-  const shareButtonEl = clone.querySelector('.share a');
+  // Share
+  const shareTemplate = document.querySelector('#share-template');
+  const shareEl = document.importNode(shareTemplate.content, true);
+  const shareTextEl = shareEl.querySelector('.text');
+  shareTextEl.textContent = character.tweet;
+  const shareButtonEl = shareEl.querySelector('.share a');
   shareButtonEl.href = getTweetURL(character);
+  messageEl.appendChild(shareEl);
 
   const body = document.getElementsByTagName('body')[0];
   body.appendChild(clone);

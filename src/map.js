@@ -38,43 +38,30 @@ export function setupMap (onClickCb) {
     : '8';
 
   state.viz = new carto.Viz(`
-    @name: $name,
-    @important: $important,
-    strokeWidth: 2,
-    strokeColor: rgba(36, 49, 50, 0.8),
-    color: rgb(245, 227, 108),
-    filter: 1,
+    @name: $name
+    @important: $important
+
+    strokeColor: opacity(gold, 0.8)
+    color: opacity(gold, 0.4)
+    strokeWidth: 1
+    filter: 1
     width: ${ width }
   `);
 
   const layer = new carto.Layer('layer', locationsSource, state.viz);
   const interactivity = new carto.Interactivity(layer);
 
-  interactivity.on('featureClick', featureEvent => {
-    if (state.inQuestion && featureEvent && featureEvent.features.length > 0) {
-      const feature = featureEvent.features[0];
-      const origin = getPlaceFromGeoJSON(feature.id);
-      const coordinates = origin.geometry.coordinates;
-      const target = getPlaceFromGeoJSON(state.currentTarget.id);
-      const basicTarget = {
-        id: target.properties.id,
-        lng: target.geometry.coordinates[0],
-        lat: target.geometry.coordinates[1],
-        name: target.properties.name
-      };
-      onClickCb(feature, coordinates, basicTarget);
-    }
-  });
+  handleInteractivity(interactivity, onClickCb);
 
   state.line = getLineGeoJSON();
   state.lineSource = new carto.source.GeoJSON(state.line);
   state.lineViz = new carto.Viz(`
-    color: rgba(255, 255, 102, 0.7),
+    color: opacity(#d700ff, 0.7)
     width: 4
   `);
   state.lineLayer = new carto.Layer('lineLayer', state.lineSource, state.lineViz);
   state.lineLayer.addTo(state.map);
-  layer.addTo(state.map,"selected-places-got");
+  layer.addTo(state.map, 'selected-places-got');
 }
 
 export function filterMap () {
@@ -152,6 +139,81 @@ function fitToBounds (start, end) {
   ]], options);
 }
 
+export function resetZoom () {
+  const currentZoom = state.map.getZoom();
+  if (currentZoom < 4) {
+    state.map.zoomTo(4);
+  } else if (currentZoom > 5) {
+    state.map.zoomTo(5);
+  }
+}
+
 export function hidePath () {
   state.lineLayer.hide();
+}
+
+function handleInteractivity (interactivity, onClickCb) {
+  const delay = 50;
+
+  interactivity.on('featureClick', featureEvent => {
+    if (state.inQuestion && featureEvent && featureEvent.features.length > 0) {
+      const feature = featureEvent.features[0];
+      state.clickedFeatureId = feature.id;
+      state.clickedFeature = feature;
+      feature.color.blendTo('gold', delay);
+      feature.strokeWidth.blendTo('6', delay);
+      feature.strokeColor.blendTo('gold', delay);
+      const origin = getPlaceFromGeoJSON(state.clickedFeatureId);
+      const coordinates = origin.geometry.coordinates;
+      const target = getPlaceFromGeoJSON(state.currentTarget.id);
+      const basicTarget = {
+        id: target.properties.id,
+        lng: target.geometry.coordinates[0],
+        lat: target.geometry.coordinates[1],
+        name: target.properties.name
+      };
+      onClickCb(feature, coordinates, basicTarget);
+    }
+  });
+
+  interactivity.on('featureClickOut', event => {
+    if (event.features.length) {
+      event.features.forEach(feature => resetClick(feature));
+    }
+  });
+
+  interactivity.on('featureEnter', event => {
+    event.features.forEach(feature => {
+      if (feature.id !== state.clickedFeatureId) {
+        feature.color.blendTo('opacity(#d700ff, 0.8)', delay);
+        feature.strokeWidth.blendTo('4', delay);
+        feature.strokeColor.blendTo('opacity(#d700ff, 1)', delay);
+      }
+    });
+  });
+
+  interactivity.on('featureLeave', event => {
+    event.features.forEach(feature => {
+      if (feature.id !== state.clickedFeatureId) {
+        feature.color.reset(delay);
+        feature.strokeWidth.reset(delay);
+        feature.strokeColor.reset(delay);
+      }
+    });
+  });
+}
+
+export function resetClick (feature) {
+  if (!feature) {
+    return;
+  }
+
+  const delay = 50;
+  if (feature.id === state.clickedFeatureId) {
+    state.clickedFeatureId = null;
+    state.clickedFeature = null;
+    feature.color.reset(delay);
+    feature.strokeWidth.reset(delay);
+    feature.strokeColor.reset(delay);
+  }
 }

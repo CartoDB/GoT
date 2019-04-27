@@ -2,19 +2,21 @@
 import { isMobile } from 'is-mobile';
 import { getDistanceFromLngLatInKm, calculateScore } from './utils';
 import { state } from './state';
-import { setupMap, filterMap, showPath, hidePath } from './map';
+import { setupMap, filterMap, showPath, hidePath, resetClick, resetZoom } from './map';
 import { getQuestion, fillQuestions } from './questions';
 import { showWelcome, renderQuestion, closeBottomDialog, renderHit, renderMiss, renderEnd, renderError } from './ui';
 import { getCharacterFromScore } from './score';
 
 
-const maxQuestions = 1;
+const maxQuestions = 5;
 const maxPoints = 100;
 
 function onNext () {
   state.currentIndex++;
   closeBottomDialog();
   hidePath();
+  resetClick(state.clickedFeature);
+  resetZoom();
   const maxScore = maxPoints * maxQuestions;
   if (state.currentIndex < maxQuestions) {
     state.inQuestion = true;

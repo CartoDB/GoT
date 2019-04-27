@@ -10,5 +10,7 @@ export const state = {
   lineViz: null,
   lineSource: null,
   lineLayer: null,
-  map: null
+  map: null,
+  clickedFeatureId: null,
+  clickedFeature: null
 };

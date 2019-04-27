@@ -33,12 +33,12 @@
           <img class="corner bottom right" src="/media/ornament.svg" />
           <img class="corner bottom left" src="/media/ornament.svg" />
           <img class="crown" src="/media/top_ornament.svg" />
-          <a href="https://carto.com" target="_blank"><img class="bycarto" src="/media/powered_by_carto.svg" /></a>
+          <a href="https://carto.com/developers/carto-vl/" target="_blank"><img class="bycarto" src="/media/powered_by_carto.svg" /></a>
         </div>
         <div class="ui">
           <h1>GEOM OF THRONES</h1>
           <img class="separator" src="/media/separator.svg" />
-          <p>A Game of Thrones map trivia v0.9</p>
+          <p>A Game of Thrones map trivia</p>
           <div>
             <button class="button">Start</button>
           </div>
@@ -98,15 +98,24 @@
       <div class="end-dialog">
         <div class="content">
           <div class="points"></div>
-          <div class="character-name"></div>
-          <div class="character-message"></div>
-          <div class="share">
-            <p>Want to tell the realm of your accomplishments?</p>
-            <p class="tweet-text"></p>
-            <a class="button" href="" target="_blank"><img class="twitter-logo" src="/media/twitter-logo.svg" />Send a Raven</a>
+          <div class="name"></div>
+          <div class="character">
+              <div class="message"></div>
+              <img class="image" />
           </div>
-          <!-- <a href="https://twitter.com/intent/tweet?text=tucutu%20tacata" target="_blank">Share your score on Twitter</a> -->
+
+          <div class="suggest">Think you can outsmart the realm? <a href="https://forms.gle/ZW8U1DhBgtb48VKb7" target="_blank">Submit your trivia questions</a> and our Maesters may add them to the game!</div> 
           <button class="button">Play again</button>    
+        </div>
+      </div>
+    </template>
+
+    <template id="share-template">
+      <div class="share">
+        <p>Want to tell the realm of your accomplishments?</p>
+        <div class="tweet">
+          <p class="text"></p>
+          <a class="action" href="" target="_blank"><img class="twitter-logo" src="/media/twitter-logo.svg" />Send a Raven</a>    
         </div>
       </div>
     </template>

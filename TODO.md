@@ -1,17 +1,16 @@
-- [ ] Score share
-- [ ] Twitter card
-- [ ] Google Analytics
-- [ ] Suggestion form
-- [ ] Timer
-
-
-- [ ] Remove distances
-- [ ] Unsupported browsers
-- [ ] Latest basemap
-- [ ] Difficulty setting
+- [-] Timer
+- [-] Remove distances
+- [-] Difficulty setting
 
 - [x] Fit to bounds doesn't work on mobile
 - [x] Refactor statics
 - [x] Restrict world size
 - [x] Remove tooltips
 - [x] Remove original filter
+- [x] Score share
+- [x] Twitter card
+- [x] Google Analytics
+- [x] Suggestion form https://forms.gle/iUBGvcMmb3eCaSeD7
+- [x] Unsupported browsers
+- [x] End page layout improvement
+- [x] Latest basemap
