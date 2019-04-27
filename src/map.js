@@ -38,12 +38,13 @@ export function setupMap (onClickCb) {
     : '8';
 
   state.viz = new carto.Viz(`
-    @name: $name,
-    @important: $important,
-    strokeWidth: 2,
-    strokeColor: rgba(36, 49, 50, 0.8),
-    color: rgb(245, 227, 108),
-    filter: 1,
+    @name: $name
+    @important: $important
+    
+    strokeColor: opacity(gold,0.8)
+    color: opacity(gold,0.4)
+    strokeWidth: 1
+    filter: 1
     width: ${ width }
   `);
 
@@ -66,10 +67,51 @@ export function setupMap (onClickCb) {
     }
   });
 
+    const delay = 50;
+    let clickedFeatureId = null;
+    interactivity.on('featureEnter', event => {
+      event.features.forEach(feature => {
+        if (feature.id !== clickedFeatureId) {
+          feature.color.blendTo('opacity(#d700ff, 0.8)', delay)
+          feature.strokeWidth.blendTo('4', delay);
+          feature.strokeColor.blendTo('opacity(#d700ff, 1)', delay);
+        }
+      });
+    });
+    interactivity.on('featureLeave', event => {
+      event.features.forEach(feature => {
+        if (feature.id !== clickedFeatureId) {
+          feature.color.reset(delay);
+          feature.strokeWidth.reset(delay);
+          feature.strokeColor.reset(delay);
+        }
+      });
+    });
+    interactivity.on('featureClick', event => {
+      if (event.features.length) {
+        const feature = event.features[0];
+        clickedFeatureId = feature.id;
+        feature.color.blendTo('gold', delay)
+        feature.strokeWidth.blendTo('6', delay);
+        feature.strokeColor.blendTo('gold', delay);
+      }
+    });
+    interactivity.on('featureClickOut', event => {
+      if (event.features.length) {
+        const feature = event.features[0];
+        clickedFeatureId = '';
+        feature.color.reset(delay);
+        feature.strokeWidth.reset(delay);
+        feature.strokeColor.reset(delay);
+      }
+    });
+
   state.line = getLineGeoJSON();
   state.lineSource = new carto.source.GeoJSON(state.line);
   state.lineViz = new carto.Viz(`
-    color: rgba(255, 255, 102, 0.7),
+    
+    //color: rgba(255, 255, 102, 0.7),
+    color: #d700ff
     width: 4
   `);
   state.lineLayer = new carto.Layer('lineLayer', state.lineSource, state.lineViz);
