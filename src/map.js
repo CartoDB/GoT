@@ -111,7 +111,7 @@ export function setupMap (onClickCb) {
   state.lineViz = new carto.Viz(`
     
     //color: rgba(255, 255, 102, 0.7),
-    color: #d700ff
+    color: opacity(#d700ff,0.7)
     width: 4
   `);
   state.lineLayer = new carto.Layer('lineLayer', state.lineSource, state.lineViz);
