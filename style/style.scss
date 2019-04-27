@@ -1,9 +1,41 @@
 $background-color: #ffb6c1;
 $yellow: rgb(245, 227, 108);
+$dark: rgb(18, 30, 39);
+$darka: rgba(18, 30, 39, 0.8);
+$cinzel: 'cinzel', serif;
+$ornament-s: 58px;
+$ornament-m: 96px;
+$ornament-l: 128px;
+$crown-s: 110px;
+$crown-m: 165px;
+$crown-l: 220px;
+$powered-s: 140px;
+$powered-m: 170px;
+$powered-l: 200px;
 
 @font-face {
   font-family: 'got';
   src: url('/media/got.ttf');
+}
+
+/* Button reset */
+button {
+  width: auto;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  background: transparent;
+  border: none;
+
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none;
 }
 
 html {
@@ -21,7 +53,7 @@ body {
   height: 100%;
   margin: 0;
   color: rgb(255, 255, 255);
-  font-family: 'got', serif;
+  font-family: 'got', 'cinzel', serif;
   letter-spacing: 12px;
 }
 
@@ -31,28 +63,13 @@ body {
   height: 100%;
 }
 
-.tooltip {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-#tooltip-text {
-  margin: 16px;
-  padding: 16px;
-  color: #000;
-  font-size: 24px;
-  background-color: #fff;
-  border-radius: 4px;
-  box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.2);
-}
-
-.hidden {
+#preload {
   display: none;
 }
 
 .button {
   padding: 16px 32px;
+  color: $dark;
   font-size: 16px;
   font-family: 'got', serif;
   letter-spacing: 2px;
@@ -61,28 +78,39 @@ body {
   cursor: pointer;
 }
 
-.dialog {
-  z-index: 100;
-  background: rgba(36, 49, 50, 0.7);
-}
-
 .welcome {
   position: absolute;
+  z-index: 100;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
+  background: $darka;
 }
 
 .welcome h1 {
-  margin-bottom: 48px;
-  color: rgb(245, 227, 108);
+  margin-bottom: 16px;
+  color: $yellow;
   font-weight: 200;
-  font-size: 28px;
+  font-size: 40px;
+  line-height: 64px;
   text-align: center;
   text-shadow: rgba(0, 0, 0, 0.5) 0 2px 4px;
+}
+
+.welcome .separator {
+  margin-bottom: 24px;
+}
+
+.welcome p {
+  margin-bottom: 32px;
+  color: $yellow;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 8px;
+  text-align: center;
 }
 
 .ui {
@@ -100,35 +128,84 @@ body {
   height: 100%;
 }
 
-.ornaments .top.left {
+.ornaments .corner {
   position: absolute;
+  width: $ornament-s;
+}
+
+.ornaments .top.left {
   top: 0;
   left: 0;
-  width: 116px;
   transform: rotate(180deg);
 }
 
 .ornaments .top.right {
-  position: absolute;
   top: 0;
   right: 0;
-  width: 116px;
   transform: rotate(270deg);
 }
 
 .ornaments .bottom.right {
-  position: absolute;
   right: 0;
   bottom: 0;
-  width: 116px;
 }
 
 .ornaments .bottom.left {
-  position: absolute;
   bottom: 0;
   left: 0;
-  width: 116px;
   transform: rotate(90deg);
+}
+
+.ornaments .crown {
+  position: absolute;
+  top: 0;
+  left: calc(50% - #{$crown-s / 2});
+  width: $crown-s;
+}
+
+.ornaments .bycarto {
+  position: absolute;
+  bottom: 16px;
+  left: calc(50% - #{$powered-s / 2});
+  width: $powered-s;
+}
+
+.flowers {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.flowers .corner {
+  position: absolute;
+  width: 16px;
+}
+
+.flowers .top.left {
+  top: 3px;
+  left: 2px;
+  transform: rotate(180deg);
+}
+
+.flowers .top.right {
+  top: 3px;
+  right: 2px;
+  transform: rotate(270deg);
+}
+
+.flowers .bottom.left {
+  bottom: 3px;
+  left: 2px;
+  transform: rotate(90deg);
+}
+
+.flowers .bottom.right {
+  right: 2px;
+  bottom: 3px;
 }
 
 .bottom-dialog {
@@ -137,26 +214,55 @@ body {
   z-index: 100;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   width: 100%;
   min-height: 128px;
-  max-height: 50%;
   padding: 24px;
   overflow-y: auto;
-  background-color: rgba(36, 49, 50, 0.7);
+  color: $yellow;
+  font-size: 16px;
+  font-family: $cinzel;
+  line-height: 24px;
+  letter-spacing: 2px;
+  background-color: $darka;
 }
 
 .bottom-dialog div {
   padding-bottom: 8px;
 }
 
-.bottom-dialog button {
+.bottom-dialog .button {
   margin: 8px;
 }
 
-.hit img {
-  max-width: 100%;
+.hit img.place {
+  max-width: 60%;
+  max-height: 50%;
+  margin: 16px;
+  border: 1px solid $yellow;
+}
+
+.bottom-dialog.hit .place {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.bottom-dialog.hit .caption {
+  margin-bottom: 8px;
+  color: $yellow;
+  font-size: 12px;
+  line-height: 12px;
+  text-decoration: none;
+  border-bottom: solid 1px $yellow;
+}
+
+.bottom-dialog.fail {
+  text-align: center;
+}
+
+.bottom-dialog.fail .booh {
+  font-size: 24px;
 }
 
 .bottom-dialog.question {
@@ -166,45 +272,248 @@ body {
   text-align: center;
 }
 
-.bottom-dialog.question .text {
-  font-size: 24px;
+.bottom-dialog.question .number {
+  width: 100%;
+  font-size: 16px;
+  text-align: left;
 }
 
-.bottom-dialog.end {
+.bottom-dialog.question .text {
+  width: 100%;
+  text-align: left;
+}
+
+.bottom-dialog .score {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  font-size: 12px;
+}
+
+.end-dialog {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  color: $yellow;
+  font-size: 16px;
+  font-family: $cinzel;
+  line-height: 24px;
+  letter-spacing: 2px;
+  background-color: $darka;
+}
+
+.end-dialog .content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  height: 100%;
-  min-height: 100%;
+  justify-content: flex-start;
+  margin: 24px;
+  padding: 0;
 }
 
-.bottom-dialog.end .content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 16px;
+.end-dialog .points {
+  margin-top: 32px;
+  margin-bottom: 16px;
+  line-height: 16px;
+  text-align: center;
 }
 
-.bottom-dialog.end .character-name {
+.end-dialog .name {
+  margin-bottom: 16px;
+  font-weight: 700;
   font-size: 24px;
+  line-height: 24px;
+  text-align: center;
 }
 
-.bottom-dialog.end .content .character-message {
+.end-dialog .character {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+}
+
+.end-dialog .character .message {
   padding-right: 8px;
 }
 
-.bottom-dialog.end .content .character-message p {
+.end-dialog .character .image {
+  display: block;
+  max-width: 50%;
+  max-height: 50%;
+  margin: 0 auto 12px auto;
+  border: 1px solid $yellow;
+  object-fit: cover;
+}
+
+.end-dialog p {
+  margin-bottom: 12px;
+}
+
+.end-dialog .character .message p {
   margin-top: 0;
 }
 
-.bottom-dialog.end .content img {
-  max-width: 50%;
-  padding-left: 8px;
+.end-dialog .tweet {
+  min-height: 32px;
+  margin-bottom: 24px;
+  padding: 24px 0 0 0;
+  background: #000;
+  border: 1px solid $yellow;
+}
+
+.end-dialog .tweet .text {
+  margin: 24px;
+}
+
+.end-dialog .tweet .action {
+  display: inline-block;
+  width: 100%;
+  color: $dark;
+  text-decoration: none;
+  background: linear-gradient(to right, #bca22b 0%, #fdf175 50%, #bca22b 100%);
+}
+
+.end-dialog .suggest a {
+  color: $yellow;
+}
+
+.end-dialog .share {
+  margin-top: 32px;
+  text-align: center;
+}
+
+.end-dialog .share .twitter-logo {
+  display: inline-block;
+  float: none;
+  max-width: 32px;
+  max-height: 32px;
+  margin: 0;
+  vertical-align: middle;
+  background: none;
+  border: none;
+}
+
+.end-dialog .button {
+  margin: 48px 0;
+}
+
+.end-dialog .share .button {
+  width: 100%;
+  text-decoration: none;
+}
+
+.error-dialog {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: $yellow;
+  font-size: 16px;
+  font-family: $cinzel;
+  line-height: 24px;
+  letter-spacing: 2px;
+  text-align: center;
+  background-color: $dark;
 }
 
 @media all and (min-width: 480px) {
+  .bottom-dialog {
+    padding: 32px;
+    overflow-y: auto;
+    color: $yellow;
+    font-size: 24px;
+    font-family: $cinzel;
+    line-height: 32px;
+    letter-spacing: 2px;
+  }
+
+  .bottom-dialog.question .number {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .bottom-dialog.question .text {
+    text-align: center;
+  }
+
+  .bottom-dialog .score {
+    top: 32px;
+    right: 32px;
+    font-size: 16px;
+  }
+
+  .end-dialog .character {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .end-dialog .character .message {
+    margin: 0 32px 0 0;
+    padding: 0;
+  }
+
+  .end-dialog .character .image {
+    max-width: 40%;
+    max-height: 40%;
+  }
+
+  .ornaments .corner {
+    width: $ornament-m;
+  }
+
+  .ornaments .crown {
+    left: calc(50% - #{$crown-m / 2});
+    width: $crown-m;
+  }
+
+  .ornaments .bycarto {
+    position: absolute;
+    bottom: 16px;
+    left: calc(50% - #{$powered-m / 2});
+    width: $powered-m;
+  }
+
+  .flowers .corner {
+    position: absolute;
+    width: 24px;
+  }
 }
 
 @media all and (min-width: 769px) {
+  .bottom-dialog.question .text {
+    max-width: 770px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .end-dialog .content {
+    max-width: 770px;
+    margin: 0 auto;
+  }
+
+  .ornaments .corner {
+    width: $ornament-l;
+  }
+
+  .ornaments .crown {
+    left: calc(50% - #{$crown-l / 2});
+    width: $crown-l;
+  }
+
+  .ornaments .bycarto {
+    position: absolute;
+    bottom: 16px;
+    left: calc(50% - #{$powered-l / 2});
+    width: $powered-l;
+  }
 }

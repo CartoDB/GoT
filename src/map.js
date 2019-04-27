@@ -1,4 +1,5 @@
 /*global carto mapboxgl*/
+import { isMobile } from 'is-mobile';
 import locations from './locations.geo.json';
 import style from './map-style.json';
 import { state } from './state';
@@ -17,7 +18,7 @@ function getPlaceFromGeoJSON (id) {
   return thePlace;
 }
 
-export function setupMap (onClickCb, onEnterCb, onLeaveCb) {
+export function setupMap (onClickCb) {
   mapboxgl.accessToken = 'pk.eyJ1IjoibWFtYXRhIiwiYSI6IjRJQmR3VEkifQ.U2bHbrX94_ZDOuJiRpcUvg';
   mapboxgl.config.API_URL = 'https://api.mapbox.com';
 
@@ -25,58 +26,42 @@ export function setupMap (onClickCb, onEnterCb, onLeaveCb) {
     container: 'map',
     style: style,
     hash: false,
-    scrollZoom: true
+    scrollZoom: true,
+    center: [20.757130, 4.235433],
+    zoom: 4
   }).addControl(new mapboxgl.NavigationControl(), 'top-right');
 
   const locationsSource = new carto.source.GeoJSON(locations);
+
+  const width = isMobile()
+    ? '16'
+    : '8';
+
   state.viz = new carto.Viz(`
-    @name: $name,
-    @important: $important,
-    strokeWidth: 0,
-    color: #E82C0C,
+    @name: $name
+    @important: $important
+
+    strokeColor: opacity(gold, 0.8)
+    color: opacity(gold, 0.4)
+    strokeWidth: 1
     filter: 1
+    width: ${ width }
   `);
 
   const layer = new carto.Layer('layer', locationsSource, state.viz);
   const interactivity = new carto.Interactivity(layer);
 
-  interactivity.on('featureClick', featureEvent => {
-    if (state.inQuestion) {
-      const feature = featureEvent.features[0];
-      const origin = getPlaceFromGeoJSON(feature.id);
-      const coordinates = origin.geometry.coordinates;
-      const target = getPlaceFromGeoJSON(state.currentTarget.id);
-      const basicTarget = {
-        id: target.properties.id,
-        lng: target.geometry.coordinates[0],
-        lat: target.geometry.coordinates[1],
-        name: target.properties.name
-      };
-      onClickCb(feature, coordinates, basicTarget);
-    }
-  });
-
-  interactivity.on('featureEnter', featureEvent => {
-    const feature = featureEvent.features[0];
-    if (feature) {
-      onEnterCb(feature.variables.name.value);
-    }
-  });
-
-  interactivity.on('featureLeave', () => {
-    onLeaveCb();
-  });
-
-  layer.addTo(state.map);
+  handleInteractivity(interactivity, onClickCb);
 
   state.line = getLineGeoJSON();
   state.lineSource = new carto.source.GeoJSON(state.line);
   state.lineViz = new carto.Viz(`
-    color: #FF3300,
+    color: opacity(#d700ff, 0.7)
     width: 4
   `);
   state.lineLayer = new carto.Layer('lineLayer', state.lineSource, state.lineViz);
   state.lineLayer.addTo(state.map);
+  layer.addTo(state.map, 'selected-places-got');
 }
 
 export function filterMap () {
@@ -97,7 +82,7 @@ function getLineGeoJSON () {
         type: 'Feature',
         geometry: {
           type: 'LineString',
-          coordinates: [[20,5], [25, 10]]
+          coordinates: [[-50,-50], [-51, -51]]
         }
       }
     ]
@@ -134,15 +119,101 @@ export function showPath (start, end) {
 }
 
 function fitToBounds (start, end) {
+  let options = {
+    padding: 200,
+    duration: 1000,
+    maxZoom: 4,
+    linear: true
+  };
+
+  if (isMobile()) {
+    options.padding = 32;
+  }
+
   state.map.fitBounds([[
     start.lng,
     start.lat
   ],[
     end.lng,
     end.lat
-  ]], { padding: 200, duration: 1000, maxZoom: 4 });
+  ]], options);
+}
+
+export function resetZoom () {
+  const currentZoom = state.map.getZoom();
+  if (currentZoom < 4) {
+    state.map.zoomTo(4);
+  } else if (currentZoom > 5) {
+    state.map.zoomTo(5);
+  }
 }
 
 export function hidePath () {
   state.lineLayer.hide();
+}
+
+function handleInteractivity (interactivity, onClickCb) {
+  const delay = 50;
+
+  interactivity.on('featureClick', featureEvent => {
+    if (state.inQuestion && featureEvent && featureEvent.features.length > 0) {
+      const feature = featureEvent.features[0];
+      state.clickedFeatureId = feature.id;
+      state.clickedFeature = feature;
+      feature.color.blendTo('gold', delay);
+      feature.strokeWidth.blendTo('6', delay);
+      feature.strokeColor.blendTo('gold', delay);
+      const origin = getPlaceFromGeoJSON(state.clickedFeatureId);
+      const coordinates = origin.geometry.coordinates;
+      const target = getPlaceFromGeoJSON(state.currentTarget.id);
+      const basicTarget = {
+        id: target.properties.id,
+        lng: target.geometry.coordinates[0],
+        lat: target.geometry.coordinates[1],
+        name: target.properties.name
+      };
+      onClickCb(feature, coordinates, basicTarget);
+    }
+  });
+
+  interactivity.on('featureClickOut', event => {
+    if (event.features.length) {
+      event.features.forEach(feature => resetClick(feature));
+    }
+  });
+
+  interactivity.on('featureEnter', event => {
+    event.features.forEach(feature => {
+      if (feature.id !== state.clickedFeatureId) {
+        feature.color.blendTo('opacity(#d700ff, 0.8)', delay);
+        feature.strokeWidth.blendTo('4', delay);
+        feature.strokeColor.blendTo('opacity(#d700ff, 1)', delay);
+      }
+    });
+  });
+
+  interactivity.on('featureLeave', event => {
+    event.features.forEach(feature => {
+      if (feature.id !== state.clickedFeatureId) {
+        feature.color.reset(delay);
+        feature.strokeWidth.reset(delay);
+        feature.strokeColor.reset(delay);
+      }
+    });
+  });
+}
+
+export function resetClick (feature) {
+  if (!feature) {
+    return;
+  }
+
+  const delay = 50;
+  if (feature.id === state.clickedFeatureId) {
+    state.clickedFeatureId = null;
+    state.clickedFeature = null;
+    feature.color.reset(delay);
+    feature.strokeWidth.reset(delay);
+    feature.strokeColor.reset(delay);
+  }
 }

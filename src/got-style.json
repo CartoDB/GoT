@@ -1,0 +1,312 @@
+{
+  "version": 8,
+  "name": "GoT Test",
+  "metadata": {
+      "mapbox:autocomposite": true,
+      "mapbox:type": "template",
+      "mapbox:sdk-support": {
+          "js": "0.50.0",
+          "android": "6.7.0",
+          "ios": "4.6.0"
+      },
+      "mapbox:groups": {
+          "e40d078c3494160ad0e2cbb288b21316": {
+              "name": "Roads",
+              "collapsed": false
+          }
+      }
+  },
+  "center": [30.394093137094615, 4.698656850286724],
+  "zoom": 4,
+  "bearing": 0,
+  "pitch": 0,
+  "sources": {
+      "composite": {"url": "mapbox://mamata.9gw5v5hl", "type": "vector"}
+  },
+  "sprite": "mapbox://sprites/mamata/cjud6g7240oza1fmtca5zjvzh/ef7wugu9981yjfhesdb3dmtk8",
+  "glyphs": "mapbox://fonts/mamata/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+        "id": "background",
+        "type": "background",
+        "paint": {"background-opacity": 1, "background-color": "#2e4a61"}
+    },
+    {
+        "id": "ocean",
+        "type": "fill",
+        "source": "composite",
+        "source-layer": "ocean",
+        "layout": {},
+        "paint": {"fill-pattern": "wavy-ocean-small", "fill-opacity": 0.1}
+    },
+    {
+        "id": "buffer-under",
+        "type": "fill",
+        "source": "composite",
+        "source-layer": "buffer_under",
+        "layout": {},
+        "paint": {
+            "fill-opacity": 1,
+            "fill-outline-color": "hsla(0, 0%, 0%, 0)",
+            "fill-color": [
+                "interpolate",
+                ["linear"],
+                ["get", "data_range"],
+                32186.8,
+                "hsla(207, 21%, 38%, 0.25)",
+                128747.2,
+                "hsla(207, 36%, 28%, 0.3)"
+            ]
+        }
+    },
+    {
+        "id": "continents (1)",
+        "type": "fill",
+        "source": "composite",
+        "source-layer": "continents",
+        "layout": {},
+        "paint": {"fill-opacity": 1, "fill-color": "hsl(207, 38%, 17%)"}
+    },
+    {
+        "id": "continents",
+        "type": "fill",
+        "source": "composite",
+        "source-layer": "continents",
+        "layout": {},
+        "paint": {
+            "fill-outline-color": "hsla(48, 21%, 71%, 0)",
+            "fill-color": "hsl(207, 38%, 21%)",
+            "fill-pattern": "land",
+            "fill-opacity": 0.1
+        }
+    },
+    {
+        "id": "ice",
+        "type": "fill",
+        "source": "composite",
+        "source-layer": "ice",
+        "filter": ["match", ["get", "cartodb_id"], [3], true, false],
+        "layout": {},
+        "paint": {
+            "fill-color": "hsl(193, 18%, 69%)",
+            "fill-outline-color": "hsla(0, 0%, 0%, 0)",
+            "fill-opacity": 0.59
+        }
+    },
+    {
+        "id": "mountains",
+        "type": "fill",
+        "source": "composite",
+        "source-layer": "mountains",
+        "layout": {},
+        "paint": {
+            "fill-pattern": "Group3",
+            "fill-opacity": 0.3,
+            "fill-color": "#2e4a61"
+        }
+    },
+    {
+        "id": "mountains copy",
+        "type": "fill",
+        "source": "composite",
+        "source-layer": "mountains",
+        "layout": {},
+        "paint": {
+            "fill-pattern": "Group3",
+            "fill-opacity": 0.23,
+            "fill-color": "#2e4a61",
+            "fill-translate": [15, 15]
+        }
+    },
+    {
+        "id": "rivers",
+        "type": "line",
+        "source": "composite",
+        "source-layer": "rivers_and_roads",
+        "filter": ["match", ["get", "type"], ["river"], true, false],
+        "layout": {},
+        "paint": {
+            "line-color": "#304d64",
+            "line-opacity": 0.56,
+            "line-width": [
+                "interpolate",
+                ["linear"],
+                ["zoom"],
+                3,
+                0.5,
+                6,
+                1
+            ]
+        }
+    },
+    {
+        "id": "lakes-and-swamps",
+        "type": "fill",
+        "source": "composite",
+        "source-layer": "lakes_and_swamps",
+        "layout": {},
+        "paint": {
+            "fill-color": [
+                "match",
+                ["get", "type"],
+                ["swamp"],
+                "hsl(174, 33%, 20%)",
+                "hsl(206, 35%, 29%)"
+            ],
+            "fill-outline-color": "hsla(187, 86%, 58%, 0)",
+            "fill-opacity": 1
+        }
+    },
+    {
+        "id": "roads",
+        "type": "line",
+        "metadata": {"mapbox:group": "e40d078c3494160ad0e2cbb288b21316"},
+        "source": "composite",
+        "source-layer": "rivers_and_roads",
+        "filter": ["match", ["get", "type"], ["road"], true, false],
+        "layout": {},
+        "paint": {
+            "line-opacity": 0.62,
+            "line-width": [
+                "interpolate",
+                ["linear"],
+                ["zoom"],
+                3,
+                0.5,
+                6,
+                8
+            ],
+            "line-color": "hsla(0, 0%, 25%, 0.8)"
+        }
+    },
+    {
+        "id": "roads casing",
+        "type": "line",
+        "metadata": {"mapbox:group": "e40d078c3494160ad0e2cbb288b21316"},
+        "source": "composite",
+        "source-layer": "rivers_and_roads",
+        "filter": ["match", ["get", "type"], ["road"], true, false],
+        "layout": {},
+        "paint": {
+            "line-width": [
+                "interpolate",
+                ["linear"],
+                ["zoom"],
+                3,
+                0.5,
+                6,
+                5
+            ],
+            "line-opacity": 0.48,
+            "line-color": "hsl(207, 36%, 28%)"
+        }
+    },
+    {
+        "id": "vegetation",
+        "type": "circle",
+        "source": "composite",
+        "source-layer": "vegetation",
+        "filter": ["match", ["get", "type"], ["forest"], true, false],
+        "layout": {},
+        "paint": {
+            "circle-radius": [
+                "interpolate",
+                ["linear"],
+                ["get", "radius"],
+                0.000692564994096756,
+                1,
+                0.999264307320118,
+                8
+            ],
+            "circle-color": "hsl(94, 26%, 31%)",
+            "circle-opacity": 0.5
+        }
+    },
+    {
+        "id": "wall",
+        "type": "line",
+        "source": "composite",
+        "source-layer": "wall",
+        "layout": {},
+        "paint": {"line-color": "hsl(41, 38%, 49%)", "line-width": 4}
+    },
+    {
+        "id": "selected-places-got",
+        "type": "symbol",
+        "source": "composite",
+        "source-layer": "selected_places_got",
+        "layout": {
+            "text-field": ["to-string", ["get", "name"]],
+            "text-size": 10.5,
+            "text-font": ["Oswald Regular", "Arial Unicode MS Regular"],
+            "text-letter-spacing": 0.08
+        },
+        "paint": {
+            "text-color": "hsl(207, 30%, 72%)",
+            "text-halo-color": "hsl(206, 28%, 20%)",
+            "text-halo-width": 0.75,
+            "text-translate": [0, -15]
+        }
+    },
+    {
+        "id": "selected-places-got copy",
+        "type": "circle",
+        "source": "composite",
+        "source-layer": "selected_places_got",
+        "layout": {"visibility": "none"},
+        "paint": {"circle-radius": 4, "circle-color": "hsl(55, 93%, 54%)"}
+    },
+    {
+        "id": "point-region",
+        "type": "symbol",
+        "source": "composite",
+        "source-layer": "point_region",
+        "layout": {
+            "text-field": ["to-string", ["get", "category"]],
+            "text-font": ["Oswald Bold", "Arial Unicode MS Regular"],
+            "text-letter-spacing": [
+                "interpolate",
+                ["linear"],
+                ["zoom"],
+                6,
+                0.08,
+                18,
+                0.15
+            ],
+            "text-size": [
+                "interpolate",
+                ["linear"],
+                ["zoom"],
+                3,
+                10.5,
+                18,
+                28
+            ],
+            "text-transform": "uppercase",
+            "text-max-width": 8,
+            "text-line-height": 1.25,
+            "text-padding": 5
+        },
+        "paint": {
+            "text-halo-color": "#163247",
+            "text-halo-width": 1,
+            "text-opacity": [
+                "interpolate",
+                ["linear"],
+                ["zoom"],
+                3.5,
+                0.8,
+                6,
+                0.3
+            ],
+            "text-color": "hsl(206, 30%, 89%)"
+        }
+    }
+],
+"created": "2019-04-11T21:51:21.551Z",
+"id": "cjud6g7240oza1fmtca5zjvzh",
+"modified": "2019-04-12T14:07:48.955Z",
+"owner": "mamata",
+"visibility": "public",
+"draft": false
+}

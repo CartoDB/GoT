@@ -1,41 +1,27 @@
-import './../style/style.scss';
+/*global carto*/
+import { isMobile } from 'is-mobile';
 import { getDistanceFromLngLatInKm, calculateScore } from './utils';
 import { state } from './state';
-import { setupMap, filterMap, showPath, hidePath } from './map';
+import { setupMap, filterMap, showPath, hidePath, resetClick, resetZoom } from './map';
 import { getQuestion, fillQuestions } from './questions';
-import { showWelcome, renderQuestion, closeBottomDialog, renderHit, renderMiss, renderEnd } from './ui';
+import { showWelcome, renderQuestion, closeBottomDialog, renderHit, renderMiss, renderEnd, renderError } from './ui';
 import { getCharacterFromScore } from './score';
+
 
 const maxQuestions = 5;
 const maxPoints = 100;
-
-function setFilterButtonText () {
-  const button = document.getElementById('filter-button');
-  state.filtered
-    ? button.textContent = 'Reset'
-    : button.textContent = 'Filter';
-}
-function addFilterEvent () {
-  const button = document.getElementById('filter-button');
-  button.addEventListener('click', function () {
-    filterMap();
-    setFilterButtonText();
-  });
-}
-
-function hookUpEvents () {
-  addFilterEvent();
-}
 
 function onNext () {
   state.currentIndex++;
   closeBottomDialog();
   hidePath();
+  resetClick(state.clickedFeature);
+  resetZoom();
+  const maxScore = maxPoints * maxQuestions;
   if (state.currentIndex < maxQuestions) {
     state.inQuestion = true;
-    renderQuestion(getQuestion(), maxQuestions);
+    renderQuestion(getQuestion(), state.currentTarget, maxQuestions, state.totalScore, maxScore);
   } else {
-    const maxScore = maxPoints * maxQuestions;
     renderEnd(state.totalScore, maxScore, getCharacterFromScore(state.totalScore, maxScore), onRestart);
   }  
 }
@@ -66,26 +52,10 @@ function featureClicked (feature, coordinates, target) {
   }
 }
 
-function setTooltip (text) {
-  const tooltip = document.getElementById('tooltip-text');
-  tooltip.textContent = text;
-  text
-    ? tooltip.classList.remove('hidden')
-    : tooltip.classList.add('hidden');
-}
-
-function featureEntered (name) {
-  setTooltip(name);
-}
-
-function featureLeft () {
-  setTooltip('');
-}
-
 function onStart () {
   state.inQuestion = true;
   closeBottomDialog();
-  renderQuestion(getQuestion(), maxQuestions);
+  renderQuestion(getQuestion(), state.currentTarget, maxQuestions, state.totalScore, maxPoints * maxQuestions);
 }
 
 function startState (showWelcomeDialog) {
@@ -104,13 +74,26 @@ function startState (showWelcomeDialog) {
   }
 }
 
+function checkBrowser() {
+  if (!carto.isBrowserSupported()) {
+    const reasons = carto.unsupportedBrowserReasons();
+    const message = reasons.map(r => r.message).join(' - ');
+    if (window.dataLayer) {
+      window.dataLayer.push('vl-error', message);
+    }
+    renderError(isMobile());
+    return false;
+  }
+  return true;
+}
+
 function gameLoop() {
   window.state = state;
-  setupMap(featureClicked, featureEntered, featureLeft);
-  hookUpEvents();
-  filterMap();
-  setFilterButtonText();
-  startState(true);
+  if (checkBrowser()) {
+    setupMap(featureClicked);
+    filterMap();
+    startState(true);  
+  }
 }
 
 if (window.addEventListener) {
