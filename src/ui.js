@@ -117,7 +117,7 @@ function getTweetURL (character) {
   const domain = 'https://game-of-thrones.cartocdn.com';
   const text = `${ character.tweet} - Geom of Thrones map trivia`;
   const url = `${ domain }/${ character.page }`;
-  const hashtags = 'GameofThrones, GeomofThrones';
+  const hashtags = 'GameofThrones,GeomofThrones,GoT';
   return `https://twitter.com/intent/tweet?text=${ text }&url=${ url }&hashtags=${ hashtags }`;
 }
 

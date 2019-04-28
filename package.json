@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel index.html",
-    "build": "rm -rf dist && parcel build index.html",
+    "build": "rm -rf dist && parcel build index.html && cp arya.html daenerys.html davos.html drogo.html hotpie.html raven.html rickon.html robb.html sam.html theon.html dist",
     "lint": "eslint src/*.js && stylelint \"style/style.scss\"",
     "lint:css": "stylelint \"style/style.scss\"",
     "csv2json": "csvtojson ./trivia/got-trivia.csv > ./trivia/trivia.json"
