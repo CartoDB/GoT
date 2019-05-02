@@ -5,3 +5,4 @@ static
 *.log*
 .cache
 dist
+google*.html
