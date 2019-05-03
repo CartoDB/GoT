@@ -79,7 +79,7 @@ function checkBrowser() {
     const reasons = carto.unsupportedBrowserReasons();
     const message = reasons.map(r => r.message).join(' - ');
     if (window.dataLayer) {
-      window.dataLayer.push('vl-error', message);
+      window.dataLayer.push('event', 'vl-error', message);
     }
     renderError(isMobile());
     return false;
