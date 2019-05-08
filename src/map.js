@@ -19,9 +19,6 @@ function getPlaceFromGeoJSON (id) {
 }
 
 export function setupMap (onClickCb) {
-  mapboxgl.accessToken = 'pk.eyJ1IjoibWFtYXRhIiwiYSI6IjRJQmR3VEkifQ.U2bHbrX94_ZDOuJiRpcUvg';
-  mapboxgl.config.API_URL = 'https://api.mapbox.com';
-
   state.map = new mapboxgl.Map({
     container: 'map',
     style: style,
