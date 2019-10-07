@@ -2,7 +2,7 @@ $background-color: #ffb6c1;
 $yellow: rgb(245, 227, 108);
 $dark: rgb(18, 30, 39);
 $darka: rgba(18, 30, 39, 0.8);
-$cinzel: 'cinzel', serif;
+$cinzel: "cinzel", serif;
 $ornament-s: 58px;
 $ornament-m: 96px;
 $ornament-l: 128px;
@@ -14,8 +14,8 @@ $powered-m: 170px;
 $powered-l: 200px;
 
 @font-face {
-  font-family: 'got';
-  src: url('/media/got.ttf');
+  font-family: "got";
+  src: url("/media/got.ttf");
 }
 
 /* Button reset */
@@ -53,7 +53,7 @@ body {
   height: 100%;
   margin: 0;
   color: rgb(255, 255, 255);
-  font-family: 'got', 'cinzel', serif;
+  font-family: "got", "cinzel", serif;
   letter-spacing: 12px;
 }
 
@@ -71,7 +71,7 @@ body {
   padding: 16px 32px;
   color: $dark;
   font-size: 16px;
-  font-family: 'got', serif;
+  font-family: "got", serif;
   letter-spacing: 2px;
   background: linear-gradient(to right, #bca22b 0%, #fdf175 50%, #bca22b 100%);
   border: 0;
@@ -83,8 +83,8 @@ body {
   z-index: 100;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
   background: $darka;
@@ -117,8 +117,8 @@ body {
   z-index: 100;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .ornaments {
@@ -214,8 +214,8 @@ body {
   z-index: 100;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: flex-start;
   width: 100%;
   min-height: 128px;
   padding: 24px;
@@ -344,8 +344,8 @@ body {
   max-width: 50%;
   max-height: 50%;
   margin: 0 auto 12px auto;
-  border: 1px solid $yellow;
   object-fit: cover;
+  border: 1px solid $yellow;
 }
 
 .end-dialog p {
@@ -412,8 +412,8 @@ body {
   z-index: 100;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
   color: $yellow;
